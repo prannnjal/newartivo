@@ -12,6 +12,7 @@ import { ProductFeaturesSection } from "@/components/ProductFeaturesSection";
 import { ViewAllProjectsStrip } from "@/components/ViewAllProjectsStrip";
 import { InnovativeAffiliationsSection } from "@/components/InnovativeAffiliationsSection";
 import { ContactForm } from "@/components/ContactForm";
+import { Footer } from "@/components/Footer";
 import { GearIcon, DocumentIcon, UserIcon, AwardIcon, QuoteIcon } from "@/components/Icons";
 
 export default function Home() {
@@ -53,6 +54,8 @@ export default function Home() {
           {/* Innovative Affiliations Section */}
           <InnovativeAffiliationsSection />
 
+          {/* Footer */}
+          <Footer />
     </div>
   );
 }

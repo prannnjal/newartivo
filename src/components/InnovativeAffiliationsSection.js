@@ -31,8 +31,8 @@ export const InnovativeAffiliationsSection = () => {
               WebkitTextFillColor: 'transparent',
               backgroundClip: 'text'
             }}>
-              Innovative Affiliations
-            </h2>
+            Innovative Affiliations
+          </h2>
             <p className="text-gray-600 text-lg leading-relaxed">
               We work with all types and size of businesses across industries, becoming ideal R&D providers to turn their ideas into a profitable reality.
             </p>
@@ -51,65 +51,65 @@ export const InnovativeAffiliationsSection = () => {
             </div>
           </div>
         </div>
-
-        {/* Logo Carousel */}
-        <div className="overflow-hidden">
-          {/* First Row - Moving Right */}
-          <div className="flex animate-scroll-right">
-            {logos.map((logo, index) => (
-                <div key={`row1-${index}`} className="flex-shrink-0 mx-1">
-                <Image
-                  src={logo}
-                  alt={`Logo ${index + 1}`}
-                  width={220}
-                  height={140}
-                  className="object-contain grayscale hover:grayscale-0 transition-all duration-300"
-                />
-              </div>
-            ))}
-            {/* Duplicate logos for seamless loop */}
-            {logos.map((logo, index) => (
-                <div key={`row1-dup-${index}`} className="flex-shrink-0 mx-1">
-                <Image
-                  src={logo}
-                  alt={`Logo ${index + 1}`}
-                  width={220}
-                  height={140}
-                  className="object-contain grayscale hover:grayscale-0 transition-all duration-300"
-                />
-              </div>
-            ))}
-          </div>
-
-              {/* Second Row - Moving Left */}
-              <div className="flex animate-scroll-left mt-1">
-            {logos.slice().reverse().map((logo, index) => (
-                <div key={`row2-${index}`} className="flex-shrink-0 mx-1">
-                <Image
-                  src={logo}
-                  alt={`Logo ${index + 1}`}
-                  width={220}
-                  height={140}
-                  className="object-contain grayscale hover:grayscale-0 transition-all duration-300"
-                />
-              </div>
-            ))}
-            {/* Duplicate logos for seamless loop */}
-            {logos.slice().reverse().map((logo, index) => (
-                <div key={`row2-dup-${index}`} className="flex-shrink-0 mx-1">
-                <Image
-                  src={logo}
-                  alt={`Logo ${index + 1}`}
-                  width={220}
-                  height={140}
-                  className="object-contain grayscale hover:grayscale-0 transition-all duration-300"
-                />
-              </div>
-            ))}
-          </div>
-        </div>
       </div>
 
+      {/* Logo Carousel - Full Width */}
+      <div className="w-full overflow-hidden">
+        {/* First Row - Moving Right */}
+        <div className="flex animate-scroll-right">
+          {logos.map((logo, index) => (
+            <div key={`row1-${index}`} className="flex-shrink-0 mx-1">
+              <Image
+                src={logo}
+                alt={`Logo ${index + 1}`}
+                width={220}
+                height={140}
+                className="object-contain grayscale hover:grayscale-0 transition-all duration-300"
+              />
+            </div>
+          ))}
+          {/* Duplicate logos for seamless loop */}
+          {logos.map((logo, index) => (
+            <div key={`row1-dup-${index}`} className="flex-shrink-0 mx-1">
+              <Image
+                src={logo}
+                alt={`Logo ${index + 1}`}
+                width={220}
+                height={140}
+                className="object-contain grayscale hover:grayscale-0 transition-all duration-300"
+              />
+            </div>
+          ))}
+        </div>
+
+        {/* Second Row - Moving Left */}
+        <div className="flex animate-scroll-left mt-1">
+          {logos.slice().reverse().map((logo, index) => (
+            <div key={`row2-${index}`} className="flex-shrink-0 mx-1">
+              <Image
+                src={logo}
+                alt={`Logo ${index + 1}`}
+                width={220}
+                height={140}
+                className="object-contain grayscale hover:grayscale-0 transition-all duration-300"
+              />
+            </div>
+          ))}
+          {/* Duplicate logos for seamless loop */}
+          {logos.slice().reverse().map((logo, index) => (
+            <div key={`row2-dup-${index}`} className="flex-shrink-0 mx-1">
+              <Image
+                src={logo}
+                alt={`Logo ${index + 1}`}
+                width={220}
+                height={140}
+                className="object-contain grayscale hover:grayscale-0 transition-all duration-300"
+              />
+            </div>
+          ))}
+        </div>
+      </div>
+          
       <style jsx>{`
         @keyframes scroll-right {
           0% {

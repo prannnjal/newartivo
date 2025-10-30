@@ -3,6 +3,7 @@ import { Navbar } from '@/components/Navbar';
 import { ContactSection } from '@/components/ContactSection';
 import { InnovativeAffiliationsSection } from '@/components/InnovativeAffiliationsSection';
 import { TestimonialsSection } from '@/components/TestimonialsSection';
+import { Footer } from '@/components/Footer';
 
 export default function ContactUs() {
   return (
@@ -18,6 +19,9 @@ export default function ContactUs() {
 
       {/* Testimonials Section */}
       <TestimonialsSection />
+      
+      {/* Footer */}
+      <Footer />
     </div>
   );
 }

@@ -6,10 +6,13 @@ import { usePathname } from 'next/navigation';
 
 export const Navbar = () => {
   const pathname = usePathname();
-  const isWhyArtivoPage = pathname === '/why-artivo';
-  
+  const isContactUs = pathname === '/contact-us';
+
   return (
-    <nav className={`${isWhyArtivoPage ? 'relative' : 'fixed top-0 left-0 right-0'} z-50 bg-transparent`}>
+    <nav
+      className={`absolute top-0 left-0 right-0 z-50 ${isContactUs ? '' : 'bg-transparent'}`}
+      style={isContactUs ? { background: 'linear-gradient(90deg, rgba(11, 25, 47, 1), rgba(205, 64, 11, 1))' } : undefined}
+    >
       <div className="px-8 py-6 flex justify-between items-center">
         {/* Logo */}
         <div className="flex items-center">

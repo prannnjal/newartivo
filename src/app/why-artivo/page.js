@@ -5,6 +5,7 @@ import { WhyArtivoContentSection } from '@/components/WhyArtivoContentSection';
 import { TestimonialFeaturesSection } from '@/components/TestimonialFeaturesSection';
 import { ContactSection } from '@/components/ContactSection';
 import { TestimonialsSection } from '@/components/TestimonialsSection';
+import { Footer } from '@/components/Footer';
 
 export default function WhyArtivo() {
   return (
@@ -13,7 +14,7 @@ export default function WhyArtivo() {
       <Navbar />
 
       {/* Hero Section */}
-      <section className="relative h-screen overflow-hidden pt-20">
+      <section className="relative h-screen overflow-hidden">
         {/* Hero background image */}
         <div className="absolute inset-0">
           <Image
@@ -46,6 +47,9 @@ export default function WhyArtivo() {
 
       {/* Testimonials Section */}
       <TestimonialsSection />
+
+      {/* Footer */}
+      <Footer />
     </div>
   );
 }
