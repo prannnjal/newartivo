@@ -3,33 +3,47 @@ import Image from 'next/image';
 
 export const OurWorkSection = () => {
   return (
-    <section className="py-20 bg-white">
-      <div className="container mx-auto px-8">
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+    <section 
+      className="relative overflow-visible"
+      style={{ background: 'rgba(10, 25, 47, 1)' }}
+    >
+      {/* Background Image */}
+      <div className="absolute inset-0 z-0">
+        <Image
+          src="/2 11.png"
+          alt="Background Pattern"
+          fill
+          className="object-cover opacity-30"
+          priority
+        />
+      </div>
+      
+      <div className="container mx-auto px-0 relative z-10 overflow-visible">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-0">
           
           {/* Left Side - Text Content */}
-          <div className="space-y-6">
-            <h2 className="text-5xl font-bold text-gray-900 leading-tight">
+          <div className="space-y-2 px-8 py-4 flex flex-col justify-center">
+            <h2 className="text-3xl font-bold text-white leading-tight">
               Our Work
             </h2>
             
-            <p className="text-lg text-gray-700 leading-relaxed">
+            <p className="text-sm text-white/90 leading-snug">
               Every project we take on is more than a design; it's a story of innovation, precision, and purpose.
             </p>
             
-            <p className="text-lg text-gray-700 leading-relaxed">
+            <p className="text-sm text-white/90 leading-snug">
               From first sketches to full production, our work reflects a balance of creativity and engineering excellence.
             </p>
           </div>
           
-          {/* Right Side - Bicycle Rendering */}
-          <div className="relative">
+          {/* Right Side - Artivo GP Line Drawing - Full Height */}
+          <div className="relative h-full min-h-[200px] max-h-[300px] overflow-visible">
             <Image
               src="/New folder/Artivo - GP Line Drawings (3) 1.png"
-              alt="Bicycle Technical Drawing"
-              width={800}
-              height={600}
-              className="w-full h-auto object-contain"
+              alt="Artivo GP Line Drawing"
+              fill
+              className="object-contain object-right"
+              sizes="(max-width: 768px) 100vw, 50vw"
             />
           </div>
           
