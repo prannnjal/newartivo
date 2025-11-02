@@ -3,11 +3,15 @@ import Image from 'next/image';
 
 export const OurWorkSection = () => {
   return (
-    <section 
-      className="relative overflow-visible"
-      style={{ background: 'rgba(10, 25, 47, 1)' }}
-    >
-      {/* Background Image */}
+    <>
+      {/* White Gap from Upper Section */}
+      <div className="w-full bg-white h-0.5 md:h-1 lg:h-2"></div>
+      
+      <section 
+        className="relative overflow-visible"
+        style={{ background: 'linear-gradient(to right, rgba(11, 25, 47, 1), rgba(8, 181, 255, 1))' }}
+      >
+        {/* Background Image */}
       <div className="absolute inset-0 z-0">
         <Image
           src="/2 11.png"
@@ -50,6 +54,7 @@ export const OurWorkSection = () => {
         </div>
       </div>
     </section>
+    </>
   );
 };
 
