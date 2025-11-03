@@ -4,6 +4,7 @@ import { Navbar } from '@/components/Navbar';
 import { Footer } from '@/components/Footer';
 import { ContactSection } from '@/components/ContactSection';
 import { InnovativeAffiliationsSection } from '@/components/InnovativeAffiliationsSection';
+import { LogoCarousel } from '@/components/LogoCarousel';
 import { TestimonialsSection } from '@/components/TestimonialsSection';
 
 function FooterStyleSection() {
@@ -440,6 +441,9 @@ export default function About() {
 
         {/* Innovative Affiliations Section */}
         <InnovativeAffiliationsSection />
+
+        {/* Logo Carousel */}
+        <LogoCarousel />
 
       {/* Contact Section */}
       <ContactSection />

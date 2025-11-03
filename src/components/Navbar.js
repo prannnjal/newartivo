@@ -27,7 +27,7 @@ export const Navbar = () => {
           </a>
         </div>
 
-        {/* Navigation Links */}
+        {/* Right Side - Navigation Links and Button */}
         <div className="hidden md:flex items-center space-x-8">
           <a href="#" className="text-white text-lg font-medium hover:text-gray-300 transition-colors">
             Journal
@@ -35,18 +35,21 @@ export const Navbar = () => {
           <a href="/why-artivo" className="text-white text-lg font-medium hover:text-gray-300 transition-colors">
             Why Artivo
           </a>
-          <a href="#" className="text-white text-lg font-medium hover:text-gray-300 transition-colors">
+          <a href="/about" className="text-white text-lg font-medium hover:text-gray-300 transition-colors">
             About
           </a>
           <a href="/contact-us" className="text-white text-lg font-medium hover:text-gray-300 transition-colors">
             Contact Us
           </a>
+          
+          {/* Connect Button */}
+          <button 
+            className="text-black px-8 py-3 font-semibold text-sm rounded-full transition-colors"
+            style={{ backgroundColor: 'rgba(255, 242, 8, 1)' }}
+          >
+            Connect
+          </button>
         </div>
-
-        {/* Connect Button */}
-        <button className="bg-yellow-400 text-black px-8 py-3 font-semibold text-sm tracking-wide hover:bg-yellow-300 transition-colors rounded-sm">
-          Connect
-        </button>
       </div>
     </nav>
   );

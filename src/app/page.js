@@ -11,6 +11,7 @@ import { OurWorkSection } from "@/components/OurWorkSection";
 import { ProductFeaturesSection } from "@/components/ProductFeaturesSection";
 import { ViewAllProjectsStrip } from "@/components/ViewAllProjectsStrip";
 import { InnovativeAffiliationsSection } from "@/components/InnovativeAffiliationsSection";
+import { LogoCarousel } from "@/components/LogoCarousel";
 import { ContactForm } from "@/components/ContactForm";
 import { ContactSection } from "@/components/ContactSection";
 import { Footer } from "@/components/Footer";
@@ -366,37 +367,35 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Our Specialities Section */}
-          <OurSpecialitiesSection />
+      {/* Sections Container with 1px gaps */}
+      <div className="space-y-[1px]">
+        {/* Our Specialities Section */}
+        <OurSpecialitiesSection />
 
-          {/* Services Section */}
-          <ServicesSection />
+        {/* Services Section */}
+        <ServicesSection />
 
-      {/* Our Work Section */}
-      <OurWorkSection />
+        {/* Our Work Section */}
+        <OurWorkSection />
 
-     
-      {/* Product Showcase Section */}
-      <ProductShowcaseSection />
+        {/* Product Showcase Section */}
+        <ProductShowcaseSection />
 
-       {/* Design Section */}
-       <DesignSection />
+        {/* Design Section */}
+        <DesignSection />
 
-{/* Yellow Strip */}
-<YellowStrip />
+        {/* Product Features Section */}
+        <ProductFeaturesSection />
 
+        {/* Innovative Affiliations Section */}
+        <InnovativeAffiliationsSection />
 
-          {/* Product Features Section */}
-          <ProductFeaturesSection />
+        {/* Logo Carousel */}
+        <LogoCarousel />
 
-          {/* View All Projects Strip */}
-          <ViewAllProjectsStrip />
-
-          {/* Innovative Affiliations Section */}
-          <InnovativeAffiliationsSection />
-
-          {/* Contact Section */}
-          <ContactSection />
+        {/* Contact Section */}
+        <ContactSection />
+      </div>
 
           {/* Footer */}
           <Footer />

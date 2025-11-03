@@ -34,9 +34,9 @@ export const ProductShowcaseSection = () => {
           </div>
           
           {/* Right Side - 3rd Card + Read More Button */}
-          <div className="flex flex-col">
+          <div className="flex flex-col h-full min-h-screen lg:min-h-[1136px]">
             {/* Right Panel - Hero Section */}
-            <div className="relative overflow-hidden w-full h-[100vh] lg:h-[1136px]">
+            <div className="relative overflow-hidden w-full h-full">
                <Image
                  src="/New folder/13.png"
                  alt="Burning Bike Concept"
@@ -44,18 +44,95 @@ export const ProductShowcaseSection = () => {
                  className="object-cover"
                />
               <div className="absolute inset-0 bg-black/50 z-10"></div>
-              <div className="absolute bottom-6 left-6 right-6 z-20">
+              <div className="absolute bottom-16 left-6 right-6 z-20">
                 <div className="p-5">
-                  <h2 className="text-white text-[36px] font-bold mb-3">Excellence in R&D</h2>
-                  <p className="text-white text-[20px] mb-4 leading-relaxed" style={{ width: '338px' }}>
+                  <h2 
+                    className="text-white mb-3"
+                    style={{
+                      fontWeight: 700,
+                      fontSize: '36px',
+                      lineHeight: '100%',
+                      letterSpacing: '-0.04em'
+                    }}
+                  >
+                    Tested to Succeed.
+                  </h2>
+                  <p 
+                    className="text-white mb-4"
+                    style={{ 
+                      width: '338px',
+                      fontWeight: 200,
+                      fontSize: '20px',
+                      lineHeight: '100%',
+                      letterSpacing: '-0.04em'
+                    }}
+                  >
                     Our R&D process is built on precision, experimentation, and collaboration, helping businesses transform bold ideas into market-ready products faster, smarter, and more sustainably.
                   </p>
+                </div>
+              </div>
+              
+              {/* Right Side - Bottom Right Content - Desktop */}
+              <div className="hidden lg:block absolute bottom-0 right-0 z-20">
+                <div className="relative flex items-center gap-2 md:gap-4">
+                  {/* Intersect Background Image */}
+                  <div className="relative">
+                    <Image
+                      src="/why-artivo/Intersect (1).png"
+                      alt="Intersect Background"
+                      width={400}
+                      height={100}
+                      className="object-contain"
+                    />
+                    {/* Text and Arrow Overlay */}
+                    <div className="absolute inset-0 flex items-center justify-center gap-2 px-6">
+                      <span className="text-black font-bold text-sm whitespace-nowrap">
+                      CLICK HERE TO BOOK A FREE CONSULTATION
+                      </span>
+                      <Image
+                        src="/why-artivo/Group 18.svg"
+                        alt="Arrow"
+                        width={20}
+                        height={20}
+                        className="object-contain"
+                      />
+                    </div>
+                  </div>
+                </div>
+              </div>
+              
+              {/* Mobile - Right Side Content */}
+              <div className="w-full lg:hidden absolute bottom-0 left-0 right-0 z-20">
+                <div className="relative flex items-center gap-2 md:gap-4">
+                  {/* Intersect Background Image */}
+                  <div className="relative">
+                    <Image
+                      src="/why-artivo/Intersect (1).png"
+                      alt="Intersect Background"
+                      width={400}
+                      height={80}
+                      className="object-contain w-full h-auto lg:w-[400px]"
+                    />
+                    {/* Text and Arrow Overlay */}
+                    <div className="absolute inset-0 flex items-center justify-center gap-2 px-4 md:px-6">
+                      <span className="text-black font-bold text-xs sm:text-xs md:text-sm whitespace-normal sm:whitespace-nowrap">
+                      CLICK HERE TO BOOK A FREE CONSULTATION
+                      </span>
+                      <Image
+                        src="/why-artivo/Group 18.svg"
+                        alt="Arrow"
+                        width={16}
+                        height={16}
+                        className="object-contain w-4 h-4 md:w-5 md:h-5 flex-shrink-0"
+                      />
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
             
             {/* Read More Button - Below 3rd Card Only */}
-            <ReadMoreButton />
+           
           </div>
           
         </div>

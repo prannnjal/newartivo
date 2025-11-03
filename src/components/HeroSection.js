@@ -24,8 +24,8 @@ export const HeroSection = () => {
       <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent z-10"></div>
       
       {/* Hero content */}
-      <div className="absolute inset-0 z-20 flex items-center">
-        <div className="px-4 sm:px-8 lg:ml-[70px] lg:mt-[244px]">
+      <div className="absolute inset-0 z-20 flex items-center justify-start">
+        <div className="px-4 sm:px-8 lg:px-16">
           <blockquote 
             className="text-white"
             style={{

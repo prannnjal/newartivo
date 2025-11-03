@@ -8,7 +8,7 @@ export const OurSpecialitiesSection = () => {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-stretch h-full">
           
           {/* Left Side - Text Content */}
-          <div className="flex flex-col justify-center px-4 sm:px-6 lg:px-7">
+          <div className="flex flex-col justify-center px-4 sm:px-6 lg:px-16">
             <h2 
               className="text-gray-900 mb-4 sm:mb-6 text-2xl sm:text-3xl lg:text-[36px]"
               style={{

@@ -21,7 +21,7 @@ export const DesignSection = () => {
       <div className="absolute inset-0 bg-black/20 z-10"></div>
       
       {/* Content */}
-      <div className="relative z-20 container mx-auto px-2">
+      <div className="relative z-20 container mx-auto px-8 md:px-12 lg:px-16">
         <div className="flex items-center justify-between pt-8 h-full">
           
           {/* Left Side - Case Studies Content */}
@@ -38,7 +38,7 @@ export const DesignSection = () => {
           </div>
           
           {/* Right Side - Testimonial */}
-          <div className="text-white flex-1 text-right mt-8">
+          <div className="text-white flex-1 text-right mt-12">
             <div style={{ width: '651px', height: '86px' }} className="ml-auto mb-4">
               <p className="text-[18px] md:text-[20px] italic" style={{ fontWeight: 400, lineHeight: '1.8' }}>
                 "We're thrilled to collaborate with them! They simply design successful products."

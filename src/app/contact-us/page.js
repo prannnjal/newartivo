@@ -2,6 +2,7 @@ import React from 'react';
 import { Navbar } from '@/components/Navbar';
 import { ContactSection } from '@/components/ContactSection';
 import { InnovativeAffiliationsSection } from '@/components/InnovativeAffiliationsSection';
+import { LogoCarousel } from '@/components/LogoCarousel';
 import { TestimonialsSection } from '@/components/TestimonialsSection';
 import { Footer } from '@/components/Footer';
 
@@ -16,6 +17,9 @@ export default function ContactUs() {
 
       {/* Innovative Affiliations Section */}
       <InnovativeAffiliationsSection />
+
+      {/* Logo Carousel */}
+      <LogoCarousel />
 
       {/* Testimonials Section */}
       <TestimonialsSection />

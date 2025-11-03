@@ -97,7 +97,7 @@ export const ServicesSection = () => {
                 <span 
                   className="font-light leading-none text-white"
                   style={{ 
-                    fontSize: 'clamp(48px, 6vw, 80px)',
+                    fontSize: '48px',
                     WebkitTextStroke: '1.5px white',
                     color: 'transparent',
                     textStroke: '1.5px white'
@@ -136,7 +136,15 @@ export const ServicesSection = () => {
                     letterSpacing: '-0.04em'
                   }}
                 >
-                  {service.title}
+                  {service.title === "INDUSTRIAL TESTING + VALIDATION" ? (
+                    <>
+                      INDUSTRIAL
+                      <br />
+                      TESTING+VALIDATION
+                    </>
+                  ) : (
+                    service.title
+                  )}
                 </h3>
               </div>
               
