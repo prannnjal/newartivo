@@ -7,63 +7,63 @@ export const ServicesSection = () => {
       id: 1,
       title: "INDUSTRIAL DESIGN",
       description: "Transforming bold ideas into functional, market-ready products with timeless aesthetics.",
-      image: "/electronic.avif", // Placeholder - update with actual image
-      showArrow: false
+      image: "/New folder (2)/1.png",
+      showArrow: true
     },
     {
       id: 2,
       title: "ELECTRONIC DESIGN",
       description: "Crafting intelligent systems that power modern, reliable, and efficient innovations.",
-      image: "/electronic.avif", // Placeholder - update with actual image
+      image: "/New folder (2)/2.png",
       showArrow: true
     },
     {
       id: 3,
       title: "SUSTAINABLE DESIGN",
       description: "Building future-focused solutions using eco-friendly materials and conscious engineering.",
-      image: "/sustanibility.avif", // Placeholder - update with actual image
+      image: "/New folder (2)/Frame .png",
       showArrow: true
     },
     {
       id: 4,
       title: "PROTOTYPE DESIGNING",
       description: "Turning concepts into tangible prototypes to validate design, performance, and usability.",
-      image: "/product.avif", // Placeholder - update with actual image
+      image: "/New folder (2)/4.png",
       showArrow: true
     },
     {
       id: 5,
       title: "INDUSTRIAL TESTING + VALIDATION",
       description: "Ensuring your product meets every benchmark through precision testing and feedback.",
-      image: "/manufacture.avif", // Placeholder - update with actual image
-      showArrow: false
+      image: "/New folder (2)/5.png",
+      showArrow: true
     },
     {
       id: 6,
       title: "MANUFACTURING OPTIMISATION",
       description: "Streamlining production for cost efficiency, quality, and scalable manufacturing success.",
-      image: "/manufacture.avif", // Placeholder - update with actual image
-      showArrow: false
+      image: "/New folder (2)/Frame 198.png",
+      showArrow: true
     },
     {
       id: 7,
       title: "PRODUCT PACKAGING",
       description: "Designing sustainable, premium packaging that enhances the product and brand experience.",
-      image: "/product.avif", // Placeholder - update with actual image
-      showArrow: false
+      image: "/New folder (2)/7.png",
+      showArrow: true
     },
     {
       id: 8,
       title: "START-UP SERVICES",
       description: "Empowering innovators with full R&D support to launch their next big idea.",
-      image: "/start-up.avif", // Placeholder - update with actual image
-      showArrow: false
+      image: "/New folder (2)/8.png",
+      showArrow: true
     },
     {
       id: 9,
       title: "LAUNCH + EXPANSION",
       description: "We can help you showcase your vision to the world with powerful strategies and lasting impact.",
-      image: "/start-up.avif", // Placeholder - update with actual image
+      image: "/New folder (2)/Frame 41 (1).png",
       showArrow: true
     }
   ];
@@ -95,8 +95,13 @@ export const ServicesSection = () => {
               {/* Section Number - Top Right */}
               <div className="absolute top-5 right-5 md:top-6 md:right-6 lg:top-7 lg:right-7 z-20">
                 <span 
-                  className="font-light text-gray-300 leading-none"
-                  style={{ fontSize: 'clamp(48px, 6vw, 80px)' }}
+                  className="font-light leading-none text-white"
+                  style={{ 
+                    fontSize: 'clamp(48px, 6vw, 80px)',
+                    WebkitTextStroke: '1.5px white',
+                    color: 'transparent',
+                    textStroke: '1.5px white'
+                  }}
                 >
                   /{service.id}
                 </span>
@@ -118,22 +123,33 @@ export const ServicesSection = () => {
                 </div>
               )}
               
-              {/* Content - Bottom Left */}
-              <div className="absolute bottom-0 left-0 right-0 z-20 p-5 md:p-6 lg:p-7">
+              {/* Content - Positioned */}
+              <div className="absolute z-20" style={{ top: '20px', left: '26px' }}>
                 <h3 
-                  className="text-white font-bold mb-2 md:mb-3 leading-tight"
+                  className="text-white"
                   style={{ 
-                    fontSize: 'clamp(20px, 2.5vw, 32px)',
-                    letterSpacing: '0.5px'
+                    width: '169px',
+                    height: '72px',
+                    fontWeight: 600,
+                    fontSize: '30px',
+                    lineHeight: '100%',
+                    letterSpacing: '-0.04em'
                   }}
                 >
                   {service.title}
                 </h3>
+              </div>
+              
+              <div className="absolute z-20" style={{ top: '102px', left: '26px' }}>
                 <p 
-                  className="text-white font-normal leading-relaxed"
+                  className="text-white"
                   style={{ 
-                    fontSize: 'clamp(13px, 1.2vw, 16px)',
-                    lineHeight: '1.5'
+                    width: '384px',
+                    height: '38px',
+                    fontWeight: 600,
+                    fontSize: '16px',
+                    lineHeight: '100%',
+                    letterSpacing: '0'
                   }}
                 >
                   {service.description}

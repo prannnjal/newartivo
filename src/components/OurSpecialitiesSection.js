@@ -3,36 +3,88 @@ import Image from 'next/image';
 
 export const OurSpecialitiesSection = () => {
   return (
-    <section className="py-16 bg-white" style={{ height: '280px' }}>
-      <div className="container mx-auto px-8">
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-start">
+    <section className="bg-white py-12 sm:py-16 lg:py-0 lg:h-[400px]">
+      <div className="container mx-auto h-full">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-stretch h-full">
           
           {/* Left Side - Text Content */}
-           <div className="space-y-8" style={{ width: '889px', marginTop: '-40px' }}>
-            <h2 className="text-5xl font-bold text-gray-900 tracking-tight">
+          <div className="flex flex-col justify-center px-4 sm:px-6 lg:px-7">
+            <h2 
+              className="text-gray-900 mb-4 sm:mb-6 text-2xl sm:text-3xl lg:text-[36px]"
+              style={{
+                fontWeight: 700,
+                lineHeight: '100%',
+                letterSpacing: '-0.04em'
+              }}
+            >
               Our Specialities
             </h2>
             
-            <div className="space-y-6">
-              <p className="text-lg text-gray-700 leading-relaxed">
-                Every idea deserves the right team to bring it to life. At Artivo, we bridge the gap between imagination and execution helping businesses design, develop, and deliver a vision that truly stand out.
+            <div 
+              className="text-gray-900 text-base sm:text-lg lg:text-[20px]"
+              style={{
+                fontWeight: 400,
+                lineHeight: '100%',
+                letterSpacing: '-0.04em'
+              }}
+            >
+              <p className="mb-4">
+                Every idea deserves the right team to bring it to life.
               </p>
-              
-              <p className="text-lg text-gray-700 leading-relaxed">
-                From early-stage concepts to full-scale production, our multidisciplinary team handles everything under one roof. We understand the pressure to move fast, stay efficient, and keep costs in check; that's why our process is built to make innovation seamless, practical, and profitable.
+              <p>
+                At Artivo, we bridge the gap between imagination and execution helping your business design, develop, and deliver a vision that truly stand out.
               </p>
             </div>
           </div>
           
-          {/* Right Side - Image */}
-          <div className="relative" style={{ marginLeft: '40px', height: '280px' }}>
-            <div className="absolute top-[-125px] left-0 w-full" style={{ height: '400px' }}>
-              <Image
-                src="/New folder/2 13.png"
-                alt="Our Specialities Visual"
-                fill
-                className="object-cover rounded-lg"
-              />
+          {/* Right Side - Image with Testimonial Overlay */}
+          <div className="relative w-full h-[300px] sm:h-[350px] lg:h-full overflow-hidden rounded-lg">
+            <Image
+              src="/New folder/2 13.png"
+              alt="Our Specialities Visual"
+              width={942}
+              height={325}
+              className="absolute object-cover w-full h-full"
+              style={{ transform: 'translateX(20px) rotate(0deg)' }}
+            />
+            
+            {/* Testimonial Text Overlay */}
+            <div className="absolute inset-0 z-20 flex items-center justify-end px-4 sm:px-6 lg:px-16">
+              <div className="text-right max-w-full sm:max-w-lg lg:max-w-[558px]">
+                <blockquote 
+                  className="text-black mb-4 text-xl sm:text-2xl lg:text-[36px]"
+                  style={{ 
+                    fontWeight: 700,
+                    lineHeight: '100%',
+                    letterSpacing: '-0.04em'
+                  }}
+                >
+                  "If you have an idea of a product or service, we can design, develop, test and launch it for you."
+                </blockquote>
+                
+                <div className="space-y-1">
+                  <p 
+                    className="text-black text-base sm:text-lg lg:text-[20px]"
+                    style={{ 
+                      fontWeight: 500,
+                      lineHeight: '100%',
+                      letterSpacing: '-0.04em'
+                    }}
+                  >
+                    Olivia Harris
+                  </p>
+                  <p 
+                    className="text-black text-base sm:text-lg lg:text-[20px]"
+                    style={{ 
+                      fontWeight: 500,
+                      lineHeight: '100%',
+                      letterSpacing: '-0.04em'
+                    }}
+                  >
+                    Business Manager, Artivo
+                  </p>
+                </div>
+              </div>
             </div>
           </div>
           

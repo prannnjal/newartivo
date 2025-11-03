@@ -24,15 +24,24 @@ export const HeroSection = () => {
       <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent z-10"></div>
       
       {/* Hero content */}
-      <div className="absolute inset-0 z-20 flex items-center">
-        <div className="ml-20 max-w-2xl">
-          <blockquote className="text-white text-6xl font-light leading-tight tracking-tight">
-            "Good design is<br /><span className="font-bold">good business</span>"
-          </blockquote>
-          <cite className="text-white text-xl font-light mt-6 block not-italic text-right">
-            - Thomas John Watson Jr.
-          </cite>
-        </div>
+      <div className="absolute inset-0 z-20">
+        <blockquote 
+          className="text-white"
+          style={{
+            position: 'absolute',
+            width: '336px',
+            height: '160px',
+            top: '244px',
+            left: '70px',
+            fontWeight: 400,
+            fontStyle: 'italic',
+            fontSize: '36px',
+            lineHeight: '40px',
+            letterSpacing: '-0.04em'
+          }}
+        >
+          Your partners for innovation, bringing<br /><span className="font-bold">Excellence in R&D</span><br />without the overheads.
+        </blockquote>
       </div>
     </section>
   );
