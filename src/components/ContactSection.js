@@ -9,11 +9,16 @@ export const ContactSection = () => {
           {/* Left Section - Contact Information */}
           <div className="space-y-8 mt-24">
             <div>
-              <h2 className="text-4xl lg:text-5xl font-bold leading-tight mb-6">
-                <span className="text-gray-800">Let's </span>
-                <span className="text-red-500">connect</span>
-                <span className="text-gray-800"> and </span>
-                <span className="text-red-500">bring your ideas to life.</span>
+              <h2 
+                className="text-4xl lg:text-5xl font-bold leading-tight mb-6"
+                style={{
+                  background: 'linear-gradient(to right, rgba(12, 25, 48, 1), rgba(203, 65, 13, 1))',
+                  WebkitBackgroundClip: 'text',
+                  WebkitTextFillColor: 'transparent',
+                  backgroundClip: 'text'
+                }}
+              >
+                Let's connect and bring your ideas to life.
               </h2>
               <p className="text-gray-600 text-lg leading-relaxed">
                 Ready to bring your vision to life? Get in touch and let's transform your ideas into reality.

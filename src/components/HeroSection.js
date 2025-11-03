@@ -25,18 +25,20 @@ export const HeroSection = () => {
       
       {/* Hero content */}
       <div className="absolute inset-0 z-20 flex items-center">
-        <blockquote 
-          className="text-white px-4 sm:px-8 lg:ml-[70px] lg:mt-[244px]"
-          style={{
-            fontWeight: 400,
-            fontStyle: 'italic',
-            letterSpacing: '-0.04em'
-          }}
-        >
-          <div className="text-xl sm:text-2xl md:text-3xl lg:text-[36px] leading-tight lg:leading-[40px] max-w-xs sm:max-w-sm md:max-w-md lg:w-[336px]">
-            Your partners for innovation, bringing<br className="hidden lg:block" /><span className="font-bold"> Excellence in R&D</span><br className="hidden lg:block" /> without the overheads.
-          </div>
-        </blockquote>
+        <div className="px-4 sm:px-8 lg:ml-[70px] lg:mt-[244px]">
+          <blockquote 
+            className="text-white"
+            style={{
+              fontWeight: 400,
+              fontStyle: 'italic',
+              letterSpacing: '-0.04em'
+            }}
+          >
+            <div className="text-xl sm:text-2xl md:text-3xl lg:text-[36px] leading-tight lg:leading-[40px] max-w-xs sm:max-w-sm md:max-w-md lg:w-[336px]">
+              Your partners for innovation, bringing<br className="hidden lg:block" /><span className="font-bold"> Excellence in R&D</span><br className="hidden lg:block" /> without the overheads.
+            </div>
+          </blockquote>
+        </div>
       </div>
     </section>
   );

@@ -4,7 +4,7 @@ import { ReadMoreButton } from './ReadMoreButton';
 
 export const ProductShowcaseSection = () => {
   return (
-    <section className="pt-2 pb-16 bg-white">
+    <section className="pt-2 pb-1 bg-white">
       <div className="w-full">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-1 min-h-screen">
           

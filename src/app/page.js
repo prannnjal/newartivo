@@ -386,9 +386,6 @@ export default function Home() {
 <YellowStrip />
 
 
-          {/* Visions & Missions Section */}
-          <VisionsMissionsSection />
-
           {/* Product Features Section */}
           <ProductFeaturesSection />
 
