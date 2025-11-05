@@ -27,7 +27,10 @@ export default function GPHybridBike() {
         
         {/* Testimonial Text - Bottom Left */}
         <div className="absolute bottom-10 left-8 z-20 max-w-2xl">
-          <blockquote className="text-white text-2xl sm:text-3xl lg:text-4xl font-semibold leading-tight mb-4 drop-shadow-lg">
+          <blockquote 
+            className="text-white text-2xl sm:text-3xl lg:text-4xl font-semibold leading-tight mb-4 drop-shadow-lg"
+            style={{ letterSpacing: '-4%' }}
+          >
             "The strength of any business lies in its ability to innovate. That's why we choose Artivo."
           </blockquote>
           <div className="text-white">

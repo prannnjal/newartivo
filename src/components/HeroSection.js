@@ -13,7 +13,7 @@ export const HeroSection = () => {
           playsInline
           className="w-full h-full object-cover min-w-full min-h-full"
         >
-          <source src="/ORAEVEN GP Bike - Intro video.mp4" type="video/mp4" />
+          <source src="/hero.webm" type="video/mp4" />
         </video>
       </div>
       
@@ -31,7 +31,7 @@ export const HeroSection = () => {
             style={{
               fontWeight: 400,
               fontStyle: 'italic',
-              letterSpacing: '-0.04em'
+              letterSpacing: '-4%'
             }}
           >
             <div className="text-xl sm:text-2xl md:text-3xl lg:text-[36px] leading-tight lg:leading-[40px] max-w-xs sm:max-w-sm md:max-w-md lg:w-[336px]">

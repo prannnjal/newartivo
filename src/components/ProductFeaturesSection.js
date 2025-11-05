@@ -1,5 +1,6 @@
 import React from 'react';
 import Image from 'next/image';
+import Link from 'next/link';
 
 export const ProductFeaturesSection = () => {
   return (
@@ -30,7 +31,7 @@ export const ProductFeaturesSection = () => {
           </div>
           
           {/* Image 57 - Right 50% */}
-          <div className="relative w-full h-full">
+          <Link href="/gp-hybrid-bike" className="relative w-full h-full block cursor-pointer">
             <Image
               src="/New folder/Rectangle 57.png"
               alt="Product Feature 2"
@@ -49,7 +50,7 @@ export const ProductFeaturesSection = () => {
                 GP Hybrid Electric Bike
               </p>
             </div>
-          </div>
+          </Link>
           
         </div>
       </div>
