@@ -51,14 +51,14 @@ export default function Home() {
       </section>
 
       {/* Full Screen Gradient Section */}
-      <section className="relative w-full min-h-screen overflow-hidden py-20 lg:py-0 lg:h-screen">
+      <section className="relative w-full min-h-screen overflow-hidden py-8 sm:py-12 md:py-16 lg:py-0 lg:h-screen">
         <div 
           className="absolute inset-0 w-full h-full"
           style={{
             background: 'linear-gradient(to bottom, rgba(11, 25, 47, 1), rgba(26, 26, 26, 1))'
           }}
         />
-        {/* Curve Effect Overlay */}
+        {/* Curve Effect Overlay - Desktop only */}
         <div className="absolute inset-0 z-10 hidden lg:block">
           <Image
             src="/Grids/Curve Effect.png"
@@ -71,212 +71,10 @@ export default function Home() {
         
         {/* R&D Lifecycle Content */}
         <div className="relative z-20 flex items-center justify-center min-h-screen lg:absolute lg:inset-0">
-          {/* Desktop Layout - Circle Arrangement */}
-          <div className="hidden lg:block relative w-full h-full flex items-center justify-center">
-            <div className="relative w-full h-full flex items-center justify-center">
-              {/* Central Symbols and Logo */}
-              <div className="relative z-10">
-                <Image
-                  src="/Grids/Artivo - Symbols (7) 1.png"
-                  alt="Artivo Symbols"
-                  width={220}
-                  height={220}
-                  className="object-contain"
-                />
-                {/* Logo Centered on Symbols */}
-                <div className="absolute inset-0 flex items-center justify-center">
-                  <Image
-                    src="/Grids/Artivo Logo - White (1) 1.png"
-                    alt="Artivo Logo"
-                    width={75}
-                    height={75}
-                    className="object-contain"
-                  />
-                </div>
-              </div>
-
-              {/* Process Steps - Arranged in Circle around the image */}
-              {/* Step 1 - Top Center */}
-              <div className="absolute top-[8%] left-1/2 -translate-x-1/2 text-center">
-                <div className="flex justify-center mb-2">
-                  <span className="text-4xl sm:text-5xl font-light" style={{ WebkitTextStroke: '1.5px white', color: 'transparent', textStroke: '1.5px white' }}>/1</span>
-                </div>
-                <h3 
-                  className="text-white mx-auto mb-2"
-                  style={{
-                    width: '278px',
-                    height: '36px',
-                    fontWeight: 600,
-                    fontSize: '30px',
-                    lineHeight: '100%',
-                    letterSpacing: '-0.04em',
-                    textAlign: 'center'
-                  }}
-                >
-                  Ideation & Research
-                </h3>
-                <p 
-                  className="text-white mx-auto"
-                  style={{
-                    width: '319px',
-                    height: '44px',
-                    fontWeight: 400,
-                    fontSize: '16px',
-                    lineHeight: '140%',
-                    letterSpacing: '0',
-                    textAlign: 'center'
-                  }}
-                >
-                  Building strong foundations with you through creative exploration
-                </p>
-              </div>
-
-              {/* Step 2 - Right Middle */}
-              <div className="absolute top-[42%] right-[15%] translate-y-[-50%] text-center">
-                <div className="flex justify-center mb-2">
-                  <span className="text-4xl sm:text-5xl font-light" style={{ WebkitTextStroke: '1.5px white', color: 'transparent', textStroke: '1.5px white' }}>/2</span>
-                </div>
-                <h3 
-                  className="text-white mx-auto mb-2"
-                  style={{
-                    width: '278px',
-                    height: '36px',
-                    fontWeight: 600,
-                    fontSize: '30px',
-                    lineHeight: '100%',
-                    letterSpacing: '-0.04em',
-                    textAlign: 'center'
-                  }}
-                >
-                  Design & Develop MVP
-                </h3>
-                <p 
-                  className="text-white mx-auto"
-                  style={{
-                    width: '319px',
-                    height: '44px',
-                    fontWeight: 400,
-                    fontSize: '16px',
-                    lineHeight: '140%',
-                    letterSpacing: '0',
-                    textAlign: 'center'
-                  }}
-                >
-                  Transforming your ideas into viable products for pre-launch statistics and estimates
-                </p>
-              </div>
-
-              {/* Step 3 - Bottom Right */}
-              <div className="absolute bottom-[18%] right-[18%] text-center">
-                <div className="flex justify-center mb-2">
-                  <span className="text-4xl sm:text-5xl font-light" style={{ WebkitTextStroke: '1.5px white', color: 'transparent', textStroke: '1.5px white' }}>/3</span>
-                </div>
-                <h3 
-                  className="text-white mx-auto mb-2"
-                  style={{
-                    width: '278px',
-                    height: '36px',
-                    fontWeight: 600,
-                    fontSize: '30px',
-                    lineHeight: '100%',
-                    letterSpacing: '-0.04em',
-                    textAlign: 'center'
-                  }}
-                >
-                  Testing & Validations
-                </h3>
-                <p 
-                  className="text-white mx-auto"
-                  style={{
-                    width: '319px',
-                    height: '44px',
-                    fontWeight: 400,
-                    fontSize: '16px',
-                    lineHeight: '140%',
-                    letterSpacing: '0',
-                    textAlign: 'center'
-                  }}
-                >
-                  Ensuring viable concepts perform under real conditions and scenarios
-                </p>
-              </div>
-
-              {/* Step 4 - Bottom Left */}
-              <div className="absolute bottom-[18%] left-[18%] text-center">
-                <div className="flex justify-center mb-2">
-                  <span className="text-4xl sm:text-5xl font-light" style={{ WebkitTextStroke: '1.5px white', color: 'transparent', textStroke: '1.5px white' }}>/4</span>
-                </div>
-                <h3 
-                  className="text-white mx-auto mb-2"
-                  style={{
-                    width: '278px',
-                    height: '36px',
-                    fontWeight: 600,
-                    fontSize: '30px',
-                    lineHeight: '100%',
-                    letterSpacing: '-0.04em',
-                    textAlign: 'center'
-                  }}
-                >
-                  Manufacture Ready
-                </h3>
-                <p 
-                  className="text-white mx-auto"
-                  style={{
-                    width: '319px',
-                    height: '44px',
-                    fontWeight: 400,
-                    fontSize: '16px',
-                    lineHeight: '140%',
-                    letterSpacing: '0',
-                    textAlign: 'center'
-                  }}
-                >
-                  We prepare your product for mass production and get all processes defined for you
-                </p>
-              </div>
-
-              {/* Step 5 - Left Middle */}
-              <div className="absolute top-[42%] left-[15%] translate-y-[-50%] text-center">
-                <div className="flex justify-center mb-2">
-                  <span className="text-4xl sm:text-5xl font-light" style={{ WebkitTextStroke: '1.5px white', color: 'transparent', textStroke: '1.5px white' }}>/5</span>
-                </div>
-                <h3 
-                  className="text-white mx-auto mb-2"
-                  style={{
-                    width: '278px',
-                    height: '36px',
-                    fontWeight: 600,
-                    fontSize: '30px',
-                    lineHeight: '100%',
-                    letterSpacing: '-0.04em',
-                    textAlign: 'center'
-                  }}
-                >
-                  Bring it to world!
-                </h3>
-                <p 
-                  className="text-white mx-auto"
-                  style={{
-                    width: '319px',
-                    height: '44px',
-                    fontWeight: 400,
-                    fontSize: '16px',
-                    lineHeight: '140%',
-                    letterSpacing: '0',
-                    textAlign: 'center'
-                  }}
-                >
-                  Based on your requirements, we help you launch your product successfully!
-                </p>
-              </div>
-            </div>
-          </div>
-
-          {/* Mobile/Tablet Layout - Vertical Stack */}
+          {/* Mobile Layout - Vertical Stack */}
           <div className="lg:hidden w-full px-4 sm:px-6 pb-24 space-y-8 pt-8">
             {/* Central Symbols and Logo */}
-            <div className="relative mx-auto" style={{ width: '120px', height: '120px' }}>
+            <div className="relative mx-auto" style={{ width: 'clamp(100px, 25vw, 150px)', height: 'clamp(100px, 25vw, 150px)' }}>
               <Image
                 src="/Grids/Artivo - Symbols (7) 1.png"
                 alt="Artivo Symbols"
@@ -291,6 +89,7 @@ export default function Home() {
                   width={40}
                   height={40}
                   className="object-contain"
+                  style={{ width: 'clamp(25px, 6vw, 40px)', height: 'clamp(25px, 6vw, 40px)' }}
                 />
               </div>
             </div>
@@ -299,53 +98,305 @@ export default function Home() {
             {/* Step 1 */}
             <div className="text-center max-w-[280px] mx-auto">
               <div className="flex justify-center mb-2">
-                <span className="text-3xl sm:text-4xl font-light" style={{ WebkitTextStroke: '1.5px white', color: 'transparent', textStroke: '1.5px white' }}>/1</span>
+                <span className="font-light" style={{ 
+                  fontSize: 'clamp(1.5rem, 6vw, 2rem)',
+                  WebkitTextStroke: 'clamp(0.8px, 0.2vw, 1px) white', 
+                  color: 'transparent', 
+                  textStroke: 'clamp(0.8px, 0.2vw, 1px) white' 
+                }}>/1</span>
               </div>
-              <h3 className="text-white text-base sm:text-lg font-bold mb-2">Ideation & Research</h3>
-              <p className="text-white text-xs sm:text-sm font-normal">Building strong foundations with you through creative exploration</p>
+              <h3 className="text-white text-base sm:text-lg font-semibold mb-2" style={{ letterSpacing: '-0.04em' }}>Ideation & Research</h3>
+              <p className="text-white text-xs sm:text-sm font-normal leading-relaxed" style={{ lineHeight: '22px' }}>Building strong foundations with you through creative exploration</p>
             </div>
 
             {/* Step 2 */}
             <div className="text-center max-w-[280px] mx-auto">
               <div className="flex justify-center mb-2">
-                <span className="text-3xl sm:text-4xl font-light" style={{ WebkitTextStroke: '1.5px white', color: 'transparent', textStroke: '1.5px white' }}>/2</span>
+                <span className="font-light" style={{ 
+                  fontSize: 'clamp(1.5rem, 6vw, 2rem)',
+                  WebkitTextStroke: 'clamp(0.8px, 0.2vw, 1px) white', 
+                  color: 'transparent', 
+                  textStroke: 'clamp(0.8px, 0.2vw, 1px) white' 
+                }}>/2</span>
               </div>
-              <h3 className="text-white text-base sm:text-lg font-bold mb-2">Design & Develop MVP</h3>
-              <p className="text-white text-xs sm:text-sm font-normal">Transforming your ideas into viable products for pre-launch statistics and estimates</p>
+              <h3 className="text-white text-base sm:text-lg font-semibold mb-2" style={{ letterSpacing: '-0.04em' }}>Design & Develop MVP</h3>
+              <p className="text-white text-xs sm:text-sm font-normal leading-relaxed" style={{ lineHeight: '22px' }}>Transforming your ideas into viable products for pre-launch statistics and estimates</p>
             </div>
 
             {/* Step 3 */}
             <div className="text-center max-w-[280px] mx-auto">
               <div className="flex justify-center mb-2">
-                <span className="text-3xl sm:text-4xl font-light" style={{ WebkitTextStroke: '1.5px white', color: 'transparent', textStroke: '1.5px white' }}>/3</span>
+                <span className="font-light" style={{ 
+                  fontSize: 'clamp(1.5rem, 6vw, 2rem)',
+                  WebkitTextStroke: 'clamp(0.8px, 0.2vw, 1px) white', 
+                  color: 'transparent', 
+                  textStroke: 'clamp(0.8px, 0.2vw, 1px) white' 
+                }}>/3</span>
               </div>
-              <h3 className="text-white text-base sm:text-lg font-bold mb-2">Testing & Validations</h3>
-              <p className="text-white text-xs sm:text-sm font-normal">Ensuring viable concepts perform under real conditions and scenarios</p>
+              <h3 className="text-white text-base sm:text-lg font-semibold mb-2" style={{ letterSpacing: '-0.04em' }}>Testing & Validations</h3>
+              <p className="text-white text-xs sm:text-sm font-normal leading-relaxed" style={{ lineHeight: '22px' }}>Ensuring viable concepts perform under real conditions and scenarios</p>
             </div>
 
             {/* Step 4 */}
             <div className="text-center max-w-[280px] mx-auto">
               <div className="flex justify-center mb-2">
-                <span className="text-3xl sm:text-4xl font-light" style={{ WebkitTextStroke: '1.5px white', color: 'transparent', textStroke: '1.5px white' }}>/4</span>
+                <span className="font-light" style={{ 
+                  fontSize: 'clamp(1.5rem, 6vw, 2rem)',
+                  WebkitTextStroke: 'clamp(0.8px, 0.2vw, 1px) white', 
+                  color: 'transparent', 
+                  textStroke: 'clamp(0.8px, 0.2vw, 1px) white' 
+                }}>/4</span>
               </div>
-              <h3 className="text-white text-base sm:text-lg font-bold mb-2">Manufacture Ready</h3>
-              <p className="text-white text-xs sm:text-sm font-normal">We prepare your product for mass production and get all processes defined for you</p>
+              <h3 className="text-white text-base sm:text-lg font-semibold mb-2" style={{ letterSpacing: '-0.04em' }}>Manufacture Ready</h3>
+              <p className="text-white text-xs sm:text-sm font-normal leading-relaxed" style={{ lineHeight: '22px' }}>We prepare your product for mass production and get all processes defined for you</p>
             </div>
 
             {/* Step 5 */}
             <div className="text-center max-w-[280px] mx-auto">
               <div className="flex justify-center mb-2">
-                <span className="text-3xl sm:text-4xl font-light" style={{ WebkitTextStroke: '1.5px white', color: 'transparent', textStroke: '1.5px white' }}>/5</span>
+                <span className="font-light" style={{ 
+                  fontSize: 'clamp(1.5rem, 6vw, 2rem)',
+                  WebkitTextStroke: 'clamp(0.8px, 0.2vw, 1px) white', 
+                  color: 'transparent', 
+                  textStroke: 'clamp(0.8px, 0.2vw, 1px) white' 
+                }}>/5</span>
               </div>
-              <h3 className="text-white text-base sm:text-lg font-bold mb-2">Bring it to world!</h3>
-              <p className="text-white text-xs sm:text-sm font-normal">Based on your requirements, we help you launch your product successfully!</p>
+              <h3 className="text-white text-base sm:text-lg font-semibold mb-2" style={{ letterSpacing: '-0.04em' }}>Bring it to world!</h3>
+              <p className="text-white text-xs sm:text-sm font-normal leading-relaxed" style={{ lineHeight: '22px' }}>Based on your requirements, we help you launch your product successfully!</p>
+            </div>
+          </div>
+
+          {/* Desktop/Tablet Layout - Circle Arrangement (14-inch base and up) */}
+          <div className="hidden lg:block relative w-full h-full flex items-center justify-center">
+            <div className="relative w-full h-full flex items-center justify-center">
+              {/* Central Symbols and Logo */}
+              <div className="relative z-10" style={{ width: 'clamp(100px, 12vw, 200px)', height: 'clamp(100px, 12vw, 200px)' }}>
+                <Image
+                  src="/Grids/Artivo - Symbols (7) 1.png"
+                  alt="Artivo Symbols"
+                  fill
+                  className="object-contain"
+                />
+                {/* Logo Centered on Symbols */}
+                <div className="absolute inset-0 flex items-center justify-center">
+                  <Image
+                    src="/Grids/Artivo Logo - White (1) 1.png"
+                    alt="Artivo Logo"
+                    width={75}
+                    height={75}
+                    className="object-contain"
+                    style={{ width: 'clamp(25px, 4vw, 65px)', height: 'clamp(25px, 4vw, 65px)' }}
+                  />
+                </div>
+              </div>
+
+              {/* Process Steps - Arranged in Circle around the image */}
+              {/* Step 1 - Top Center */}
+              <div className="absolute top-[6%] sm:top-[7%] md:top-[7.5%] lg:top-[8%] left-1/2 -translate-x-1/2 text-center max-w-[90vw] sm:max-w-[350px] md:max-w-[380px] lg:max-w-[400px] xl:max-w-[450px] 2xl:max-w-[500px]">
+                <div className="flex justify-center mb-1 sm:mb-2">
+                  <span className="font-light" style={{ 
+                    fontSize: 'clamp(1.5rem, 2.5vw, 2.5rem)',
+                    WebkitTextStroke: 'clamp(0.8px, 0.08vw, 1.2px) white', 
+                    color: 'transparent', 
+                    textStroke: 'clamp(0.8px, 0.08vw, 1.2px) white' 
+                  }}>/1</span>
+                </div>
+                <h3 
+                  className="text-white mx-auto mb-1 sm:mb-2"
+                  style={{
+                    width: 'clamp(210px, 16vw, 310px)',
+                    height: 'clamp(24px, 1.875vw, 36px)',
+                    fontWeight: 600,
+                    fontSize: 'clamp(0.875rem, 1.8vw, 1.5rem)',
+                    lineHeight: '100%',
+                    letterSpacing: '-0.04em',
+                    textAlign: 'center'
+                  }}
+                >
+                  Ideation & Research
+                </h3>
+                <p 
+                  className="text-white mx-auto"
+                  style={{
+                    width: 'clamp(220px, 16.6vw, 319px)',
+                    height: 'clamp(32px, 2.3vw, 44px)',
+                    fontWeight: 400,
+                    fontSize: 'clamp(0.625rem, 1.2vw, 0.875rem)',
+                    lineHeight: '22px',
+                    letterSpacing: '0',
+                    textAlign: 'center'
+                  }}
+                >
+                  Building strong foundations with you through creative exploration
+                </p>
+              </div>
+
+              {/* Step 2 - Right Middle */}
+              <div className="absolute top-[42%] right-[8%] sm:right-[10%] md:right-[12%] lg:right-[15%] translate-y-[-50%] text-center max-w-[90vw] sm:max-w-[350px] md:max-w-[380px] lg:max-w-[400px] xl:max-w-[450px] 2xl:max-w-[500px]">
+                <div className="flex justify-center mb-1 sm:mb-2">
+                  <span className="font-light" style={{ 
+                    fontSize: 'clamp(1.5rem, 2.5vw, 2.5rem)',
+                    WebkitTextStroke: 'clamp(0.8px, 0.08vw, 1.2px) white', 
+                    color: 'transparent', 
+                    textStroke: 'clamp(0.8px, 0.08vw, 1.2px) white' 
+                  }}>/2</span>
+                </div>
+                <h3 
+                  className="text-white mx-auto mb-1 sm:mb-2"
+                  style={{
+                    width: 'clamp(210px, 16vw, 310px)',
+                    height: 'clamp(24px, 1.875vw, 36px)',
+                    fontWeight: 600,
+                    fontSize: 'clamp(0.875rem, 1.8vw, 1.5rem)',
+                    lineHeight: '100%',
+                    letterSpacing: '-0.04em',
+                    textAlign: 'center'
+                  }}
+                >
+                  Design & Develop MVP
+                </h3>
+                <p 
+                  className="text-white mx-auto"
+                  style={{
+                    width: 'clamp(300px, 24vw, 460px)',
+                    height: 'clamp(32px, 2.3vw, 44px)',
+                    fontWeight: 400,
+                    fontSize: 'clamp(0.625rem, 1.2vw, 0.875rem)',
+                    lineHeight: '22px',
+                    letterSpacing: '0',
+                    textAlign: 'center'
+                  }}
+                >
+                  Transforming your ideas into viable products for pre-launch statistics and estimates
+                </p>
+              </div>
+
+              {/* Step 3 - Bottom Right */}
+              <div className="absolute bottom-[12%] sm:bottom-[15%] md:bottom-[16%] lg:bottom-[18%] right-[10%] sm:right-[12%] md:right-[14%] lg:right-[18%] text-center max-w-[90vw] sm:max-w-[350px] md:max-w-[380px] lg:max-w-[400px] xl:max-w-[450px] 2xl:max-w-[500px]">
+                <div className="flex justify-center mb-1 sm:mb-2">
+                  <span className="font-light" style={{ 
+                    fontSize: 'clamp(1.5rem, 2.5vw, 2.5rem)',
+                    WebkitTextStroke: 'clamp(0.8px, 0.08vw, 1.2px) white', 
+                    color: 'transparent', 
+                    textStroke: 'clamp(0.8px, 0.08vw, 1.2px) white' 
+                  }}>/3</span>
+                </div>
+                <h3 
+                  className="text-white mx-auto mb-1 sm:mb-2"
+                  style={{
+                    width: 'clamp(210px, 16vw, 310px)',
+                    height: 'clamp(24px, 1.875vw, 36px)',
+                    fontWeight: 600,
+                    fontSize: 'clamp(0.875rem, 1.8vw, 1.5rem)',
+                    lineHeight: '100%',
+                    letterSpacing: '-0.04em',
+                    textAlign: 'center'
+                  }}
+                >
+                  Testing & Validations
+                </h3>
+                <p 
+                  className="text-white mx-auto"
+                  style={{
+                    width: 'clamp(240px, 18vw, 350px)',
+                    height: 'clamp(32px, 2.3vw, 44px)',
+                    fontWeight: 400,
+                    fontSize: 'clamp(0.625rem, 1.2vw, 0.875rem)',
+                    lineHeight: '22px',
+                    letterSpacing: '0',
+                    textAlign: 'center'
+                  }}
+                >
+                  Ensuring viable concepts perform under real conditions and scenarios
+                </p>
+              </div>
+
+              {/* Step 4 - Bottom Left */}
+              <div className="absolute bottom-[12%] sm:bottom-[15%] md:bottom-[16%] lg:bottom-[18%] left-[10%] sm:left-[12%] md:left-[14%] lg:left-[18%] text-center max-w-[90vw] sm:max-w-[350px] md:max-w-[380px] lg:max-w-[400px] xl:max-w-[450px] 2xl:max-w-[500px]">
+                <div className="flex justify-center mb-1 sm:mb-2">
+                  <span className="font-light" style={{ 
+                    fontSize: 'clamp(1.5rem, 2.5vw, 2.5rem)',
+                    WebkitTextStroke: 'clamp(0.8px, 0.08vw, 1.2px) white', 
+                    color: 'transparent', 
+                    textStroke: 'clamp(0.8px, 0.08vw, 1.2px) white' 
+                  }}>/4</span>
+                </div>
+                <h3 
+                  className="text-white mx-auto mb-1 sm:mb-2"
+                  style={{
+                    width: 'clamp(210px, 16vw, 310px)',
+                    height: 'clamp(24px, 1.875vw, 36px)',
+                    fontWeight: 600,
+                    fontSize: 'clamp(0.875rem, 1.8vw, 1.5rem)',
+                    lineHeight: '100%',
+                    letterSpacing: '-0.04em',
+                    textAlign: 'center'
+                  }}
+                >
+                  Manufacture Ready
+                </h3>
+                <p 
+                  className="text-white mx-auto"
+                  style={{
+                    width: 'clamp(300px, 24vw, 460px)',
+                    height: 'clamp(32px, 2.3vw, 44px)',
+                    fontWeight: 400,
+                    fontSize: 'clamp(0.625rem, 1.2vw, 0.875rem)',
+                    lineHeight: '22px',
+                    letterSpacing: '0',
+                    textAlign: 'center'
+                  }}
+                >
+                  We prepare your product for mass production and get all processes defined for you
+                </p>
+              </div>
+
+              {/* Step 5 - Left Middle */}
+              <div className="absolute top-[42%] left-[8%] sm:left-[10%] md:left-[12%] lg:left-[15%] translate-y-[-50%] text-center max-w-[90vw] sm:max-w-[350px] md:max-w-[380px] lg:max-w-[400px] xl:max-w-[450px] 2xl:max-w-[500px]">
+                <div className="flex justify-center mb-1 sm:mb-2">
+                  <span className="font-light" style={{ 
+                    fontSize: 'clamp(1.5rem, 2.5vw, 2.5rem)',
+                    WebkitTextStroke: 'clamp(0.8px, 0.08vw, 1.2px) white', 
+                    color: 'transparent', 
+                    textStroke: 'clamp(0.8px, 0.08vw, 1.2px) white' 
+                  }}>/5</span>
+                </div>
+                <h3 
+                  className="text-white mx-auto mb-1 sm:mb-2"
+                  style={{
+                    width: 'clamp(210px, 16vw, 310px)',
+                    height: 'clamp(24px, 1.875vw, 36px)',
+                    fontWeight: 600,
+                    fontSize: 'clamp(0.875rem, 1.8vw, 1.5rem)',
+                    lineHeight: '100%',
+                    letterSpacing: '-0.04em',
+                    textAlign: 'center'
+                  }}
+                >
+                  Bring it to world!
+                </h3>
+                <p 
+                  className="text-white mx-auto"
+                  style={{
+                    width: 'clamp(250px, 18.5vw, 360px)',
+                    height: 'clamp(32px, 2.3vw, 44px)',
+                    fontWeight: 400,
+                    fontSize: 'clamp(0.625rem, 1.2vw, 0.875rem)',
+                    lineHeight: '22px',
+                    letterSpacing: '0',
+                    textAlign: 'center'
+                  }}
+                >
+                  Based on your requirements, we help you launch your product successfully!
+                </p>
+              </div>
             </div>
           </div>
         </div>
 
         {/* Yellow Call-to-Action Button - Responsive (Outside both layouts for consistent bottom placement) */}
-        <div className="absolute bottom-0 left-0 right-0 z-30 sm:px-4 md:px-6">
-          <button className="relative w-full sm:max-w-4xl sm:mx-auto text-black font-bold py-3 sm:py-4 px-4 sm:px-6 md:px-8 flex items-center justify-center gap-2 sm:gap-3 transition-colors rounded-sm overflow-hidden">
+        <div className="absolute bottom-0 left-0 right-0 z-30 px-2 sm:px-4 md:px-6 lg:px-8 xl:px-12">
+          <button className="relative w-full max-w-[500px] sm:max-w-[600px] md:max-w-[650px] lg:max-w-[700px] mx-auto text-black font-bold py-1 sm:py-1.5 md:py-2 lg:py-2.5 px-2 sm:px-3 md:px-4 lg:px-5 flex items-center justify-center gap-1 sm:gap-1.5 transition-colors rounded-sm overflow-hidden">
             {/* Intersect Background */}
             <div className="absolute inset-0 z-0 flex items-center justify-center">
               <Image
@@ -355,13 +406,14 @@ export default function Home() {
                 className="object-cover"
               />
             </div>
-            <span className="relative z-10 text-xs sm:text-sm md:text-base lg:text-base tracking-wide whitespace-nowrap sm:whitespace-normal">CLICK HERE AND GET YOUR R&D SCORE</span>
+            <span className="relative z-10 text-[clamp(0.5rem, 1vw, 1rem)] sm:text-[clamp(0.625rem, 1.1vw, 1rem)] font-bold tracking-wide whitespace-nowrap">CLICK HERE AND GET YOUR R&D SCORE</span>
             <Image
               src="/why-artivo/Group 18.svg"
               alt="Arrow"
               width={24}
               height={24}
-              className="relative z-10 object-contain w-5 h-5 sm:w-6 sm:h-6"
+              className="relative z-10 object-contain"
+              style={{ width: 'clamp(12px, 1.5vw, 24px)', height: 'clamp(12px, 1.5vw, 24px)' }}
             />
           </button>
         </div>
