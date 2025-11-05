@@ -56,13 +56,12 @@ export const OurWorkSection = () => {
       <div className="container mx-auto px-4 md:px-8 relative z-10 overflow-visible py-8 md:py-12 lg:py-16 min-h-[271px]">
         <div className="flex flex-col lg:flex-row items-start lg:items-center justify-between gap-8 lg:gap-16">
           {/* Left Side - Text Content */}
-          <div className="space-y-4 flex-1" style={{ position: 'absolute', top: '57px', left: '-40px' }}>
+          <div className="space-y-4 flex-1 absolute left-6 md:left-10 lg:left-[-30px] xl:left-[-30px] top-8 md:top-12 lg:top-[57px]">
             <div className="w-full max-w-full lg:max-w-[967px]">
               <p 
-                className="text-white"
+                className="text-white text-xl md:text-2xl lg:text-[36px]"
                 style={{
                   fontWeight: 400,
-                  fontSize: '36px',
                   lineHeight: '100%',
                   letterSpacing: '-0.04em'
                 }}
