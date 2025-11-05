@@ -8,7 +8,7 @@ export const OurSpecialitiesSection = () => {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-stretch h-full">
           
           {/* Left Side - Text Content */}
-          <div className="flex flex-col justify-center px-4 sm:px-6 lg:px-16">
+          <div className="flex flex-col justify-center px-4 sm:px-6 lg:pl-[clamp(1rem,3.33vw,4rem)]">
             <h2 
               className="text-gray-900 mb-4 sm:mb-6 text-2xl sm:text-3xl lg:text-[36px]"
               style={{
@@ -44,12 +44,12 @@ export const OurSpecialitiesSection = () => {
               alt="Our Specialities Visual"
               width={942}
               height={325}
-              className="absolute object-cover w-full h-full"
+              className="hidden lg:block absolute object-cover w-full h-full"
               style={{ transform: 'translateX(20px) rotate(0deg)' }}
             />
             
             {/* Testimonial Text Overlay */}
-            <div className="absolute inset-0 z-20 flex items-center justify-end px-4 sm:px-6 lg:px-16">
+            <div className="absolute inset-0 z-20 flex items-center justify-end px-4 sm:px-6 lg:pr-[clamp(1rem,3.33vw,4rem)]">
               <div className="text-right max-w-full sm:max-w-lg lg:max-w-[558px]">
                 <blockquote 
                   className="text-black mb-4 text-xl sm:text-2xl lg:text-[36px]"

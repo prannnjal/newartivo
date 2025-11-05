@@ -39,16 +39,37 @@ export const DesignSection = () => {
           
           {/* Right Side - Testimonial */}
           <div className="text-white flex-1 text-right mt-12">
-            <div style={{ width: '651px', height: '86px' }} className="ml-auto mb-4">
-              <p className="text-[18px] md:text-[20px] italic" style={{ fontWeight: 400, lineHeight: '1.8' }}>
+            <div className="ml-auto mb-4">
+              <blockquote 
+                className="text-white text-xl sm:text-2xl lg:text-[36px] mb-4"
+                style={{ 
+                  fontWeight: 700,
+                  lineHeight: '100%',
+                  letterSpacing: '-0.04em'
+                }}
+              >
                 "We're thrilled to collaborate with them! They simply design successful products."
-              </p>
+              </blockquote>
             </div>
-            <div className="flex flex-col items-end">
-              <p className="text-[14px] md:text-[16px] font-medium">
+            <div className="flex flex-col items-end space-y-1">
+              <p 
+                className="text-white text-base sm:text-lg lg:text-[20px]"
+                style={{ 
+                  fontWeight: 500,
+                  lineHeight: '100%',
+                  letterSpacing: '-0.04em'
+                }}
+              >
                 Pirelli
               </p>
-              <p className="text-[14px] md:text-[16px] font-normal">
+              <p 
+                className="text-white text-base sm:text-lg lg:text-[20px]"
+                style={{ 
+                  fontWeight: 500,
+                  lineHeight: '100%',
+                  letterSpacing: '-0.04em'
+                }}
+              >
                 Exclusive Official Tyre Suppliers
               </p>
             </div>

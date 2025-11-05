@@ -42,14 +42,39 @@ export const InnovativeAffiliationsSection = () => {
 
           {/* Right Section - Testimonial */}
           <div className="text-right flex flex-col justify-start" style={{ paddingTop: '0', marginTop: '0' }}>
-            <blockquote className="text-gray-800 text-2xl lg:text-3xl font-bold leading-tight mb-6" style={{ marginTop: '0', paddingTop: '0' }}>
-              "Artivo can make ideas turn real!<br />
-              They've always exceeded<br />
-              expectations. Great work!"
+            <blockquote 
+              className="text-black text-xl sm:text-2xl lg:text-[36px] mb-4"
+              style={{ 
+                fontWeight: 700,
+                lineHeight: '100%',
+                letterSpacing: '-0.04em',
+                marginTop: '0',
+                paddingTop: '0'
+              }}
+            >
+              "Artivo can make ideas turn real! They've always exceeded expectations. Great work!"
             </blockquote>
             <div className="space-y-1">
-              <p className="text-gray-800 font-semibold text-lg">Veronica</p>
-              <p className="text-gray-600 text-base">Software Accelerator, Keyshot</p>
+              <p 
+                className="text-black text-base sm:text-lg lg:text-[20px]"
+                style={{ 
+                  fontWeight: 500,
+                  lineHeight: '100%',
+                  letterSpacing: '-0.04em'
+                }}
+              >
+                Veronica
+              </p>
+              <p 
+                className="text-black text-base sm:text-lg lg:text-[20px]"
+                style={{ 
+                  fontWeight: 500,
+                  lineHeight: '100%',
+                  letterSpacing: '-0.04em'
+                }}
+              >
+                Software Accelerator, Keyshot
+              </p>
             </div>
           </div>
         </div>

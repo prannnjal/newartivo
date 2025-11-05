@@ -39,13 +39,37 @@ function FooterStyleSection() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-6 gap-8 items-center">
           {/* Left-aligned Quote Content */}
           <div className="lg:col-span-3 text-left max-w-xl">
-            <p className="text-white text-lg sm:text-xl lg:text-2xl font-semibold leading-snug">
-              “Design is not just what it looks like and feels like.<br />
-              Design is how it works.”
-            </p>
-            <div className="mt-3">
-              <span className="text-white text-base">Steve Jobs</span><br />
-              <span className="text-gray-200 text-sm">Co-founder, Apple Inc.</span>
+            <blockquote 
+              className="text-white text-xl sm:text-2xl lg:text-[36px] mb-4"
+              style={{ 
+                fontWeight: 700,
+                lineHeight: '100%',
+                letterSpacing: '-0.04em'
+              }}
+            >
+              "Design is not just what it looks like and feels like. Design is how it works."
+            </blockquote>
+            <div className="space-y-1">
+              <p 
+                className="text-white text-base sm:text-lg lg:text-[20px]"
+                style={{ 
+                  fontWeight: 500,
+                  lineHeight: '100%',
+                  letterSpacing: '-0.04em'
+                }}
+              >
+                Steve Jobs
+              </p>
+              <p 
+                className="text-white text-base sm:text-lg lg:text-[20px]"
+                style={{ 
+                  fontWeight: 500,
+                  lineHeight: '100%',
+                  letterSpacing: '-0.04em'
+                }}
+              >
+                Co-founder, Apple Inc.
+              </p>
             </div>
           </div>
         </div>

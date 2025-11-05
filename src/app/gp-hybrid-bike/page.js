@@ -28,14 +28,36 @@ export default function GPHybridBike() {
         {/* Testimonial Text - Bottom Left */}
         <div className="absolute bottom-10 left-8 z-20 max-w-2xl">
           <blockquote 
-            className="text-white text-2xl sm:text-3xl lg:text-4xl font-semibold leading-tight mb-4 drop-shadow-lg"
-            style={{ letterSpacing: '-4%' }}
+            className="text-white text-xl sm:text-2xl lg:text-[36px] mb-4 drop-shadow-lg"
+            style={{ 
+              fontWeight: 700,
+              lineHeight: '100%',
+              letterSpacing: '-0.04em'
+            }}
           >
             "The strength of any business lies in its ability to innovate. That's why we choose Artivo."
           </blockquote>
-          <div className="text-white">
-            <p className="font-semibold text-lg">Calvin Purdue</p>
-            <p className="text-white/90 text-base">General Manager, ORAEVEN Bikes</p>
+          <div className="text-white space-y-1">
+            <p 
+              className="text-white text-base sm:text-lg lg:text-[20px]"
+              style={{ 
+                fontWeight: 500,
+                lineHeight: '100%',
+                letterSpacing: '-0.04em'
+              }}
+            >
+              Calvin Purdue
+            </p>
+            <p 
+              className="text-white text-base sm:text-lg lg:text-[20px]"
+              style={{ 
+                fontWeight: 500,
+                lineHeight: '100%',
+                letterSpacing: '-0.04em'
+              }}
+            >
+              General Manager, ORAEVEN Bikes
+            </p>
           </div>
         </div>
       </section>
