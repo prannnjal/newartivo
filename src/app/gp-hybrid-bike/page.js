@@ -219,20 +219,27 @@ export default function GPHybridBike() {
               </div>
                
                {/* Yellow Strip */}
-               <div 
-                 className="w-[calc(100vw-12vw)] py-[clamp(0.75rem,1.5vw,1.5rem)] px-[clamp(1rem,2vw,2rem)] flex items-center justify-center gap-[clamp(0.5rem,1vw,1rem)] -ml-[clamp(1rem,3vw,4rem)] mt-[clamp(0.5rem,3vh,3rem)]"
-                 style={{ backgroundColor: 'rgba(255, 242, 8, 1)' }}
-               >
-                 <span className="text-black font-bold text-[clamp(0.875rem,1.25vw,1.125rem)] tracking-wide">
-                   BRING YOUR IDEAS TO LIFE
-                 </span>
+               <div className="relative w-[calc(100vw-12vw)] -ml-[clamp(1rem,3vw,4rem)] mt-[clamp(0.5rem,3vh,3rem)]">
                  <Image
-                   src="/why-artivo/Group 18.svg"
-                   alt="Arrow"
-                   width={24}
-                   height={24}
-                   className="object-contain w-[clamp(1rem,1.5vw,1.5rem)] h-[clamp(1rem,1.5vw,1.5rem)]"
+                   src="/why-artivo/Intersect (1).png"
+                   alt="Intersect Background"
+                   width={600}
+                   height={120}
+                   className="object-contain w-full h-auto"
                  />
+                 {/* Text and Arrow Overlay */}
+                 <div className="absolute inset-0 flex items-center justify-center gap-2 px-6">
+                   <span className="text-black font-bold text-sm whitespace-nowrap">
+                     BRING YOUR IDEAS TO LIFE
+                   </span>
+                   <Image
+                     src="/why-artivo/Group 18.svg"
+                     alt="Arrow"
+                     width={20}
+                     height={20}
+                     className="object-contain"
+                   />
+                 </div>
                </div>
             </div>
           </div>

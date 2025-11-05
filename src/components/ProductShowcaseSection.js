@@ -9,7 +9,7 @@ export const ProductShowcaseSection = () => {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-1 min-h-screen">
           
           {/* Left Side - Two Panels */}
-          <div className="grid grid-rows-2 gap-0 min-h-screen lg:min-h-[1136px]" style={{ gap: '-8px' }}>
+          <div className="grid grid-rows-2 gap-1 lg:gap-0 min-h-screen lg:min-h-[1136px]">
             
             {/* Top-Left Panel - Device Detail 1 */}
             <div className="bg-gray-100 overflow-hidden relative w-full h-[50vh] lg:h-[572px]">
@@ -22,7 +22,7 @@ export const ProductShowcaseSection = () => {
             </div>
             
             {/* Bottom-Left Panel - Device Detail 2 */}
-            <div className="bg-gray-100 overflow-hidden relative w-full h-[50vh] lg:h-[613px]" style={{ marginTop: '-18px' }}>
+            <div className="bg-gray-100 overflow-hidden relative w-full h-[50vh] lg:h-[613px] lg:-mt-[18px]">
               <Image
                 src="/New folder/12.png"
                 alt="Device Detail - Connectors"
@@ -73,21 +73,28 @@ export const ProductShowcaseSection = () => {
               </div>
               
               {/* Right Side - Bottom Right Content - Desktop */}
-              <div className="hidden lg:block absolute bottom-0 right-0 z-20">
-                <div className="relative flex items-center gap-2 md:gap-4">
+              <div className="hidden lg:block absolute right-0 z-20" style={{ bottom: 0, marginBottom: 0, paddingBottom: 0 }}>
+                <div className="relative flex items-end gap-2" style={{ marginBottom: 0, paddingBottom: 0 }}>
                   {/* Intersect Background Image */}
-                  <div className="relative">
+                  <div className="relative" style={{ 
+                    width: 'clamp(400px, 31.25vw, 600px)',
+                    height: 'clamp(80px, 6.25vw, 120px)',
+                    marginBottom: 0,
+                    paddingBottom: 0,
+                    display: 'flex',
+                    alignItems: 'flex-end'
+                  }}>
                     <Image
                       src="/why-artivo/Intersect (1).png"
                       alt="Intersect Background"
-                      width={400}
-                      height={100}
+                      fill
                       className="object-contain"
+                      style={{ objectPosition: 'bottom' }}
                     />
                     {/* Text and Arrow Overlay */}
-                    <div className="absolute inset-0 flex items-center justify-center gap-2 px-6">
-                      <span className="text-black font-bold text-sm whitespace-nowrap">
-                      CLICK HERE TO BOOK A FREE CONSULTATION
+                    <div className="absolute inset-0 flex items-end justify-center gap-2" style={{ paddingLeft: 'clamp(1rem, 0.417vw, 2rem)', paddingRight: 'clamp(1rem, 0.417vw, 2rem)', paddingBottom: 0, bottom: 0 }}>
+                      <span className="text-black font-bold whitespace-nowrap" style={{ fontSize: 'clamp(0.875rem, 0.938vw, 1.125rem)' }}>
+                        CLICK HERE TO BOOK A FREE CONSULTATION
                       </span>
                       <Image
                         src="/why-artivo/Group 18.svg"
@@ -95,6 +102,10 @@ export const ProductShowcaseSection = () => {
                         width={20}
                         height={20}
                         className="object-contain"
+                        style={{ 
+                          width: 'clamp(16px, 1.25vw, 20px)',
+                          height: 'clamp(16px, 1.25vw, 20px)'
+                        }}
                       />
                     </div>
                   </div>
@@ -102,21 +113,28 @@ export const ProductShowcaseSection = () => {
               </div>
               
               {/* Mobile - Right Side Content */}
-              <div className="w-full lg:hidden absolute bottom-0 left-0 right-0 z-20">
-                <div className="relative flex items-center gap-2 md:gap-4">
+              <div className="lg:hidden absolute right-0 z-20" style={{ bottom: 0, marginBottom: 0, paddingBottom: 0 }}>
+                <div className="relative flex items-end gap-2" style={{ marginBottom: 0, paddingBottom: 0 }}>
                   {/* Intersect Background Image */}
-                  <div className="relative">
+                  <div className="relative" style={{ 
+                    width: 'clamp(300px, 80vw, 400px)',
+                    height: 'clamp(60px, 15vw, 80px)',
+                    marginBottom: 0,
+                    paddingBottom: 0,
+                    display: 'flex',
+                    alignItems: 'flex-end'
+                  }}>
                     <Image
                       src="/why-artivo/Intersect (1).png"
                       alt="Intersect Background"
-                      width={400}
-                      height={80}
-                      className="object-contain w-full h-auto lg:w-[400px]"
+                      fill
+                      className="object-contain"
+                      style={{ objectPosition: 'bottom' }}
                     />
                     {/* Text and Arrow Overlay */}
-                    <div className="absolute inset-0 flex items-center justify-center gap-2 px-4 md:px-6">
+                    <div className="absolute inset-0 flex items-end justify-center gap-2 px-4 md:px-6" style={{ paddingBottom: 0, bottom: 0 }}>
                       <span className="text-black font-bold text-xs sm:text-xs md:text-sm whitespace-normal sm:whitespace-nowrap">
-                      CLICK HERE TO BOOK A FREE CONSULTATION
+                        CLICK HERE TO BOOK A FREE CONSULTATION
                       </span>
                       <Image
                         src="/why-artivo/Group 18.svg"

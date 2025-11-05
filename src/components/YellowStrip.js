@@ -3,18 +3,25 @@ import Image from 'next/image';
 
 export const YellowStrip = () => {
   return (
-    <section className="h-[45px] flex items-center" style={{ backgroundColor: 'rgba(255, 242, 8, 1)' }}>
-      <div className="container mx-auto px-8">
-        <div className="flex items-center justify-center space-x-2">
-          <h2 className="text-black text-[16px] font-bold tracking-wide">
+    <section className="relative h-[45px] flex items-center justify-center">
+      <div className="relative w-full h-full">
+        <Image
+          src="/why-artivo/Intersect (1).png"
+          alt="Intersect Background"
+          fill
+          className="object-cover"
+        />
+        {/* Text and Arrow Overlay */}
+        <div className="absolute inset-0 flex items-center justify-center gap-2 px-6">
+          <span className="text-black font-bold text-sm whitespace-nowrap">
             DISCOVER OUR PROCESS
-          </h2>
+          </span>
           <Image
-            src="/Group 17.svg"
-            alt="Process Icon"
+            src="/why-artivo/Group 18.svg"
+            alt="Arrow"
             width={20}
             height={20}
-            className="text-black"
+            className="object-contain"
           />
         </div>
       </div>

@@ -49,7 +49,7 @@ export const TestimonialFeaturesSection = () => {
       {/* Intersect image in top right corner */}
       <div className="absolute top-0 right-0 z-20">
         <Image
-          src="/why-artivo/Intersect.png"
+          src="/why-artivo/Intersect (1).png"
           alt="Intersect Pattern"
           width={450}
           height={350}
@@ -57,16 +57,18 @@ export const TestimonialFeaturesSection = () => {
         />
         {/* Text overlay */}
         <div className="absolute inset-0 flex items-center justify-center">
-          <button className="text-black font-semibold text-sm tracking-wide hover:opacity-90 transition-all duration-300 whitespace-nowrap flex items-center space-x-3">
-            <span>CLICK HERE TO BOOK A FREE CONSULTATION</span>
+          <div className="flex items-center gap-2 px-6">
+            <span className="text-black font-bold text-sm whitespace-nowrap">
+              CLICK HERE TO BOOK A FREE CONSULTATION
+            </span>
             <Image
               src="/why-artivo/Group 18.svg"
               alt="Group 18 Pattern"
-              width={24}
-              height={24}
+              width={20}
+              height={20}
               className="object-contain"
             />
-          </button>
+          </div>
         </div>
       </div>
 

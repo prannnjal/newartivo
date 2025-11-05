@@ -323,13 +323,15 @@ export default function About() {
             />
             {/* CTA overlay centered on the image */}
             <div className="absolute inset-0 flex items-center justify-center z-20">
-              <div className="flex items-center gap-3 text-white font-semibold text-sm sm:text-base whitespace-nowrap">
-                <span>CLICK HERE TO BOOK A FREE CONSULTATION</span>
+              <div className="flex items-center gap-2 px-6">
+                <span className="text-black font-bold text-sm whitespace-nowrap">
+                  CLICK HERE TO BOOK A FREE CONSULTATION
+                </span>
                 <Image
                   src="/why-artivo/Group 18.svg"
                   alt="CTA Arrow"
-                  width={24}
-                  height={24}
+                  width={20}
+                  height={20}
                   className="object-contain"
                 />
               </div>

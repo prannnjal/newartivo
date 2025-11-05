@@ -154,7 +154,7 @@ export const ServicesSection = () => {
                   style={{ 
                     width: '384px',
                     height: '38px',
-                    fontWeight: 600,
+                    fontWeight: 400,
                     fontSize: '16px',
                     lineHeight: '100%',
                     letterSpacing: '0'

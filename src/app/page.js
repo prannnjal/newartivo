@@ -98,7 +98,7 @@ export default function Home() {
             {/* Step 1 */}
             <div className="text-center max-w-[280px] mx-auto">
               <div className="flex justify-center mb-2">
-                <span className="font-light" style={{ 
+                <span className="font-semibold" style={{ 
                   fontSize: 'clamp(1.5rem, 6vw, 2rem)',
                   WebkitTextStroke: 'clamp(0.8px, 0.2vw, 1px) white', 
                   color: 'transparent', 
@@ -112,7 +112,7 @@ export default function Home() {
             {/* Step 2 */}
             <div className="text-center max-w-[280px] mx-auto">
               <div className="flex justify-center mb-2">
-                <span className="font-light" style={{ 
+                <span className="font-semibold" style={{ 
                   fontSize: 'clamp(1.5rem, 6vw, 2rem)',
                   WebkitTextStroke: 'clamp(0.8px, 0.2vw, 1px) white', 
                   color: 'transparent', 
@@ -126,7 +126,7 @@ export default function Home() {
             {/* Step 3 */}
             <div className="text-center max-w-[280px] mx-auto">
               <div className="flex justify-center mb-2">
-                <span className="font-light" style={{ 
+                <span className="font-semibold" style={{ 
                   fontSize: 'clamp(1.5rem, 6vw, 2rem)',
                   WebkitTextStroke: 'clamp(0.8px, 0.2vw, 1px) white', 
                   color: 'transparent', 
@@ -140,7 +140,7 @@ export default function Home() {
             {/* Step 4 */}
             <div className="text-center max-w-[280px] mx-auto">
               <div className="flex justify-center mb-2">
-                <span className="font-light" style={{ 
+                <span className="font-semibold" style={{ 
                   fontSize: 'clamp(1.5rem, 6vw, 2rem)',
                   WebkitTextStroke: 'clamp(0.8px, 0.2vw, 1px) white', 
                   color: 'transparent', 
@@ -154,7 +154,7 @@ export default function Home() {
             {/* Step 5 */}
             <div className="text-center max-w-[280px] mx-auto">
               <div className="flex justify-center mb-2">
-                <span className="font-light" style={{ 
+                <span className="font-semibold" style={{ 
                   fontSize: 'clamp(1.5rem, 6vw, 2rem)',
                   WebkitTextStroke: 'clamp(0.8px, 0.2vw, 1px) white', 
                   color: 'transparent', 
@@ -194,7 +194,7 @@ export default function Home() {
               {/* Step 1 - Top Center */}
               <div className="absolute top-[6%] sm:top-[7%] md:top-[7.5%] lg:top-[8%] left-1/2 -translate-x-1/2 text-center max-w-[90vw] sm:max-w-[350px] md:max-w-[380px] lg:max-w-[400px] xl:max-w-[450px] 2xl:max-w-[500px]">
                 <div className="flex justify-center mb-1 sm:mb-2">
-                  <span className="font-light" style={{ 
+                  <span className="font-semibold" style={{ 
                     fontSize: 'clamp(1.5rem, 2.5vw, 2.5rem)',
                     WebkitTextStroke: 'clamp(0.8px, 0.08vw, 1.2px) white', 
                     color: 'transparent', 
@@ -234,7 +234,7 @@ export default function Home() {
               {/* Step 2 - Right Middle */}
               <div className="absolute top-[42%] right-[8%] sm:right-[10%] md:right-[12%] lg:right-[15%] translate-y-[-50%] text-center max-w-[90vw] sm:max-w-[350px] md:max-w-[380px] lg:max-w-[400px] xl:max-w-[450px] 2xl:max-w-[500px]">
                 <div className="flex justify-center mb-1 sm:mb-2">
-                  <span className="font-light" style={{ 
+                  <span className="font-semibold" style={{ 
                     fontSize: 'clamp(1.5rem, 2.5vw, 2.5rem)',
                     WebkitTextStroke: 'clamp(0.8px, 0.08vw, 1.2px) white', 
                     color: 'transparent', 
@@ -274,7 +274,7 @@ export default function Home() {
               {/* Step 3 - Bottom Right */}
               <div className="absolute bottom-[12%] sm:bottom-[15%] md:bottom-[16%] lg:bottom-[18%] right-[10%] sm:right-[12%] md:right-[14%] lg:right-[18%] text-center max-w-[90vw] sm:max-w-[350px] md:max-w-[380px] lg:max-w-[400px] xl:max-w-[450px] 2xl:max-w-[500px]">
                 <div className="flex justify-center mb-1 sm:mb-2">
-                  <span className="font-light" style={{ 
+                  <span className="font-semibold" style={{ 
                     fontSize: 'clamp(1.5rem, 2.5vw, 2.5rem)',
                     WebkitTextStroke: 'clamp(0.8px, 0.08vw, 1.2px) white', 
                     color: 'transparent', 
@@ -314,7 +314,7 @@ export default function Home() {
               {/* Step 4 - Bottom Left */}
               <div className="absolute bottom-[12%] sm:bottom-[15%] md:bottom-[16%] lg:bottom-[18%] left-[10%] sm:left-[12%] md:left-[14%] lg:left-[18%] text-center max-w-[90vw] sm:max-w-[350px] md:max-w-[380px] lg:max-w-[400px] xl:max-w-[450px] 2xl:max-w-[500px]">
                 <div className="flex justify-center mb-1 sm:mb-2">
-                  <span className="font-light" style={{ 
+                  <span className="font-semibold" style={{ 
                     fontSize: 'clamp(1.5rem, 2.5vw, 2.5rem)',
                     WebkitTextStroke: 'clamp(0.8px, 0.08vw, 1.2px) white', 
                     color: 'transparent', 
