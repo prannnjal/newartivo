@@ -157,13 +157,7 @@ export default function About() {
       <section className="relative pt-16 pb-4 bg-white overflow-hidden">
         {/* Subtle right-side background pattern */}
         <div className="pointer-events-none absolute inset-y-0 right-0 w-1/2 opacity-10 z-0">
-          <Image
-            src="/about/Artivo - GP Line Drawings 1.png"
-            alt="Background pattern"
-            fill
-            className="object-cover"
-            priority
-          />
+         
         </div>
 
         <div className="relative z-10 max-w-7xl mx-auto px-6 lg:px-12">

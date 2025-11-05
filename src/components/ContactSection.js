@@ -113,6 +113,9 @@ export const ContactSection = () => {
                       <option>Design</option>
                       <option>Manufacturing</option>
                       <option>R&D</option>
+                      <option>Medical & Sciences</option>
+                      <option>Food Industry</option>
+                      <option>Agriculture</option>
                     </select>
                   </div>
 
@@ -124,7 +127,7 @@ export const ContactSection = () => {
                         <option>+91</option>
                         <option>+1</option>
                         <option>+61</option>
-                        <option>+44</option>
+                        <option>+64</option>
                       </select>
                       <input
                         type="tel"
