@@ -111,14 +111,14 @@ export default function GPHybridBike() {
       </section>
 
       {/* Product and Conceptualisation Section */}
-      <section className="py-12 bg-white w-full">
+      <section className="py-4 bg-white w-full overflow-visible">
         <div className="w-full max-w-none pl-0 pr-8 lg:pr-12">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
             
             {/* Left Column - Product Images */}
-            <div className="space-y-6">
+            <div className="space-y-4">
               {/* Product Image a.png */}
-              <div className="relative w-full h-[500px] xl:h-[500px] z-10">
+              <div className="relative w-full h-[480px] xl:h-[480px] z-10">
                 <Image
                   src="/product/a.png"
                   alt="Product Design"
@@ -138,7 +138,7 @@ export default function GPHybridBike() {
               </div>
               
               {/* Product Image d.png */}
-              <div className="relative w-full h-[600px] lg:h-[800px] xl:h-[800px] -mt-44">
+              <div className="relative w-[130%] h-[650px] lg:h-[800px] xl:h-[850px] -mt-16">
                 <Image
                   src="/product/d.png"
                   alt="Product Detail"
@@ -149,7 +149,7 @@ export default function GPHybridBike() {
             </div>
             
             {/* Right Column - Conceptualisation Text and Image Side by Side */}
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-6 items-start">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-2 items-start">
               {/* Text Content */}
               <div className="space-y-2 mt-20">
                 <h2 className="text-xl lg:text-2xl xl:text-2xl font-bold text-gray-900">
@@ -162,7 +162,7 @@ export default function GPHybridBike() {
               </div>
               
               {/* Image b.png */}
-              <div className="relative w-full h-[400px] xl:h-[400px] -mt-20">
+              <div className="relative w-full h-[300px] xl:h-[320px] -mt-9">
                 <Image
                   src="/product/b.png"
                   alt="Conceptualisation Design"
@@ -177,16 +177,16 @@ export default function GPHybridBike() {
       </section>
 
       {/* Product Detail Section - c.png */}
-      <section className="pt-0 pb-12 bg-white -mt-244 overflow-x-hidden">
-        <div className="container mx-auto px-8 lg:px-12 max-w-7xl xl:max-w-[1400px]">
-          <div className="grid grid-cols-1 lg:grid-cols-5 gap-12">
+      <section className="pt-0 pb-12 bg-white -mt-244 overflow-x-hidden overflow-y-visible">
+        <div className="container mx-auto px-8 lg:px-12 max-w-7xl xl:max-w-[1400px] relative overflow-visible">
+          <div className="grid grid-cols-1 lg:grid-cols-5 gap-12 overflow-visible">
             {/* Left - Empty space */}
             <div className="lg:col-span-2"></div>
             
             {/* Right - Images covering entire right section */}
-            <div className="lg:col-span-3 space-y-0 flex flex-col items-start w-full overflow-visible">
+            <div className="lg:col-span-3 space-y-0 flex flex-col items-start w-full overflow-visible -mt-4 lg:-mt-6 xl:-mt-8 relative">
               {/* c.png Image */}
-              <div className="relative w-[150%] max-w-[150%] xl:max-w-[150%] h-[500px] lg:h-[550px] xl:h-[600px] -ml-[25%] mt-8 lg:mt-12 xl:mt-16 z-10">
+              <div className="relative w-[145%] max-w-[145%] xl:max-w-[145%] h-[650px] lg:h-[850px] xl:h-[950px] -ml-[8%] -mt-16 lg:-mt-8 xl:-mt-2 overflow-visible">
                 <Image
                   src="/product/c.png"
                   alt="Product Detail"
@@ -198,7 +198,7 @@ export default function GPHybridBike() {
                
                {/* Yellow Strip */}
                <div 
-                 className="w-[calc(100vw-4vw)] py-[clamp(0.75rem,1.5vw,1.5rem)] px-[clamp(1rem,2vw,2rem)] flex items-center justify-center gap-[clamp(0.5rem,1vw,1rem)] -ml-[clamp(1rem,3vw,4rem)] mt-[clamp(1rem,5vh,5rem)]"
+                 className="w-[calc(100vw-12vw)] py-[clamp(0.75rem,1.5vw,1.5rem)] px-[clamp(1rem,2vw,2rem)] flex items-center justify-center gap-[clamp(0.5rem,1vw,1rem)] -ml-[clamp(1rem,3vw,4rem)] mt-[clamp(0.5rem,3vh,3rem)]"
                  style={{ backgroundColor: 'rgba(255, 242, 8, 1)' }}
                >
                  <span className="text-black font-bold text-[clamp(0.875rem,1.25vw,1.125rem)] tracking-wide">

@@ -95,12 +95,12 @@ export const ServicesSection = () => {
               {/* Section Number - Top Right */}
               <div className="absolute top-5 right-5 md:top-6 md:right-6 lg:top-7 lg:right-7 z-20">
                 <span 
-                  className="font-light leading-none text-white"
+                  className="font-semibold leading-none text-white"
                   style={{ 
-                    fontSize: '48px',
-                    WebkitTextStroke: '1.5px white',
+                    fontSize: '64px',
+                    WebkitTextStroke: '0.3px white',
                     color: 'transparent',
-                    textStroke: '1.5px white'
+                    textStroke: '0.3px white'
                   }}
                 >
                   /{service.id}
