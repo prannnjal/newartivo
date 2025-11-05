@@ -19,7 +19,7 @@ export const OurWorkSection = () => {
           src="/2 11.png"
           alt="Background Pattern"
           fill
-          className="object-cover opacity-30"
+          className="object-cover "
           priority
         />
       </div>
@@ -38,7 +38,7 @@ export const OurWorkSection = () => {
             />
             {/* Text and Arrow Overlay */}
             <div className="absolute inset-0 flex items-center justify-center gap-4 px-8">
-              <span className="text-white font-bold text-lg xl:text-xl whitespace-nowrap">
+              <span className="text-black font-bold text-lg xl:text-xl whitespace-nowrap">
                 HAVE AN IDEA? LET'S MAKE IT PROFITABLE
               </span>
               <Image
