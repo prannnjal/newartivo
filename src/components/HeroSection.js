@@ -35,7 +35,7 @@ export const HeroSection = () => {
             }}
           >
             <div className="text-xl sm:text-2xl md:text-3xl lg:text-[36px] leading-tight lg:leading-[40px] max-w-xs sm:max-w-sm md:max-w-md lg:w-[336px]">
-              Your partners for innovation, bringing<br className="hidden lg:block" /><span className="font-bold"> Excellence in R&D</span><br className="hidden lg:block" /> without the overheads.
+              Your partners for innovation, bringing<br className="hidden lg:block" /><span className="font-bold"> Excellence in R&D</span><br className="hidden lg:block" /> <span className="whitespace-nowrap">without the overheads.</span>
             </div>
           </blockquote>
         </div>
