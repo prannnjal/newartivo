@@ -35,10 +35,10 @@ function FooterStyleSection() {
           />
         </div>
       </div>
-      <div className="container mx-auto px-6 lg:px-12 relative z-20">
+      <div className="relative z-20" style={{ paddingLeft: 'clamp(1rem, 4.68vw, 4rem)' }}>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-6 gap-8 items-center">
           {/* Left-aligned Quote Content */}
-          <div className="lg:col-span-3 text-left max-w-xl">
+          <div className="lg:col-span-3 text-left max-w-xl" style={{ paddingLeft: 0 }}>
             <blockquote 
               className="text-white text-xl sm:text-2xl lg:text-[36px] mb-4"
               style={{ 
@@ -63,7 +63,7 @@ function FooterStyleSection() {
               <p 
                 className="text-white text-base sm:text-lg lg:text-[20px]"
                 style={{ 
-                  fontWeight: 500,
+                  fontWeight: 400,
                   lineHeight: '100%',
                   letterSpacing: '-0.04em'
                 }}
@@ -96,14 +96,39 @@ export default function About() {
         <div className="absolute inset-0 bg-black/30 z-10" />
         {/* Hero Text Content */}
         <div className="absolute inset-0 z-20 flex items-end justify-start">
-          <div>
-            <blockquote className="text-white text-xl sm:text-2xl lg:text-3xl font-semibold text-left max-w-3xl ml-32 mb-10 drop-shadow-lg">
-              “There is good design, then there is better design.”<br />
-              At Artivo, we aim for the best design.”
+          <div style={{ paddingLeft: 'clamp(1rem, 4.68vw, 4rem)' }}>
+            <blockquote 
+              className="text-white text-xl sm:text-2xl lg:text-[36px] text-left max-w-3xl mb-4 drop-shadow-lg"
+              style={{ 
+                fontWeight: 700,
+                lineHeight: '100%',
+                letterSpacing: '-0.04em'
+              }}
+            >
+              "There is good design, then there is better design."<br />
+              At Artivo, we aim for the best design."
             </blockquote>
-            <div className="ml-32 mb-16 mt-2 leading-tight">
-              <span className="text-white text-base font-normal">Rudra</span><br />
-              <span className="text-gray-200 text-sm font-light">Director of Design, Artivo</span>
+            <div className="space-y-1 mb-16">
+              <p 
+                className="text-white text-base sm:text-lg lg:text-[20px]"
+                style={{ 
+                  fontWeight: 500,
+                  lineHeight: '100%',
+                  letterSpacing: '-0.04em'
+                }}
+              >
+                Rudra
+              </p>
+              <p 
+                className="text-white text-base sm:text-lg lg:text-[20px]"
+                style={{ 
+                  fontWeight: 400,
+                  lineHeight: '100%',
+                  letterSpacing: '-0.04em'
+                }}
+              >
+                Director of Design, Artivo
+              </p>
             </div>
           </div>
         </div>
@@ -178,7 +203,7 @@ export default function About() {
       <FooterStyleSection />
 
       {/* Our Mission Section */}
-      <section className="relative pt-16 pb-4 bg-white overflow-hidden">
+      <section className="relative pt-16 bg-white overflow-hidden" style={{ paddingBottom: 'clamp(2rem, 4vw, 4rem)' }}>
         {/* Subtle right-side background pattern */}
         <div className="pointer-events-none absolute inset-y-0 right-0 w-1/2 opacity-10 z-0">
          
@@ -195,12 +220,19 @@ export default function About() {
             {/* Card 1 */}
             <div className="border border-gray-200 rounded-lg p-6 bg-white min-h-[220px] flex flex-col">
               <div className="flex items-center justify-between mb-6">
-                <div className="text-gray-400 font-bold tracking-wider">/1</div>
-                {/* two dots icon */}
-                <div className="flex items-center space-x-2 text-gray-400">
-                  <span className="w-2 h-2 rounded-full bg-gray-400 inline-block" />
-                  <span className="w-2 h-2 rounded-full bg-gray-400 inline-block" />
-                </div>
+                <span className="font-semibold" style={{ 
+                  fontSize: 'clamp(1.5rem, 6vw, 2rem)',
+                  WebkitTextStroke: 'clamp(0.8px, 0.2vw, 1px) #000', 
+                  color: 'transparent', 
+                  textStroke: 'clamp(0.8px, 0.2vw, 1px) #000' 
+                }}>/1</span>
+                <Image
+                  src="/product/1.svg"
+                  alt="Icon 1"
+                  width={24}
+                  height={24}
+                  className="object-contain"
+                />
               </div>
               <h3 className="text-gray-800 font-semibold mb-3 text-lg">Motivation First</h3>
               <p className="text-gray-600 text-sm leading-relaxed">
@@ -211,11 +243,19 @@ export default function About() {
             {/* Card 2 */}
             <div className="border border-gray-200 rounded-lg p-6 bg-white min-h-[220px] flex flex-col">
               <div className="flex items-center justify-between mb-6">
-                <div className="text-gray-400 font-bold tracking-wider">/2</div>
-                {/* clipboard icon */}
-                <svg className="w-6 h-6 text-gray-500" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.5" d="M9 5h6m2 0h1a2 2 0 012 2v12a2 2 0 01-2 2H6a2 2 0 01-2-2V7a2 2 0 012-2h1m2-2h6a2 2 0 012 2v0a2 2 0 01-2 2H9a2 2 0 01-2-2v0a2 2 0 012-2z" />
-                </svg>
+                <span className="font-semibold" style={{ 
+                  fontSize: 'clamp(1.5rem, 6vw, 2rem)',
+                  WebkitTextStroke: 'clamp(0.8px, 0.2vw, 1px) #000', 
+                  color: 'transparent', 
+                  textStroke: 'clamp(0.8px, 0.2vw, 1px) #000' 
+                }}>/2</span>
+                <Image
+                  src="/product/2.svg"
+                  alt="Icon 2"
+                  width={24}
+                  height={24}
+                  className="object-contain"
+                />
               </div>
               <h3 className="text-gray-800 font-semibold mb-3 text-lg">Quality Excellence</h3>
               <p className="text-gray-600 text-sm leading-relaxed">
@@ -226,8 +266,19 @@ export default function About() {
             {/* Card 3 */}
             <div className="border border-gray-200 rounded-lg p-6 bg-white min-h-[220px] flex flex-col">
               <div className="flex items-center justify-between mb-6">
-                <div className="text-gray-400 font-bold tracking-wider">/3</div>
-                <span className="text-gray-800 font-semibold">ISO</span>
+                <span className="font-semibold" style={{ 
+                  fontSize: 'clamp(1.5rem, 6vw, 2rem)',
+                  WebkitTextStroke: 'clamp(0.8px, 0.2vw, 1px) #000', 
+                  color: 'transparent', 
+                  textStroke: 'clamp(0.8px, 0.2vw, 1px) #000' 
+                }}>/3</span>
+                <Image
+                  src="/product/3.svg"
+                  alt="Icon 3"
+                  width={24}
+                  height={24}
+                  className="object-contain"
+                />
               </div>
               <h3 className="text-gray-800 font-semibold mb-3 text-lg">Industry Standards & ISOs</h3>
               <p className="text-gray-600 text-sm leading-relaxed">
@@ -238,11 +289,19 @@ export default function About() {
             {/* Card 4 */}
             <div className="border border-gray-200 rounded-lg p-6 bg-white min-h-[220px] flex flex-col">
               <div className="flex items-center justify-between mb-6">
-                <div className="text-gray-400 font-bold tracking-wider">/4</div>
-                {/* growth arrow icon */}
-                <svg className="w-6 h-6 text-gray-700" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.5" d="M3 17l6-6 4 4 7-7" />
-                </svg>
+                <span className="font-semibold" style={{ 
+                  fontSize: 'clamp(1.5rem, 6vw, 2rem)',
+                  WebkitTextStroke: 'clamp(0.8px, 0.2vw, 1px) #000', 
+                  color: 'transparent', 
+                  textStroke: 'clamp(0.8px, 0.2vw, 1px) #000' 
+                }}>/4</span>
+                <Image
+                  src="/product/4.svg"
+                  alt="Icon 4"
+                  width={24}
+                  height={24}
+                  className="object-contain"
+                />
               </div>
               <h3 className="text-gray-800 font-semibold mb-3 text-lg">Organic Growth & Reach</h3>
               <p className="text-gray-600 text-sm leading-relaxed">
@@ -313,7 +372,7 @@ export default function About() {
         </div>
         {/* Bottom-center intersect image with overlaid CTA text */}
         <div className="absolute left-1/2 -translate-x-1/2 -bottom-16 sm:-bottom-20 pointer-events-none">
-          <div className="relative w-[360px] sm:w-[440px] md:w-[520px] h-[120px] sm:h-[150px] md:h-[180px]">
+          <div className="relative w-[400px] sm:w-[490px] md:w-[580px] h-[120px] sm:h-[155px] md:h-[190px]">
             <Image
               src="/about/Intersect (1).png"
               alt="Intersect Decorative"
@@ -323,7 +382,7 @@ export default function About() {
             />
             {/* CTA overlay centered on the image */}
             <div className="absolute inset-0 flex items-center justify-center z-20">
-              <div className="flex items-center gap-2 px-6">
+              <div className="flex items-center justify-center gap-2 px-6" style={{ transform: 'translateY(-4px)' }}>
                 <span className="text-black font-bold text-sm whitespace-nowrap">
                   CLICK HERE TO BOOK A FREE CONSULTATION
                 </span>
@@ -340,71 +399,56 @@ export default function About() {
         </div>
 
         {/* Values Text */}
-        <div className="relative z-20 container mx-auto px-6 lg:px-12">
-          <div className="max-w-5xl">
-            <h2 className="text-white text-3xl lg:text-4xl font-bold mb-6">Our Values</h2>
+        <div className="relative z-20" style={{ paddingLeft: 'clamp(1rem, 4.68vw, 4rem)', paddingTop: 'clamp(2rem, 4vw, 4rem)' }}>
+          <h2 className="text-white text-3xl lg:text-4xl font-bold mb-6" style={{ paddingLeft: 0 }}>Our Values</h2>
 
-            {/* Mobile: single column */}
-            <div className="grid grid-cols-1 gap-6 md:hidden">
-              {/* Value 1 */}
-              <div>
-                <h3 className="text-white text-xl font-semibold mb-2">Client brief drives innovation</h3>
-                <p className="text-gray-100 text-sm leading-relaxed">
-                  We start working on a project only when the client has officially signed & approved a comprehensive design brief that outlines their requirements, deliverables, expectations and vision.
+          {/* Feature Cards */}
+          <div className="grid grid-cols-1 md:grid-cols-3 relative" style={{ gap: '2px', paddingLeft: 0, marginLeft: 'clamp(-1rem, -1vw, -0.5rem)' }}>
+            {[
+              {
+                id: 1,
+                title: "Client brief drives innovation",
+                description: "We start working on a project only when the client has officially signed & approved a comprehensive design brief that outlines their requirements, deliverables, expectations and vision."
+              },
+              {
+                id: 2,
+                title: "Improvisation is necessary",
+                description: "Our team strongly believes that innovation must have multiple versions for best results. This is why our projects can have multiple iterations with running changes that surpass client expectations."
+              },
+              {
+                id: 3,
+                title: "Innovation that leads",
+                description: "At Artivo, we believe that true innovation goes beyond just creativity. It requires a deep understanding of market needs and user-centric design, to fulfil market supply-demand."
+              }
+            ].map((feature, index) => (
+              <div
+                key={feature.id}
+                className="p-6 bg-transparent duration-300 group cursor-pointer relative"
+              >
+                <h3 className="text-white text-xl font-bold mb-3 group-hover:text-[#ffed00] transition-colors">
+                  {feature.title}
+                </h3>
+                <p className="text-white text-sm opacity-90 leading-relaxed mb-6" style={{ maxWidth: '330px' }}>
+                  {feature.description}
                 </p>
+                <div className="hidden md:flex items-center justify-center absolute top-1/2 right-0 -translate-y-1/2 z-10" style={{ transform: 'translateY(-50%) translateX(-800%)' }}>
+                  <svg
+                    className="w-6 h-6 text-white"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth={2}
+                      d="M9 5l7 7-7 7"
+                    />
+                  </svg>
+                </div>
               </div>
-              {/* Value 2 */}
-              <div>
-                <h3 className="text-white text-xl font-semibold mb-2">Improvisation is necessary</h3>
-                <p className="text-gray-100 text-sm leading-relaxed">
-                  Our team strongly believes that innovation must have multiple versions for best results. This is why our projects can have multiple iterations with running changes that surpass client expectations.
-                </p>
-              </div>
-              {/* Value 3 */}
-              <div>
-                <h3 className="text-white text-xl font-semibold mb-2">Innovation that leads</h3>
-                <p className="text-gray-100 text-sm leading-relaxed">
-                  At Artivo, we believe that true innovation goes beyond just creativity. It requires a deep understanding of market needs and user-centric design, to fulfil market supply-demand.
-                </p>
-              </div>
-            </div>
-
-            {/* Desktop: three columns with '>' separators between */}
-            <div className="hidden md:flex md:items-stretch md:gap-6">
-              {/* Col 1 */}
-              <div className="flex-1">
-                <h3 className="text-white text-xl font-semibold mb-2">Client brief drives innovation</h3>
-                <p className="text-gray-100 text-sm leading-relaxed">
-                  We start working on a project only when the client has officially signed & approved a comprehensive design brief that outlines their requirements, deliverables, expectations and vision.
-                </p>
-              </div>
-              {/* Separator */}
-              <div className="self-stretch flex items-center justify-center px-2 select-none">
-                <span className="text-white text-2xl font-bold">&gt;</span>
-              </div>
-              {/* Col 2 */}
-              <div className="flex-1">
-                <h3 className="text-white text-xl font-semibold mb-2">Improvisation is necessary</h3>
-                <p className="text-gray-100 text-sm leading-relaxed">
-                  Our team strongly believes that innovation must have multiple versions for best results. This is why our projects can have multiple iterations with running changes that surpass client expectations.
-                </p>
-              </div>
-              {/* Separator */}
-              <div className="self-stretch flex items-center justify-center px-2 select-none">
-                <span className="text-white text-2xl font-bold">&gt;</span>
-              </div>
-              {/* Col 3 */}
-              <div className="flex-1">
-                <h3 className="text-white text-xl font-semibold mb-2">Innovation that leads</h3>
-                <p className="text-gray-100 text-sm leading-relaxed">
-                  At Artivo, we believe that true innovation goes beyond just creativity. It requires a deep understanding of market needs and user-centric design, to fulfil market supply-demand.
-                </p>
-              </div>
-              {/* Trailing Separator */}
-              <div className="self-stretch flex items-center justify-center px-2 select-none">
-                <span className="text-white text-2xl font-bold">&gt;</span>
-              </div>
-            </div>
+            ))}
           </div>
         </div>
       </section>
@@ -421,7 +465,7 @@ export default function About() {
         <div className="absolute inset-0 bg-black/40" />
         {/* Left-corner text */}
         <div className="absolute inset-0 z-10 flex items-end justify-start">
-          <div className="pb-10 pl-8 pr-8 max-w-2xl">
+          <div className="pb-10 pr-8 max-w-2xl" style={{ paddingLeft: 'clamp(1rem, 4.68vw, 4rem)' }}>
             <h3 className="text-white text-3xl sm:text-4xl font-bold mb-4">Tested to Succeed.</h3>
             <p className="text-white/90 text-base sm:text-lg leading-relaxed">
               Our R&D process is built on precision, experimentation, and collaboration, helping businesses transform bold ideas into market-ready products faster, smarter, and more sustainably.
@@ -430,7 +474,7 @@ export default function About() {
         </div>
         {/* Bottom-right decorative image with overlaid CTA */}
         <div className="absolute -bottom-4 sm:-bottom-19 right-0 z-10">
-          <div className="relative w-[260px] sm:w-[320px] md:w-[380px] h-[120px] sm:h-[150px] md:h-[180px]">
+          <div className="relative w-[360px] sm:w-[440px] md:w-[520px] lg:w-[600px] h-[120px] sm:h-[150px] md:h-[180px]">
             {/* Decorative image */}
             <Image
               src="/about/as.png"
@@ -442,7 +486,7 @@ export default function About() {
 
             {/* CTA overlay centered on the image */}
             <div className="absolute inset-0 flex items-center justify-center pointer-events-auto z-20">
-              <div className="flex items-center gap-3 text-white font-semibold text-sm sm:text-base whitespace-nowrap  px-3 py-1 rounded-full">
+              <div className="flex items-center justify-center gap-3 text-black font-semibold text-sm sm:text-base whitespace-nowrap px-3 py-1 rounded-full" style={{ transform: 'translateY(-8px)' }}>
                 <span>CLICK HERE AND GET YOUR R&amp;D SCORE</span>
                 <Image
                   src="/why-artivo/Group 18.svg"
