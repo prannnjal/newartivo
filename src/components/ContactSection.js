@@ -8,17 +8,18 @@ export const ContactSection = () => {
         <div className="grid grid-cols-1 lg:grid-cols-2" style={{ gap: '2px' }}>
           {/* Left Section - Contact Information */}
           <div className="space-y-6 sm:space-y-8 mt-8 sm:mt-12 md:mt-16 lg:mt-24">
-            <div>
+            <div style={{ maxWidth: 'clamp(250px, 40vw, 500px)' }}>
               <h2 
                 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-5xl font-bold leading-tight mb-4 sm:mb-5 md:mb-6"
                 style={{
                   background: 'linear-gradient(to right, rgba(12, 25, 48, 1), rgba(203, 65, 13, 1))',
                   WebkitBackgroundClip: 'text',
                   WebkitTextFillColor: 'transparent',
-                  backgroundClip: 'text'
+                  backgroundClip: 'text',
+                  letterSpacing: '-0.04em'
                 }}
               >
-                Let's connect and bring your ideas to life.
+                Let's connect and<br />bring your ideas to life.
               </h2>
               <p className="text-gray-600 text-base sm:text-lg leading-relaxed">
                 Ready to bring your vision to life? Get in touch and let's transform your ideas into reality.
@@ -80,10 +81,10 @@ export const ContactSection = () => {
                 className="object-cover"
               />
               <div className="absolute inset-0 bg-black/30"></div>
-              <div className="relative z-10 h-full flex flex-col justify-center px-4 sm:px-6 md:px-8">
+              <div className="relative z-10 h-full flex flex-col justify-center items-center text-center px-4 sm:px-6 md:px-8">
                 <h3 className="text-white text-xl sm:text-2xl md:text-3xl font-bold mb-2 sm:mb-3">Let's connect</h3>
                 <p className="text-gray-200 text-sm sm:text-base">
-                  Our team is ready to answer your questions and discuss your project needs
+                  Our team is ready to answer your questions and<br />discuss your project needs
                 </p>
               </div>
             </div>
