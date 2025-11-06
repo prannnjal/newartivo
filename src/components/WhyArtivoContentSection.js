@@ -87,9 +87,9 @@ export const WhyArtivoContentSection = () => {
   ];
 
   return (
-    <section className="py-20 bg-white">
+    <section className="bg-white">
       <div className="container mx-auto px-8">
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-0.5 lg:gap-1 xl:gap-1.5">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4" style={{ gap: '2px' }}>
           {whyArtivoBlocks.map((block) =>
             block.type === "text" ? (
                <div

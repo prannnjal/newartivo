@@ -24,7 +24,7 @@ export const TestimonialFeaturesSection = () => {
   ];
 
   return (
-    <section className="relative overflow-hidden py-2">
+    <section className="relative overflow-hidden">
       {/* Backgrounds */}
       <div className="absolute inset-0 z-0">
         {/* Updated Linear Gradient */}
@@ -91,7 +91,7 @@ export const TestimonialFeaturesSection = () => {
         </div>
 
         {/* Feature Cards */}
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-3" style={{ gap: '2px' }}>
           {features.map((feature) => (
             <div
               key={feature.id}

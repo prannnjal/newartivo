@@ -4,12 +4,12 @@ import { ReadMoreButton } from './ReadMoreButton';
 
 export const ProductShowcaseSection = () => {
   return (
-    <section className="pt-2 pb-1 bg-white">
+    <section className="bg-white">
       <div className="w-full">
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-1 min-h-screen">
+        <div className="grid grid-cols-1 lg:grid-cols-2 min-h-screen" style={{ gap: '2px' }}>
           
           {/* Left Side - Two Panels */}
-          <div className="grid grid-rows-2 gap-1 lg:gap-0 min-h-screen lg:min-h-[1136px]">
+          <div className="grid grid-rows-2 min-h-screen lg:min-h-[1136px]" style={{ gap: '2px' }}>
             
             {/* Top-Left Panel - Device Detail 1 */}
             <div className="bg-gray-100 overflow-hidden relative w-full h-[50vh] lg:h-[572px]">

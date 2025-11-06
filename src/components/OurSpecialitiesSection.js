@@ -3,11 +3,11 @@ import Image from 'next/image';
 
 export const OurSpecialitiesSection = () => {
   return (
-    <section className="relative bg-white py-12 sm:py-16 lg:py-0 lg:h-[400px]">
+    <section className="relative bg-white lg:h-[400px]">
       
       {/* Mobile View */}
       <div className="lg:hidden px-4 sm:px-6">
-        <div className="space-y-8">
+        <div style={{ display: 'flex', flexDirection: 'column', gap: '2px' }}>
           {/* Left Side - Text Content */}
           <div className="flex flex-col justify-center">
             <h2 

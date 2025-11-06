@@ -71,7 +71,7 @@ export const ServicesSection = () => {
   return (
     <section className="w-full bg-white">
       <div className="w-full max-w-none">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-0.5 md:gap-1 lg:gap-1.5">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3" style={{ gap: '2px' }}>
           {services.map((service) => (
             <div 
               key={service.id} 

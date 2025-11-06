@@ -3,11 +3,7 @@ import Image from 'next/image';
 
 export const OurWorkSection = () => {
   return (
-    <>
-      {/* White Gap from Upper Section */}
-      <div className="w-full bg-white h-0.5 md:h-1 lg:h-2"></div>
-      
-      <section 
+    <section 
         className="relative overflow-visible min-h-[271px]"
         style={{ 
           background: 'linear-gradient(to right, rgba(11, 25, 47, 1), rgba(8, 181, 255, 1))',
@@ -185,6 +181,5 @@ export const OurWorkSection = () => {
         </div>
       </div>
     </section>
-    </>
   );
 };

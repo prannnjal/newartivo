@@ -4,7 +4,7 @@ import Link from 'next/link';
 
 export const ProductFeaturesSection = () => {
   return (
-    <section className="pt-1 pb-20 bg-white">
+    <section className="bg-white">
       <div className="w-full px-0">
         <div className="grid grid-cols-2 gap-0 h-[750px]">
           

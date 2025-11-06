@@ -3,9 +3,9 @@ import Image from "next/image";
 
 export const ContactSection = () => {
   return (
-    <section className="py-8 sm:py-12 md:py-16 lg:py-20 bg-gray-50">
+    <section className="bg-gray-50">
       <div className="container mx-auto px-4 sm:px-6 md:px-8 lg:px-12 xl:px-16 2xl:px-20">
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 sm:gap-12 md:gap-14 lg:gap-16 xl:gap-20">
+        <div className="grid grid-cols-1 lg:grid-cols-2" style={{ gap: '2px' }}>
           {/* Left Section - Contact Information */}
           <div className="space-y-6 sm:space-y-8 mt-8 sm:mt-12 md:mt-16 lg:mt-24">
             <div>

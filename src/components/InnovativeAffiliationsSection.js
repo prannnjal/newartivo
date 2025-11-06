@@ -6,11 +6,11 @@ import Image from "next/image";
 export const InnovativeAffiliationsSection = () => {
 
   return (
-    <section className="py-8 bg-white">
+    <section className="bg-white">
       {/* Content Section with Background */}
       <div className="relative w-full">
         {/* Background Image */}
-        <div className="absolute w-full z-0" style={{ height: '100%', minHeight: '200px', top: '-40px', left: '0', right: '0' }}>
+        <div className="absolute w-full z-0" style={{ height: '100%', minHeight: '200px', top: '0', left: '0', right: '0' }}>
           <Image
             src="/2 13.png"
             alt="Background Pattern"
@@ -21,8 +21,8 @@ export const InnovativeAffiliationsSection = () => {
         </div>
         
         {/* Content */}
-        <div className="container mx-auto px-6 lg:px-12 relative z-10 py-4">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-start mb-8 -mt-18">
+        <div className="container mx-auto px-6 lg:px-12 relative z-10" style={{ paddingTop: '2rem', paddingBottom: '2rem' }}>
+          <div className="grid grid-cols-1 lg:grid-cols-2 items-start mb-8" style={{ gap: '2px' }}>
           {/* Left Section */}
           <div className="space-y-6 flex flex-col">
             <h2 className="text-4xl lg:text-5xl font-bold leading-tight" style={{ 
