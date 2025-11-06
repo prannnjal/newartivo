@@ -99,21 +99,41 @@ export const WhyArtivoContentSection = () => {
                >
                 <div className="flex flex-col h-full">
                   <div className="mb-4">
-                    <span
-                      className="text-3xl font-bold text-transparent"
-                      style={{ WebkitTextStroke: "1.5px #000" }}
+                    <span 
+                      className="font-semibold leading-none"
+                      style={{ 
+                        fontSize: '64px',
+                        WebkitTextStroke: '0.3px #000',
+                        color: 'transparent',
+                        textStroke: '0.3px #000'
+                      }}
                     >
                       /{block.id}
                     </span>
                   </div>
-                  <h3 className="text-lg font-bold text-gray-900 leading-tight mb-4">
+                  <h3 
+                    style={{ 
+                      fontWeight: 600,
+                      fontSize: '30px',
+                      lineHeight: '100%',
+                      letterSpacing: '-0.04em',
+                      color: '#000',
+                      marginBottom: '16px'
+                    }}
+                  >
                     {block.title}
                   </h3>
-                  <div className="flex-1 flex flex-col justify-end">
-                    <p className="text-sm text-gray-700 leading-relaxed">
-                      {block.description}
-                    </p>
-                  </div>
+                  <p 
+                    style={{ 
+                      fontWeight: 400,
+                      fontSize: '16px',
+                      lineHeight: '100%',
+                      letterSpacing: '0',
+                      color: '#000'
+                    }}
+                  >
+                    {block.description}
+                  </p>
                 </div>
               </div>
             ) : (

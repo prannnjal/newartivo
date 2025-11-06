@@ -49,7 +49,7 @@ export const Navbar = () => {
             className="text-black px-8 py-3 font-semibold text-sm rounded-full transition-colors"
             style={{ backgroundColor: 'rgba(255, 242, 8, 1)' }}
           >
-            Connect
+            Book a Free Audit
           </button>
         </div>
       </div>
