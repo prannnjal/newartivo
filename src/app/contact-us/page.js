@@ -13,7 +13,9 @@ export default function ContactUs() {
       <Navbar />
 
       {/* Contact Section as Hero */}
-      <ContactSection />
+      <div style={{ marginTop: 'clamp(6rem, 12vw, 12rem)' }}>
+        <ContactSection />
+      </div>
 
       {/* Innovative Affiliations Section */}
       <InnovativeAffiliationsSection />

@@ -10,7 +10,7 @@ export const Navbar = () => {
   return (
     <nav
       className={`absolute top-0 left-0 right-0 z-50 ${isContactUs ? '' : 'bg-transparent'}`}
-      style={isContactUs ? { background: 'linear-gradient(90deg, rgba(11, 25, 47, 1), rgba(205, 64, 11, 1))', opacity: 0.85 } : { background: 'rgba(0, 0, 0, 0.15)', opacity: 1 }}
+      style={isContactUs ? { background: 'linear-gradient(90deg, rgba(11, 25, 47, 1), rgba(205, 64, 11, 1))', opacity: 1 } : { background: 'rgba(0, 0, 0, 0.15)', opacity: 1 }}
     >
       <div className="py-6 flex justify-between items-center" style={{ 
         paddingLeft: 'clamp(1rem, 4.68vw, 4rem)',
