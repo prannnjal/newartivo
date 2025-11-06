@@ -70,26 +70,71 @@ export const OurWorkSection = () => {
         </div>
       </div>
 
-      <div className="container mx-auto px-4 md:px-8 relative z-10 overflow-visible" style={{ 
+      {/* Left Side - Testimonial Content - Independent from left edge */}
+      <div className="relative z-10" style={{ 
+        minHeight: 'clamp(250px, 14vw, 271px)',
         paddingTop: 'clamp(2rem, 3vw, 4rem)',
-        paddingBottom: 'clamp(2rem, 3vw, 4rem)',
-        minHeight: 'clamp(250px, 14vw, 271px)'
+        paddingBottom: 'clamp(2rem, 3vw, 4rem)'
       }}>
-        <div className="flex flex-col lg:flex-row items-start lg:items-center justify-between gap-8 lg:gap-16">
-          {/* Left Side - Text Content */}
-          <div className="space-y-4 flex-1 absolute left-4 sm:left-6 md:left-8 lg:left-8 xl:left-12 right-4 sm:right-6 md:right-8 lg:right-auto top-8 md:top-12 lg:top-[57px]">
-            <div className="w-full max-w-full lg:max-w-[967px]">
+        {/* Desktop View */}
+        <div className="hidden lg:block absolute left-0 text-white" style={{ 
+          paddingLeft: 'clamp(1rem, 4.68vw, 4rem)',
+          top: 'clamp(2rem, 3vw, 4rem)'
+        }}>
+          <div className="space-y-4" style={{ maxWidth: 'clamp(280px, 50vw, 967px)' }}>
+            <p 
+              className="text-white"
+              style={{
+                fontWeight: 400,
+                fontSize: 'clamp(1rem, 2.64vw, 2.25rem)',
+                lineHeight: '100%',
+                letterSpacing: '-0.04em'
+              }}
+            >
+              "With Artivo, you don't have to worry about in-house development. Skip the overheads and let them bring your ideas to life."
+            </p>
+            
+            <div className="space-y-1">
               <p 
-                className="text-white text-xl md:text-2xl lg:text-[36px]"
-                style={{
-                  fontWeight: 400,
+                className="text-white font-medium"
+                style={{ 
+                  fontSize: 'clamp(0.875rem, 1.46vw, 1.25rem)',
                   lineHeight: '100%',
                   letterSpacing: '-0.04em'
                 }}
               >
-                "With Artivo, you don't have to worry about in-house development. Skip the overheads and let them bring your ideas to life."
+                Paula
+              </p>
+              
+              <p 
+                className="text-white"
+                style={{ 
+                  fontSize: 'clamp(0.875rem, 1.46vw, 1.25rem)',
+                  lineHeight: '100%',
+                  letterSpacing: '-0.04em'
+                }}
+              >
+                Product Strategy, LAMY
               </p>
             </div>
+          </div>
+        </div>
+
+        {/* Mobile View */}
+        <div className="lg:hidden px-4 sm:px-6 md:px-8 text-white" style={{ 
+          paddingTop: 'clamp(2rem, 3vw, 4rem)'
+        }}>
+          <div className="space-y-4">
+            <p 
+              className="text-white text-xl md:text-2xl"
+              style={{
+                fontWeight: 400,
+                lineHeight: '100%',
+                letterSpacing: '-0.04em'
+              }}
+            >
+              "With Artivo, you don't have to worry about in-house development. Skip the overheads and let them bring your ideas to life."
+            </p>
             
             <div className="space-y-1">
               <p className="text-sm sm:text-base md:text-lg text-white font-medium">
@@ -101,8 +146,6 @@ export const OurWorkSection = () => {
               </p>
             </div>
           </div>
-          
-          {/* Mobile - Right Side Content - Removed from container, will be positioned at bottom */}
         </div>
       </div>
       
