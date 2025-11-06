@@ -38,7 +38,7 @@ export const ContactSection = () => {
                 </div>
                 <div className="flex-1">
                   <h3 className="text-gray-800 font-semibold mb-1 sm:mb-2 text-sm sm:text-base">Our Location</h3>
-                  <p className="text-gray-500 text-sm sm:text-base">Level 40, 140 William Street Melbourne VIC 3000, Australia</p>
+                  <p className="text-gray-500 text-sm sm:text-base">Level 40, 140 William Street,<br />Melbourne VIC 3000, Australia</p>
                 </div>
               </div>
 
@@ -64,7 +64,7 @@ export const ContactSection = () => {
                 </div>
                 <div className="flex-1">
                   <h3 className="text-gray-800 font-semibold mb-1 sm:mb-2 text-sm sm:text-base">Business Hours</h3>
-                  <p className="text-gray-500 text-sm sm:text-base">Monday - Friday 9:00 AM - 6:00 PM (AEST)</p>
+                  <p className="text-gray-500 text-sm sm:text-base">Monday - Friday<br /> 9:00 AM - 6:00 PM (AEST)</p>
                 </div>
               </div>
             </div>

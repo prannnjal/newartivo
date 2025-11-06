@@ -45,7 +45,7 @@ export const InnovativeAffiliationsSection = () => {
                     letterSpacing: '-0.04em'
                   }}
                 >
-                  "Artivo can make ideas turn real! They've always exceeded expectations. Great work!"
+                  "Artivo can make ideas turn real! They've always exceeded expectations.<br />Great work!"
                 </blockquote>
                 <div className="space-y-1">
                   <p 
@@ -61,7 +61,7 @@ export const InnovativeAffiliationsSection = () => {
                   <p 
                     className="text-black text-base sm:text-lg"
                     style={{ 
-                      fontWeight: 500,
+                      fontWeight: 400,
                       lineHeight: '100%',
                       letterSpacing: '-0.04em'
                     }}
@@ -107,7 +107,7 @@ export const InnovativeAffiliationsSection = () => {
                     letterSpacing: '-0.04em'
                   }}
                 >
-                  "Artivo can make ideas turn real! They've always exceeded expectations. Great work!"
+                  "Artivo can make ideas turn real! They've always exceeded expectations.<br />Great work!"
                 </blockquote>
                 <div className="space-y-1">
                   <p 
@@ -123,7 +123,7 @@ export const InnovativeAffiliationsSection = () => {
                   <p 
                     className="text-black text-[20px]"
                     style={{ 
-                      fontWeight: 500,
+                      fontWeight: 400,
                       lineHeight: '100%',
                       letterSpacing: '-0.04em'
                     }}

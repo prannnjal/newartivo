@@ -193,7 +193,7 @@ export default function Home() {
 
               {/* Process Steps - Arranged in Circle around the image */}
               {/* Step 1 - Top Center */}
-              <div className="absolute top-[6%] sm:top-[7%] md:top-[7.5%] lg:top-[8%] left-1/2 -translate-x-1/2 text-center max-w-[90vw] sm:max-w-[350px] md:max-w-[380px] lg:max-w-[400px] xl:max-w-[450px] 2xl:max-w-[500px]">
+              <div className="absolute left-1/2 -translate-x-1/2 text-center" style={{ top: '8%', maxWidth: '400px' }}>
                 <div className="flex justify-center mb-1 sm:mb-2">
                   <span className="font-semibold" style={{ 
                     fontSize: 'clamp(1.5rem, 2.5vw, 2.5rem)',
@@ -233,7 +233,7 @@ export default function Home() {
               </div>
 
               {/* Step 2 - Right Middle */}
-              <div className="absolute top-[42%] right-[8%] sm:right-[10%] md:right-[12%] lg:right-[15%] translate-y-[-50%] text-center max-w-[90vw] sm:max-w-[350px] md:max-w-[380px] lg:max-w-[400px] xl:max-w-[450px] 2xl:max-w-[500px]">
+              <div className="absolute translate-y-[-50%] text-center" style={{ top: '42%', right: '15%', maxWidth: '400px' }}>
                 <div className="flex justify-center mb-1 sm:mb-2">
                   <span className="font-semibold" style={{ 
                     fontSize: 'clamp(1.5rem, 2.5vw, 2.5rem)',
@@ -273,7 +273,7 @@ export default function Home() {
               </div>
 
               {/* Step 3 - Bottom Right */}
-              <div className="absolute bottom-[12%] sm:bottom-[15%] md:bottom-[16%] lg:bottom-[18%] right-[10%] sm:right-[12%] md:right-[14%] lg:right-[18%] text-center max-w-[90vw] sm:max-w-[350px] md:max-w-[380px] lg:max-w-[400px] xl:max-w-[450px] 2xl:max-w-[500px]">
+              <div className="absolute text-center" style={{ bottom: '18%', right: '18%', maxWidth: '400px' }}>
                 <div className="flex justify-center mb-1 sm:mb-2">
                   <span className="font-semibold" style={{ 
                     fontSize: 'clamp(1.5rem, 2.5vw, 2.5rem)',
@@ -313,7 +313,7 @@ export default function Home() {
               </div>
 
               {/* Step 4 - Bottom Left */}
-              <div className="absolute bottom-[12%] sm:bottom-[15%] md:bottom-[16%] lg:bottom-[18%] left-[10%] sm:left-[12%] md:left-[14%] lg:left-[18%] text-center max-w-[90vw] sm:max-w-[350px] md:max-w-[380px] lg:max-w-[400px] xl:max-w-[450px] 2xl:max-w-[500px]">
+              <div className="absolute text-center" style={{ bottom: '18%', left: '18%', maxWidth: '400px' }}>
                 <div className="flex justify-center mb-1 sm:mb-2">
                   <span className="font-semibold" style={{ 
                     fontSize: 'clamp(1.5rem, 2.5vw, 2.5rem)',
@@ -353,7 +353,7 @@ export default function Home() {
               </div>
 
               {/* Step 5 - Left Middle */}
-              <div className="absolute top-[42%] left-[8%] sm:left-[10%] md:left-[12%] lg:left-[15%] translate-y-[-50%] text-center max-w-[90vw] sm:max-w-[350px] md:max-w-[380px] lg:max-w-[400px] xl:max-w-[450px] 2xl:max-w-[500px]">
+              <div className="absolute translate-y-[-50%] text-center" style={{ top: '42%', left: '15%', maxWidth: '400px' }}>
                 <div className="flex justify-center mb-1 sm:mb-2">
                   <span className="font-semibold" style={{ 
                     fontSize: 'clamp(1.5rem, 2.5vw, 2.5rem)',
@@ -422,14 +422,14 @@ export default function Home() {
 
       {/* Sections Container with consistent gaps */}
       <div style={{ display: 'flex', flexDirection: 'column', gap: '2px' }}>
-        {/* Our Specialities Section */}
-        <OurSpecialitiesSection />
+      {/* Our Specialities Section */}
+          <OurSpecialitiesSection />
 
-        {/* Services Section */}
-        <ServicesSection />
+          {/* Services Section */}
+          <ServicesSection />
 
-        {/* Our Work Section */}
-        <OurWorkSection />
+      {/* Our Work Section */}
+          <OurWorkSection />
 
         {/* Product Showcase Section */}
         <ProductShowcaseSection />
@@ -437,11 +437,11 @@ export default function Home() {
         {/* Design Section */}
         <DesignSection />
 
-        {/* Product Features Section */}
-        <ProductFeaturesSection />
+          {/* Product Features Section */}
+          <ProductFeaturesSection />
 
-        {/* Innovative Affiliations Section */}
-        <InnovativeAffiliationsSection />
+          {/* Innovative Affiliations Section */}
+          <InnovativeAffiliationsSection />
 
         {/* Logo Carousel */}
         <LogoCarousel />
