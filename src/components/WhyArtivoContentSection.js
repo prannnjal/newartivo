@@ -102,7 +102,7 @@ export const WhyArtivoContentSection = () => {
                     <span 
                       className="font-semibold leading-none"
                       style={{ 
-                        fontSize: '64px',
+                        fontSize: 'clamp(32px, 4vw, 48px)',
                         WebkitTextStroke: '0.3px #000',
                         color: 'transparent',
                         textStroke: '0.3px #000'
@@ -114,7 +114,7 @@ export const WhyArtivoContentSection = () => {
                   <h3 
                     style={{ 
                       fontWeight: 600,
-                      fontSize: '30px',
+                      fontSize: 'clamp(18px, 2vw, 24px)',
                       lineHeight: '100%',
                       letterSpacing: '-0.04em',
                       color: '#000',
@@ -126,8 +126,8 @@ export const WhyArtivoContentSection = () => {
                   <p 
                     style={{ 
                       fontWeight: 400,
-                      fontSize: '16px',
-                      lineHeight: '100%',
+                      fontSize: 'clamp(12px, 1.2vw, 14px)',
+                      lineHeight: '140%',
                       letterSpacing: '0',
                       color: '#000'
                     }}
