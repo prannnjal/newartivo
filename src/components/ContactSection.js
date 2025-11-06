@@ -22,7 +22,7 @@ export const ContactSection = () => {
                 Let's connect and<br />bring your ideas to life.
               </h2>
               <p className="text-gray-600 text-base sm:text-lg leading-relaxed">
-                Ready to bring your vision to life? Get in touch and let's transform your ideas into reality.
+                Ready to bring your vision to life? <br />Get in touch and let's transform your ideas into reality.
               </p>
             </div>
 

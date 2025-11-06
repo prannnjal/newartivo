@@ -59,14 +59,14 @@ export const TestimonialFeaturesSection = () => {
         <Image
           src="/product/Intersect.png"
           alt="Intersect Pattern"
-          width={450}
+          width={550}
           height={350}
           className="object-contain"
         />
         {/* Text overlay */}
-        <div className="absolute inset-0 flex items-center justify-center">
-          <div className="flex items-center gap-2 px-6">
-            <span className="text-black font-bold text-sm whitespace-nowrap">
+        <div className="absolute inset-0 flex items-center" style={{ paddingLeft: 'clamp(3rem, 6vw, 6rem)', paddingRight: 'clamp(1rem, 4.68vw, 4rem)' }}>
+          <div className="flex items-center gap-6">
+            <span className="text-black font-bold whitespace-nowrap" style={{ fontSize: 'clamp(0.875rem, 1vw, 1rem)' }}>
               CLICK HERE TO BOOK A FREE CONSULTATION
             </span>
             <Image
@@ -80,7 +80,7 @@ export const TestimonialFeaturesSection = () => {
         </div>
       </div>
 
-      <div className="relative z-10" style={{ paddingLeft: 'clamp(1rem, 4.68vw, 4rem)' }}>
+      <div className="relative z-10" style={{ paddingLeft: 'clamp(1rem, 4.68vw, 4rem)', paddingBottom: 'clamp(1rem, 2vw, 2rem)' }}>
         {/* Top Section */}
         <div className="flex flex-col lg:flex-row items-start justify-between mb-8 gap-10">
           {/* Quote */}
@@ -88,9 +88,9 @@ export const TestimonialFeaturesSection = () => {
             <blockquote className="text-white text-4xl font-bold leading-tight mb-6 whitespace-nowrap">
               "Artivo is where imagination meets precision."
             </blockquote>
-            <cite className="text-white text-base sm:text-lg opacity-90 block">
-              Jessica Wade<br />
-              <span className="opacity-75">
+            <cite className="text-white text-base sm:text-lg opacity-90 block not-italic" style={{ fontStyle: 'normal' }}>
+              <span className="font-semibold" style={{ fontSize: 'clamp(1rem, 1.2vw, 1.25rem)' }}>Jessica Wade</span><br />
+              <span className="opacity-75" style={{ marginTop: '0px', display: 'block' }}>
                 Innovation, DLR Hydraulic Tools
               </span>
             </cite>
@@ -105,27 +105,31 @@ export const TestimonialFeaturesSection = () => {
               key={feature.id}
               className="p-6 bg-transparent duration-300 group cursor-pointer relative"
             >
-              <h3 className="text-white text-xl font-bold mb-3 group-hover:text-[#ffed00] transition-colors">
-                {feature.title}
-              </h3>
-              <p className="text-white text-sm opacity-90 leading-relaxed mb-6" style={{ maxWidth: '330px' }}>
-                {feature.description}
-              </p>
-              <div className="hidden md:flex items-center justify-center absolute top-1/2 right-0 -translate-y-1/2 z-10" style={{ transform: 'translateY(-50%) translateX(-800%)' }}>
-                <svg
-                  className="w-6 h-6 text-white"
-                  fill="none"
-                  stroke="currentColor"
-                  viewBox="0 0 24 24"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth={2}
-                    d="M9 5l7 7-7 7"
-                  />
-                </svg>
+              <div className="flex items-start gap-1">
+                <div className="flex-1">
+                  <h3 className="text-white text-xl font-bold mb-3 group-hover:text-[#ffed00] transition-colors">
+                    {feature.title}
+                  </h3>
+                  <p className="text-white text-sm opacity-90 leading-relaxed" style={{ maxWidth: '330px' }}>
+                    {feature.description}
+                  </p>
+                </div>
+                <div className="hidden md:flex items-center justify-center flex-shrink-0 mt-3">
+                  <svg
+                    className="w-6 h-6 text-white"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth={2}
+                      d="M9 5l7 7-7 7"
+                    />
+                  </svg>
+                </div>
               </div>
             </div>
           ))}
