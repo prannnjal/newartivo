@@ -36,9 +36,17 @@ export const TestimonialFeaturesSection = () => {
           }}
         ></div>
 
+        {/* Black overlay with opacity */}
+        <div
+          className="absolute inset-0"
+          style={{
+            background: "rgba(0, 0, 0, 0.3)",
+          }}
+        ></div>
+
         {/* White wave pattern */}
         <Image
-          src="/why-artivo/1 11.png"
+          src="/1 11.png"
           alt="Background Pattern"
           fill
           className="object-cover opacity-30"
@@ -49,7 +57,7 @@ export const TestimonialFeaturesSection = () => {
       {/* Intersect image in top right corner */}
       <div className="absolute top-0 right-0 z-20">
         <Image
-          src="/why-artivo/Intersect (1).png"
+          src="/product/Intersect.png"
           alt="Intersect Pattern"
           width={450}
           height={350}
@@ -72,11 +80,11 @@ export const TestimonialFeaturesSection = () => {
         </div>
       </div>
 
-      <div className="container mx-auto px-6 lg:px-12 relative z-10">
+      <div className="relative z-10" style={{ paddingLeft: 'clamp(1rem, 4.68vw, 4rem)' }}>
         {/* Top Section */}
         <div className="flex flex-col lg:flex-row items-start justify-between mb-8 gap-10">
           {/* Quote */}
-          <div className="lg:w-1/2 mt-12">
+          <div className="lg:w-1/2 mt-12" style={{ paddingLeft: 0 }}>
             <blockquote className="text-white text-4xl font-bold leading-tight mb-6 whitespace-nowrap">
               "Artivo is where imagination meets precision."
             </blockquote>
@@ -91,21 +99,21 @@ export const TestimonialFeaturesSection = () => {
         </div>
 
         {/* Feature Cards */}
-        <div className="grid grid-cols-1 md:grid-cols-3" style={{ gap: '2px' }}>
-          {features.map((feature) => (
+        <div className="grid grid-cols-1 md:grid-cols-3 relative" style={{ gap: '2px', paddingLeft: 0, marginLeft: 'clamp(-1rem, -1vw, -0.5rem)' }}>
+          {features.map((feature, index) => (
             <div
               key={feature.id}
-              className=" p-6 bg-transparent  duration-300 group cursor-pointer"
+              className="p-6 bg-transparent duration-300 group cursor-pointer relative"
             >
               <h3 className="text-white text-xl font-bold mb-3 group-hover:text-[#ffed00] transition-colors">
                 {feature.title}
               </h3>
-              <p className="text-white text-sm opacity-90 leading-relaxed mb-6">
+              <p className="text-white text-sm opacity-90 leading-relaxed mb-6" style={{ maxWidth: '330px' }}>
                 {feature.description}
               </p>
-              <div className="flex justify-end">
+              <div className="hidden md:flex items-center justify-center absolute top-1/2 right-0 -translate-y-1/2 z-10" style={{ transform: 'translateY(-50%) translateX(-800%)' }}>
                 <svg
-                  className="w-5 h-5 text-white group-hover:text-[#ffed00] transition-colors"
+                  className="w-6 h-6 text-white"
                   fill="none"
                   stroke="currentColor"
                   viewBox="0 0 24 24"

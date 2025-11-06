@@ -1,5 +1,4 @@
 import React from "react";
-import Image from "next/image";
 
 export const Footer = () => {
   return (
@@ -11,12 +10,10 @@ export const Footer = () => {
     >
       {/* Background Image */}
       <div className="absolute inset-0 z-0">
-        <Image
+        <img
           src="/2 11.png"
           alt="Footer Background"
-          fill
-          className="object-cover"
-          priority
+          className="object-cover w-full h-full"
         />
       </div>
       
@@ -24,7 +21,7 @@ export const Footer = () => {
         <div className="flex flex-col lg:flex-row justify-between items-start lg:items-end" style={{ gap: '2rem' }}>
           {/* Company Info & Social Media */}
           <div className="space-y-6">
-            <Image
+            <img
               src="/Logo/Frame 33.png"
               alt="ARTIVO Logo"
               width={120}

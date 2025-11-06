@@ -87,7 +87,7 @@ export const WhyArtivoContentSection = () => {
   ];
 
   return (
-    <section className="bg-white">
+    <section className="bg-white" style={{ paddingTop: 'clamp(2rem, 4vw, 4rem)', paddingBottom: 'clamp(2rem, 4vw, 4rem)' }}>
       <div className="container mx-auto px-8">
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4" style={{ gap: '2px' }}>
           {whyArtivoBlocks.map((block) =>

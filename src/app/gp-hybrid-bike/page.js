@@ -321,15 +321,14 @@ export default function GPHybridBike() {
     <div className="grid grid-cols-1 md:grid-cols-3 gap-1 items-stretch">
       {[
         "/product/aq.png",
-        "/product/freepik__show-aerodynamic-simulation-renders-of-the-bicycle__62164 2.png",
-        "/product/freepik__show-aerodynamic-simulation-renders-of-the-bicycle__62164 1.png",
+        "/product/as.png",
+        "/product/ass.png",
       ].map((src, index) => (
         <div key={index} className="relative w-full h-[300px] sm:h-[400px] md:h-[450px] lg:h-[500px] xl:h-[500px] flex items-center justify-center">
-          <Image
+          <img
             src={src}
             alt={`Aerodynamic Simulation ${index + 1}`}
-            fill
-            className="object-cover"
+            className="object-cover w-full h-full"
           />
         </div>
       ))}

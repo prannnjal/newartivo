@@ -1,7 +1,6 @@
 "use client";
 
 import React from 'react';
-import Image from 'next/image';
 import { usePathname } from 'next/navigation';
 
 export const Navbar = () => {
@@ -20,7 +19,7 @@ export const Navbar = () => {
         {/* Logo */}
         <div className="flex items-center">
           <a href="/">
-            <Image
+            <img
               src="/Logo/Frame 33.png"
               alt="ARTIVO Logo"
               width={120}
