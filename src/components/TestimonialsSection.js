@@ -3,7 +3,7 @@ import Image from "next/image";
 
 export const TestimonialsSection = () => {
   return (
-    <section className="bg-white" style={{ marginTop: 'clamp(2rem, 4vw, 4rem)' }}>
+    <section className="bg-white" style={{ marginTop: 'clamp(2rem, 4vw, 4rem)', paddingBottom: 'clamp(2rem, 4vw, 4rem)' }}>
       <div className="container mx-auto px-6 lg:px-12">
         {/* Title and Navigation */}
         <div className="flex justify-between items-center mb-12">
@@ -27,7 +27,7 @@ export const TestimonialsSection = () => {
         </div>
 
         {/* Testimonial Cards */}
-        <div className="grid grid-cols-1 lg:grid-cols-2" style={{ gap: '2px' }}>
+        <div className="grid grid-cols-1 lg:grid-cols-2" style={{ gap: 'clamp(0.75rem, 2vw, 1.5rem)' }}>
           {/* Testimonial Card 1 */}
           <div className="bg-white border border-gray-200 rounded-lg p-8 relative">
             {/* Quote Icon */}

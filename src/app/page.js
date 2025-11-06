@@ -355,7 +355,7 @@ export default function Home() {
               {/* Step 5 - Left Middle */}
               <div className="absolute top-[42%] left-[8%] sm:left-[10%] md:left-[12%] lg:left-[15%] translate-y-[-50%] text-center max-w-[90vw] sm:max-w-[350px] md:max-w-[380px] lg:max-w-[400px] xl:max-w-[450px] 2xl:max-w-[500px]">
                 <div className="flex justify-center mb-1 sm:mb-2">
-                  <span className="font-light" style={{ 
+                  <span className="font-semibold" style={{ 
                     fontSize: 'clamp(1.5rem, 2.5vw, 2.5rem)',
                     WebkitTextStroke: 'clamp(0.8px, 0.08vw, 1.2px) white', 
                     color: 'transparent', 
