@@ -14,6 +14,7 @@ import { InnovativeAffiliationsSection } from "@/components/InnovativeAffiliatio
 import { LogoCarousel } from "@/components/LogoCarousel";
 import { ContactForm } from "@/components/ContactForm";
 import { ContactSection } from "@/components/ContactSection";
+import { TestimonialsSection } from "@/components/TestimonialsSection";
 import { Footer } from "@/components/Footer";
 import { GearIcon, DocumentIcon, UserIcon, AwardIcon, QuoteIcon } from "@/components/Icons";
 
@@ -41,7 +42,7 @@ export default function Home() {
         
         {/* Centered Text */}
         <div className="relative z-10 flex items-center justify-center h-full">
-          <h2 className="font-light tracking-wide text-center px-4 text-lg sm:text-xl md:text-[30px]"
+          <h2 className="font-medium italic tracking-wide text-center px-4 text-lg sm:text-xl md:text-[30px]"
               style={{ 
                 color: 'rgba(255, 255, 255, 1)'
               }}>
@@ -448,6 +449,9 @@ export default function Home() {
         {/* Contact Section */}
         <ContactSection />
       </div>
+
+      {/* Testimonials Section */}
+      <TestimonialsSection />
 
           {/* Footer */}
           <Footer />
