@@ -3,7 +3,7 @@ import Image from "next/image";
 
 export const ContactSection = () => {
   return (
-    <section className="bg-gray-50" style={{ marginTop: 'clamp(2rem, 4vw, 4rem)' }}>
+    <section className="bg-white" style={{ marginTop: 'clamp(2rem, 4vw, 4rem)' }}>
       <div className="container mx-auto px-4 sm:px-6 md:px-8 lg:px-12 xl:px-16 2xl:px-20">
         <div className="grid grid-cols-1 lg:grid-cols-2" style={{ gap: '2px' }}>
           {/* Left Section - Contact Information */}
