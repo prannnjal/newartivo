@@ -21,7 +21,7 @@ export const Footer = () => {
       </div>
       
       <div className="container mx-auto px-6 lg:px-12 relative z-10">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-6" style={{ gap: '2px' }}>
+        <div className="flex flex-col lg:flex-row justify-between items-start lg:items-end" style={{ gap: '2rem' }}>
           {/* Company Info & Social Media */}
           <div className="space-y-6">
             <Image
@@ -55,46 +55,46 @@ export const Footer = () => {
               </a>
             </div>
             {/* Copyright */}
-            <div className="space-y-2">
+            <div className="space-y-2 text-center">
               <p className="text-white text-sm">©2025 Irisone Group Pty Ltd</p>
               <p className="text-white text-sm">All Rights Reserved</p>
             </div>
           </div>
 
-          {/* PAGES */}
-          <div className="space-y-4">
-            <h3 className="text-white text-sm font-bold uppercase tracking-wide">PAGES</h3>
-            <ul className="space-y-2">
-              <li><a href="#" className="text-white text-sm hover:text-gray-300 transition-colors">About</a></li>
-              <li><a href="#" className="text-white text-sm hover:text-gray-300 transition-colors">Work</a></li>
-              <li><a href="#" className="text-white text-sm hover:text-gray-300 transition-colors">Careers</a></li>
-              <li><a href="#" className="text-white text-sm hover:text-gray-300 transition-colors">Blog</a></li>
-              <li><a href="/contact-us" className="text-white text-sm hover:text-gray-300 transition-colors">Contact Us</a></li>
-            </ul>
-          </div>
+          {/* Right Side - Navigation Links */}
+          <div className="flex flex-col lg:flex-row gap-2 lg:gap-3 text-left">
+            {/* PAGES */}
+            <div className="space-y-4" style={{ marginRight: 'clamp(7rem, 14vw, 14rem)' }}>
+              <h3 className="text-white text-sm font-bold uppercase tracking-wide">PAGES</h3>
+              <ul className="space-y-2">
+                <li><a href="#" className="text-white text-sm hover:text-gray-300 transition-colors">About</a></li>
+                <li><a href="#" className="text-white text-sm hover:text-gray-300 transition-colors">Work</a></li>
+                <li><a href="#" className="text-white text-sm hover:text-gray-300 transition-colors">Careers</a></li>
+                <li><a href="#" className="text-white text-sm hover:text-gray-300 transition-colors">Blog</a></li>
+                <li><a href="/contact-us" className="text-white text-sm hover:text-gray-300 transition-colors">Contact Us</a></li>
+              </ul>
+            </div>
 
-          {/* SERVICES */}
-          <div className="space-y-4">
-            <h3 className="text-white text-sm font-bold uppercase tracking-wide">SERVICES</h3>
-            <ul className="space-y-2">
-              <li><a href="#" className="text-white text-sm hover:text-gray-300 transition-colors">Product Innovation</a></li>
-              <li><a href="#" className="text-white text-sm hover:text-gray-300 transition-colors">Electronic Design</a></li>
-              <li><a href="#" className="text-white text-sm hover:text-gray-300 transition-colors">Design for Sustainability</a></li>
-              <li><a href="#" className="text-white text-sm hover:text-gray-300 transition-colors">Design for Startups</a></li>
-              <li><a href="#" className="text-white text-sm hover:text-gray-300 transition-colors">Manufacture Process Optimisation</a></li>
-            </ul>
-          </div>
+            {/* SERVICES */}
+            <div className="space-y-4" style={{ marginRight: 'clamp(10rem, 20vw, 20rem)' }}>
+              <h3 className="text-white text-sm font-bold uppercase tracking-wide">SERVICES</h3>
+              <ul className="space-y-2">
+                <li><a href="#" className="text-white text-sm hover:text-gray-300 transition-colors">Product Innovation</a></li>
+                <li><a href="#" className="text-white text-sm hover:text-gray-300 transition-colors">Electronic Design</a></li>
+                <li><a href="#" className="text-white text-sm hover:text-gray-300 transition-colors">Design for Sustainability</a></li>
+                <li><a href="#" className="text-white text-sm hover:text-gray-300 transition-colors">Design for Startups</a></li>
+                <li><a href="#" className="text-white text-sm hover:text-gray-300 transition-colors">Manufacture Process Optimisation</a></li>
+              </ul>
+            </div>
 
-          {/* Empty column for spacing */}
-          <div></div>
-
-          {/* TERMS & CONDITIONS */}
-          <div className="space-y-4 text-right">
-            <h3 className="text-white text-sm font-bold uppercase tracking-wide">TERMS & CONDITIONS</h3>
-            <ul className="space-y-2">
-              <li><a href="#" className="text-white text-sm hover:text-gray-300 transition-colors">Privacy Policy</a></li>
-              <li><a href="#" className="text-white text-sm hover:text-gray-300 transition-colors">Terms of Service</a></li>
-            </ul>
+            {/* TERMS & CONDITIONS */}
+            <div className="space-y-4">
+              <h3 className="text-white text-sm font-bold uppercase tracking-wide">TERMS & CONDITIONS</h3>
+              <ul className="space-y-2">
+                <li><a href="#" className="text-white text-sm hover:text-gray-300 transition-colors">Privacy Policy</a></li>
+                <li><a href="#" className="text-white text-sm hover:text-gray-300 transition-colors">Terms of Service</a></li>
+              </ul>
+            </div>
           </div>
         </div>
 
