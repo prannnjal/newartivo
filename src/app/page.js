@@ -42,11 +42,9 @@ export default function Home() {
         
         {/* Centered Text */}
         <div className="relative z-10 flex items-center justify-center h-full">
-          <h2 className="font-medium text-center px-4 text-lg sm:text-xl md:text-[30px]"
+          <h2 className="font-medium italic tracking-wide text-center px-4 text-lg sm:text-xl md:text-[30px]"
               style={{ 
-                color: 'rgba(255, 255, 255, 1)',
-                fontStyle: 'oblique',
-                letterSpacing: '-0.02em'
+                color: 'rgba(255, 255, 255, 1)'
               }}>
             The R&D Lifecycle
           </h2>
@@ -423,7 +421,7 @@ export default function Home() {
       </section>
 
       {/* Sections Container with consistent gaps */}
-      <div style={{ display: 'flex', flexDirection: 'column', gap: 'clamp(1rem, 2vw, 3rem)' }}>
+      <div style={{ display: 'flex', flexDirection: 'column', gap: '2px' }}>
         {/* Our Specialities Section */}
         <OurSpecialitiesSection />
 

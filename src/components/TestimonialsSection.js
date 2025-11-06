@@ -3,7 +3,7 @@ import Image from "next/image";
 
 export const TestimonialsSection = () => {
   return (
-    <section className="bg-white">
+    <section className="bg-white" style={{ marginTop: 'clamp(2rem, 4vw, 4rem)' }}>
       <div className="container mx-auto px-6 lg:px-12">
         {/* Title and Navigation */}
         <div className="flex justify-between items-center mb-12">

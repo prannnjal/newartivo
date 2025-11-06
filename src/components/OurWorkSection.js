@@ -4,10 +4,10 @@ import Image from 'next/image';
 export const OurWorkSection = () => {
   return (
     <section 
-        className="relative overflow-visible min-h-[271px]"
+        className="relative overflow-visible lg:h-[400px]"
         style={{ 
           background: 'linear-gradient(to right, rgba(11, 25, 47, 1), rgba(8, 181, 255, 1))',
-          minHeight: 'clamp(250px, 14vw, 271px)',
+          minHeight: 'clamp(250px, 14vw, 400px)',
           paddingBottom: 0,
           marginBottom: 0
         }}
@@ -73,9 +73,9 @@ export const OurWorkSection = () => {
         paddingBottom: 'clamp(2rem, 3vw, 4rem)'
       }}>
         {/* Desktop View */}
-        <div className="hidden lg:block absolute left-0 text-white" style={{ 
+        <div className="hidden lg:block absolute left-0 top-0 bottom-0 flex flex-col justify-center text-white" style={{ 
           paddingLeft: 'clamp(1rem, 4.68vw, 4rem)',
-          top: 'clamp(2rem, 3vw, 4rem)'
+          transform: 'translateY(110px)'
         }}>
           <div className="space-y-4" style={{ maxWidth: 'clamp(280px, 50vw, 967px)' }}>
             <p 

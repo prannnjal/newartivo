@@ -3,7 +3,7 @@ import Image from 'next/image';
 
 export const DesignSection = () => {
   return (
-    <section className="relative overflow-hidden lg:h-[280px]">
+    <section className="relative overflow-hidden lg:h-[400px]">
       {/* Linear Gradient Background */}
       <div className="absolute inset-0 bg-gradient-to-r from-[rgba(11,25,47,1)] to-[rgba(205,64,11,1)] z-0"></div>
       
@@ -87,14 +87,12 @@ export const DesignSection = () => {
       
       {/* Desktop View */}
       <div className="hidden lg:block relative z-20" style={{ 
-        height: '100%',
-        paddingTop: 'clamp(1rem, 2.34vw, 2rem)'
+        height: '100%'
       }}>
         
         {/* Left Side - Case Studies Content - Independent from left edge */}
-        <div className="absolute left-0 text-white" style={{ 
-          paddingLeft: 'clamp(1rem, 4.68vw, 4rem)',
-          top: 'clamp(1rem, 2.34vw, 2rem)'
+        <div className="absolute left-0 top-0 bottom-0 flex flex-col justify-center text-white" style={{ 
+          paddingLeft: 'clamp(1rem, 4.68vw, 4rem)'
         }}>
           <h2 className="font-bold mb-4 tracking-tight" style={{ 
             fontSize: 'clamp(1.25rem, 2.2vw, 1.875rem)',
@@ -120,9 +118,8 @@ export const DesignSection = () => {
         </div>
         
         {/* Right Side - Testimonial - Independent from right edge */}
-        <div className="absolute right-0 text-white text-right" style={{ 
-          paddingRight: 'clamp(1rem, 4.68vw, 4rem)',
-          top: 'clamp(1.5rem, 3.52vw, 3rem)'
+        <div className="absolute right-0 top-0 bottom-0 flex flex-col justify-center text-white text-right" style={{ 
+          paddingRight: 'clamp(1rem, 4.68vw, 4rem)'
         }}>
           <div className="mb-4" style={{ maxWidth: 'clamp(300px, 40vw, 600px)' }}>
             <blockquote 
