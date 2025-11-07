@@ -94,7 +94,7 @@ export default function GPHybridBike() {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
             
             {/* Left Side - Heading and Description */}
-            <div className="space-y-4">
+              <div className="space-y-4">
               <h1 className="text-3xl lg:text-4xl xl:text-4xl font-normal text-white leading-tight">
                 <span className="font-bold">GP</span> Hybrid Electric Bike
               </h1>
@@ -134,13 +134,13 @@ export default function GPHybridBike() {
 
       {/* Product and Conceptualisation Section */}
       <section className="py-4 bg-white w-full overflow-visible">
-        <div className="w-full max-w-none pl-0 pr-8 lg:pr-12">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
+        <div className="w-full max-w-none px-12">
+          <div className="grid grid-cols-2 gap-12 items-start">
             
             {/* Left Column - Product Images */}
-            <div className="space-y-4">
+            <div className="space-y-6">
               {/* Product Image a.png */}
-              <div className="relative w-full h-[480px] xl:h-[480px] z-10">
+              <div className="relative w-full h-[480px] z-10">
                 <Image
                   src="/product/a.png"
                   alt="Product Design"
@@ -160,7 +160,7 @@ export default function GPHybridBike() {
               </div>
               
               {/* Product Image d.png */}
-              <div className="relative w-[130%] h-[650px] lg:h-[800px] xl:h-[850px] -mt-16">
+              <div className="relative w-[calc(100%+6rem)] h-[880px] -mt-12 -ml-24">
                 <Image
                   src="/product/d.png"
                   alt="Product Detail"
@@ -171,20 +171,20 @@ export default function GPHybridBike() {
             </div>
             
             {/* Right Column - Conceptualisation Text and Image Side by Side */}
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-2 items-start">
+            <div className="grid grid-cols-2 gap-4 items-start">
               {/* Text Content */}
-              <div className="space-y-2 mt-20">
-                <h2 className="text-xl lg:text-2xl xl:text-2xl font-bold text-gray-900">
+              <div className="space-y-3 mt-20">
+                <h2 className="text-2xl font-bold text-gray-900">
                   Conceptualisation
                 </h2>
                 
-                <p className="text-gray-700 text-sm xl:text-sm leading-relaxed">
+                <p className="text-gray-700 text-base leading-relaxed">
                   Our dedicated team of designers shared multiple strategies to begin this project and in-doing-so, we were able to define a creative theme that matched our client's brief.
                 </p>
               </div>
               
               {/* Image b.png */}
-              <div className="relative w-full h-[300px] xl:h-[320px] -mt-9">
+              <div className="relative w-full h-[320px] -mt-8">
                 <Image
                   src="/product/b.png"
                   alt="Conceptualisation Design"
@@ -206,9 +206,11 @@ export default function GPHybridBike() {
             <div className="lg:col-span-2"></div>
             
             {/* Right - Images covering entire right section */}
-            <div className="lg:col-span-3 space-y-0 flex flex-col items-start w-full overflow-visible -mt-4 lg:-mt-6 xl:-mt-8 relative">
+            <div className="lg:col-span-3 space-y-0 flex flex-col items-start w-full overflow-visible -mt-4 lg:-mt-6 xl:-mt-8 relative pb-24 sm:pb-28 lg:pb-32">
               {/* c.png Image */}
-              <div className="relative w-[145%] max-w-[145%] xl:max-w-[145%] h-[650px] lg:h-[850px] xl:h-[950px] -ml-[8%] -mt-16 lg:-mt-8 xl:-mt-2 overflow-visible">
+              <div
+                className="relative w-full h-[560px] sm:h-[660px] md:h-[740px] lg:h-[820px] xl:h-[900px] mt-0 sm:mt-2 lg:mt-4 xl:mt-5 lg:ml-10 xl:ml-12 overflow-visible"
+              >
                 <Image
                   src="/product/c.png"
                   alt="Product Detail"
@@ -218,29 +220,29 @@ export default function GPHybridBike() {
                 />
               </div>
                
-               {/* Yellow Strip */}
-               <div className="relative w-[calc(100vw-12vw)] -ml-[clamp(1rem,3vw,4rem)] mt-[clamp(0.5rem,3vh,3rem)]">
-                 <Image
-                   src="/why-artivo/Intersect (1).png"
-                   alt="Intersect Background"
-                   width={600}
-                   height={120}
-                   className="object-contain w-full h-auto"
-                 />
-                 {/* Text and Arrow Overlay */}
-                 <div className="absolute inset-0 flex items-center justify-center gap-2 px-6">
-                   <span className="text-black font-bold text-sm whitespace-nowrap">
-                     BRING YOUR IDEAS TO LIFE
-                   </span>
-                   <Image
-                     src="/why-artivo/Group 18.svg"
-                     alt="Arrow"
-                     width={20}
-                     height={20}
-                     className="object-contain"
-                   />
-                 </div>
-               </div>
+              <div className="absolute bottom-10 sm:bottom-12 lg:bottom-14 left-1/2 -translate-x-1/2 w-screen">
+                <div className="relative w-[87.5vw] sm:w-[81.5vw] lg:w-[75.5vw] xl:w-[69.5vw] ml-auto h-[56px] sm:h-[64px] lg:h-[76px]">
+                  <Image
+                    src="/product/Strip.svg"
+                    alt="Innovation Strip"
+                    fill
+                    className="object-cover"
+                  />
+                  {/* Text and Arrow Overlay */}
+                  <div className="absolute inset-0 flex items-center justify-center gap-5 px-6">
+                    <span className="text-black font-bold text-sm whitespace-nowrap">
+                      BRING YOUR IDEAS TO LIFE
+                    </span>
+                    <Image
+                      src="/why-artivo/Group 18.svg"
+                      alt="Arrow"
+                      width={20}
+                      height={20}
+                      className="object-contain"
+                    />
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
