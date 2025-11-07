@@ -255,12 +255,15 @@ export default function GPHybridBike() {
                 className="object-cover"
               />
             </div>
-            <div className="col-span-2 -mt-6 lg:-mt-20">
+            <div className="col-span-2 -mt-7 lg:-mt-21">
               <div
-                className="ml-auto w-[calc(49.5%-5px)] h-[48px] sm:h-[56px] lg:h-[64px] bg-[#FFED00] flex items-center justify-between pr-2 sm:pr-3 lg:pr-4"
-                style={{ transform: 'translate(-5px, -1px)' }}
+                className="ml-auto w-[calc(50%-2px)] h-[48px] sm:h-[56px] lg:h-[64px] bg-[#FFED00] flex items-center justify-start pl-[70px] pr-2 sm:pr-3 lg:pr-4 gap-[70px]"
+                style={{ transform: 'translate(-16px, -2px)' }}
               >
-                <span className="text-sm sm:text-base lg:text-lg font-semibold tracking-tight text-black pl-4 sm:pl-5" style={{ letterSpacing: '-0.04em' }}>
+                <span
+                  className="text-sm sm:text-base lg:text-lg font-semibold tracking-tight text-black"
+                  style={{ letterSpacing: '-0.04em' }}
+                >
                   BRING YOUR IDEAS TO LIFE
                 </span>
                 <Image
@@ -322,7 +325,7 @@ export default function GPHybridBike() {
               {/* Wireframe Image */}
               <div className="relative w-full h-[500px] lg:h-[600px] xl:h-[600px]">
                 <Image
-                  src="/product/1 12.png"
+                  src="/1.webp"
                   alt="Bike Wireframe Isometric View"
                   fill
                   className="object-contain"
