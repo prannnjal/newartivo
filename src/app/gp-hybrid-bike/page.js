@@ -79,7 +79,13 @@ export default function GPHybridBike() {
         </div>
 
         {/* Arrow Icon - Top Right */}
-        <div className="absolute top-6 right-6 z-10">
+        <div
+          className="absolute z-10"
+          style={{
+            top: 'clamp(0.25rem, 2.5vw, 2rem)',
+            right: 'clamp(1rem, 4.68vw, 4rem)'
+          }}
+        >
           <Image
             src="/New folder/Next Arrow
             (1).svg"
@@ -90,8 +96,15 @@ export default function GPHybridBike() {
           />
         </div>
 
-        <div className="container mx-auto px-8 lg:px-12 max-w-7xl xl:max-w-[1400px] relative z-10">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
+        <div
+          className="relative z-10 w-full"
+          style={{
+            paddingLeft: 'clamp(1rem, 4.68vw, 4rem)',
+            paddingRight: 'clamp(1rem, 4.68vw, 4rem)'
+          }}
+        >
+          <div
+            className="grid grid-cols-1 lg:grid-cols-[minmax(0,1fr)_auto] gap-12 items-start">
             
             {/* Left Side - Heading and Description */}
               <div className="space-y-4">
@@ -99,13 +112,19 @@ export default function GPHybridBike() {
                 <span className="font-bold">GP</span> Hybrid Electric Bike
               </h1>
               
-              <p className="text-white/90 text-base xl:text-base leading-relaxed">
+              <p
+                className="text-white/90 text-base xl:text-base leading-relaxed"
+                style={{ maxWidth: 'clamp(320px, 46vw, 600px)' }}
+              >
                 Artivo was commissioned to design and develop a minimalistically powerful electric bike, ready to conquer most road conditions with comfort features, for first-user and end-user market.
               </p>
             </div>
             
             {/* Right Side - Project Details */}
-            <div className="space-y-3">
+            <div
+              className="space-y-3 text-left lg:text-right lg:self-start lg:justify-self-end"
+              style={{ width: 'clamp(260px, 28vw, 420px)' }}
+            >
               <div className="border-b border-white/30 pb-3">
                 <div className="flex items-center justify-between">
                   <span className="text-white/70 text-xs uppercase tracking-wide">Brand</span>
@@ -133,115 +152,124 @@ export default function GPHybridBike() {
       </section>
 
       {/* Product and Conceptualisation Section */}
-      <section className="py-4 bg-white w-full overflow-visible">
-        <div className="w-full max-w-none px-12">
-          <div className="grid grid-cols-2 gap-12 items-start">
-            
-            {/* Left Column - Product Images */}
-            <div className="space-y-6">
-              {/* Product Image a.png */}
-              <div className="relative w-full h-[480px] z-10">
-                <Image
-                  src="/product/a.png"
-                  alt="Product Design"
-                  fill
-                  className="object-contain object-left"
-                />
-                {/* Arrow Icon - Top Right */}
-                <div className="absolute top-4 right-4 z-20">
+      <section className="py-8 bg-white w-full">
+        <div
+          className="w-full"
+          style={{
+            paddingLeft: 'clamp(1rem, 4.68vw, 4rem)',
+            paddingRight: 'clamp(1rem, 4.68vw, 4rem)',
+            marginLeft: 0,
+            marginRight: 0
+          }}
+        >
+          <div className="grid grid-cols-1 lg:grid-cols-[minmax(0,1.2fr)_minmax(0,0.8fr)] items-start gap-10 lg:gap-12">
+            <div className="flex flex-col gap-6 max-w-[70rem] lg:pr-10">
+              <div className="flex items-center gap-4">
+                <div className="relative w-9 h-9">
                   <Image
                     src="/product/Next Arrow.svg"
-                    alt="Arrow Icon"
-                    width={32}
-                    height={32}
+                    alt="Conceptualisation Arrow"
+                    fill
                     className="object-contain"
                   />
                 </div>
-              </div>
-              
-              {/* Product Image d.png */}
-              <div className="relative w-[calc(100%+6rem)] h-[880px] -mt-12 -ml-24">
-                <Image
-                  src="/product/d.png"
-                  alt="Product Detail"
-                  fill
-                  className="object-contain object-left"
-                />
-              </div>
-            </div>
-            
-            {/* Right Column - Conceptualisation Text and Image Side by Side */}
-            <div className="grid grid-cols-2 gap-4 items-start">
-              {/* Text Content */}
-              <div className="space-y-3 mt-20">
-                <h2 className="text-2xl font-bold text-gray-900">
+                <h2 className="text-3xl font-bold text-gray-900 tracking-tight">
                   Conceptualisation
                 </h2>
-                
-                <p className="text-gray-700 text-base leading-relaxed">
-                  Our dedicated team of designers shared multiple strategies to begin this project and in-doing-so, we were able to define a creative theme that matched our client's brief.
-                </p>
               </div>
-              
-              {/* Image b.png */}
-              <div className="relative w-full h-[320px] -mt-8">
-                <Image
-                  src="/product/b.png"
-                  alt="Conceptualisation Design"
-                  fill
-                  className="object-contain"
-                />
-              </div>
+              <p className="text-gray-700 text-lg leading-relaxed pl-[3.25rem]">
+                Our dedicated team of designers shared multiple strategies to begin this project and in-doing-
+                <br />
+                so,we were able to define a creative theme that matched our client's brief.
+              </p>
             </div>
-            
+            <div
+              className="relative w-full max-w-[260px] h-[180px] lg:h-[210px] xl:h-[240px] mt-6 lg:mt-0"
+              style={{
+                marginLeft: 'auto',
+                marginRight: 0
+              }}
+            >
+              <Image
+                src="/product/b.png"
+                alt="Conceptualisation Design"
+                fill
+                className="object-contain"
+              />
+            </div>
           </div>
-        </div>
-      </section>
-
-      {/* Product Detail Section - c.png */}
-      <section className="pt-0 pb-12 bg-white -mt-244 overflow-x-hidden overflow-y-visible">
-        <div className="container mx-auto px-8 lg:px-12 max-w-7xl xl:max-w-[1400px] relative overflow-visible">
-          <div className="grid grid-cols-1 lg:grid-cols-5 gap-12 overflow-visible">
-            {/* Left - Empty space */}
-            <div className="lg:col-span-2"></div>
-            
-            {/* Right - Images covering entire right section */}
-            <div className="lg:col-span-3 space-y-0 flex flex-col items-start w-full overflow-visible -mt-4 lg:-mt-6 xl:-mt-8 relative pb-24 sm:pb-28 lg:pb-32">
-              {/* c.png Image */}
+          <div className="-mt-8 grid grid-cols-1 lg:grid-cols-2 gap-8">
+            <div className="relative w-full h-[560px] lg:h-[700px] xl:h-[780px] z-10 -translate-y-20 lg:-translate-y-26 -translate-x-[2.5rem]">
+              <Image
+                src="/product/a.png"
+                alt="Product Design"
+                fill
+                className="object-contain object-left"
+              />
+            </div>
+            <div
+              className="relative w-full h-[420px] lg:h-[520px] xl:h-[600px] z-10"
+              style={{
+                marginRight: 'calc(-1 * clamp(1rem, 4.68vw, 4rem))'
+              }}
+            >
+              <Image
+                src="/product/c.png"
+                alt="Concept Imagery"
+                fill
+                className="object-contain"
+              />
+            </div>
+          </div>
+          <div
+            className="grid grid-cols-2 gap-x-[1px] gap-y-6"
+            style={{
+              marginLeft: 'calc(-1 * clamp(1rem, 4.68vw, 4rem))',
+              marginRight: 'calc(-1 * clamp(1rem, 4.68vw, 4rem))',
+              marginTop: 'clamp(-10.5rem, -13vw, -6rem)'
+            }}
+          >
+            <div
+              className="relative w-full h-[480px] sm:h-[520px] lg:h-[600px] xl:h-[700px] bg-black overflow-hidden rounded-tr-[60px]"
+              style={{
+                marginTop: 'clamp(-6rem, -10.5vw, -4.75rem)'
+              }}
+            >
+              <Image
+                src="/product/d.png"
+                alt="Prototype Imagery"
+                fill
+                className="object-cover"
+              />
+            </div>
+            <div
+              className="relative w-full h-[445px] sm:h-[485px] lg:h-[545px] xl:h-[635px] bg-black overflow-hidden rounded-tl-[60px]"
+              style={{
+                marginTop: 'clamp(-6rem, -10.5vw, -4.75rem)'
+              }}
+            >
+              <Image
+                src="/product/f.png"
+                alt="Engineering Details"
+                fill
+                className="object-cover"
+              />
+            </div>
+            <div className="col-span-2 -mt-6 lg:-mt-20">
               <div
-                className="relative w-full h-[560px] sm:h-[660px] md:h-[740px] lg:h-[820px] xl:h-[900px] mt-0 sm:mt-2 lg:mt-4 xl:mt-5 lg:ml-10 xl:ml-12 overflow-visible"
+                className="ml-auto w-[calc(49.5%-5px)] h-[48px] sm:h-[56px] lg:h-[64px] bg-[#FFED00] flex items-center justify-between pr-2 sm:pr-3 lg:pr-4"
+                style={{ transform: 'translate(-5px, -1px)' }}
               >
+                <span className="text-sm sm:text-base lg:text-lg font-semibold tracking-tight text-black pl-4 sm:pl-5" style={{ letterSpacing: '-0.04em' }}>
+                  BRING YOUR IDEAS TO LIFE
+                </span>
                 <Image
-                  src="/product/c.png"
-                  alt="Product Detail"
-                  fill
+                  src="/Group 17.svg"
+                  alt="Arrow Icon"
+                  width={32}
+                  height={32}
                   className="object-contain"
-                  sizes="(max-width: 1024px) 150vw, 90vw"
                 />
-              </div>
-               
-              <div className="absolute bottom-10 sm:bottom-12 lg:bottom-14 left-1/2 -translate-x-1/2 w-screen">
-                <div className="relative w-[87.5vw] sm:w-[81.5vw] lg:w-[75.5vw] xl:w-[69.5vw] ml-auto h-[56px] sm:h-[64px] lg:h-[76px]">
-                  <Image
-                    src="/product/Strip.svg"
-                    alt="Innovation Strip"
-                    fill
-                    className="object-cover"
-                  />
-                  {/* Text and Arrow Overlay */}
-                  <div className="absolute inset-0 flex items-center justify-center gap-5 px-6">
-                    <span className="text-black font-bold text-sm whitespace-nowrap">
-                      BRING YOUR IDEAS TO LIFE
-                    </span>
-                    <Image
-                      src="/why-artivo/Group 18.svg"
-                      alt="Arrow"
-                      width={20}
-                      height={20}
-                      className="object-contain"
-                    />
-                  </div>
-                </div>
               </div>
             </div>
           </div>
