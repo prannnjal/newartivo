@@ -43,7 +43,7 @@ export const OurWorkSection = () => {
               style={{ objectPosition: 'bottom' }}
             />
             {/* Text and Arrow Overlay - Centered in the image */}
-            <div className="absolute inset-0 flex items-center justify-center gap-2" style={{ paddingLeft: 'clamp(1rem, 0.417vw, 2rem)', paddingRight: 'clamp(1rem, 0.417vw, 2rem)', transform: 'translateY(clamp(24px, 1.8vw, 56px))' }}>
+            <div className="absolute inset-0 flex items-center justify-center gap-2" style={{ transform: 'translateY(clamp(24px, 1.8vw, 56px))' }}>
               <span 
                 className="text-black font-bold whitespace-nowrap"
                 style={{ fontSize: 'clamp(0.875rem, 0.938vw, 1.125rem)' }}
@@ -165,7 +165,7 @@ export const OurWorkSection = () => {
               style={{ objectPosition: 'bottom' }}
             />
             {/* Text and Arrow Overlay - Centered in the image */}
-            <div className="absolute inset-0 flex items-center justify-center gap-2 px-4 md:px-6" style={{ transform: 'translateY(clamp(20px, 2.6vw, 44px))' }}>
+            <div className="absolute inset-0 flex items-center justify-center gap-2 px-4 md:px-6 text-center" style={{ transform: 'translateY(clamp(20px, 2.6vw, 44px))' }}>
               <span className="text-black font-bold text-xs sm:text-xs md:text-sm whitespace-normal sm:whitespace-nowrap">
                 HAVE AN IDEA? LET'S MAKE IT PROFITABLE
               </span>
