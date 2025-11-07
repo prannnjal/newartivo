@@ -178,9 +178,12 @@ export default function GPHybridBike() {
                 </h2>
               </div>
               <p className="text-gray-700 text-lg leading-relaxed pl-[3.25rem]">
-                Our dedicated team of designers shared multiple strategies to begin this project and in-doing-
-                <br />
-                so,we were able to define a creative theme that matched our client's brief.
+                <span className="block whitespace-nowrap">
+                  Our dedicated team of designers shared multiple strategies to begin this project and in-doing-
+                </span>
+                <span className="block whitespace-nowrap">
+                  so,we were <span className="font-semibold text-black">able to define a creative theme</span> that matched our client's brief.
+                </span>
               </p>
             </div>
             <div
@@ -258,20 +261,18 @@ export default function GPHybridBike() {
             <div className="col-span-2 -mt-7 lg:-mt-21">
               <div
                 className="ml-auto w-[calc(50%-2px)] h-[48px] sm:h-[56px] lg:h-[64px] bg-[#FFED00] flex items-center justify-start pl-[70px] pr-2 sm:pr-3 lg:pr-4 gap-[70px]"
-                style={{ transform: 'translate(-16px, -2px)' }}
+                style={{ transform: 'translate(0px, -2px)' }}
               >
-                <span
-                  className="text-sm sm:text-base lg:text-lg font-semibold tracking-tight text-black"
-                  style={{ letterSpacing: '-0.04em' }}
-                >
+                <span className="text-black font-bold tracking-wide text-[clamp(0.625rem,1vw,0.95rem)] whitespace-nowrap">
                   BRING YOUR IDEAS TO LIFE
                 </span>
                 <Image
-                  src="/Group 17.svg"
+                  src="/why-artivo/Group 18.svg"
                   alt="Arrow Icon"
-                  width={32}
-                  height={32}
+                  width={24}
+                  height={24}
                   className="object-contain"
+                  style={{ width: 'clamp(12px, 1.5vw, 24px)', height: 'clamp(12px, 1.5vw, 24px)' }}
                 />
               </div>
             </div>
@@ -280,14 +281,22 @@ export default function GPHybridBike() {
       </section>
 
       {/* CAD Modelling + Simulations Section */}
-      <section className="pt-16 -mb-8 bg-white overflow-visible relative">
-        <div className="container mx-auto px-0 lg:px-12 max-w-7xl xl:max-w-[1400px] relative ">
+      <section className="pt-12 -mb-8 bg-white overflow-visible relative">
+        <div
+          className="w-full relative"
+          style={{
+            paddingLeft: 'clamp(1rem, 4.68vw, 4rem)',
+            paddingRight: 'clamp(1rem, 4.68vw, 4rem)',
+            marginLeft: 0,
+            marginRight: 0
+          }}
+        >
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
             
             {/* Left Section - 50% width (1 column) */}
-            <div className="space-y-6 pl-8 lg:pl-12">
+            <div className="space-y-6">
               {/* Heading with Arrow */}
-              <div className="flex items-center gap-3">
+              <div className="flex items-center gap-3" style={{ transform: 'translateY(-22px)' }}>
                 <Image
                   src="/product/Frame 157.svg"
                   alt="Arrow Icon"
@@ -301,14 +310,14 @@ export default function GPHybridBike() {
               </div>
               
               {/* Paragraph Text */}
-              <p className="text-gray-700 text-base xl:text-base leading-relaxed max-w-2xl">
+              <p className="text-gray-700 text-base xl:text-base leading-relaxed max-w-2xl" style={{ transform: 'translateY(-16px)' }}>
                 The GP Hybrid Electric Bike has been intricately assembled in 3D using componentry axis modelling, giving us{' '}
-                <span className="text-[#FF7A00] font-semibold">accurate</span> Finite Element Analysis.
+                <span className="font-semibold text-black">accurate Finite Element Analysis.</span>
               </p>
               
               {/* Bike Image with Background */}
               <div className="relative h-[700px] lg:h-[800px] xl:h-[800px] overflow-visible">
-                <div className="absolute w-[50vw] h-full left-[calc(-50vw+50%-2rem+12rem)] lg:left-[calc(-50vw+50%-3rem+19rem)] -top-28 lg:-top-32">
+                <div className="absolute w-[50vw] h-full left-[calc(-50vw+50%+8rem+12rem)] lg:left-[calc(-50vw+50%+6.5rem+19rem)] -top-28 lg:-top-32">
                   <Image
                     src="/product/CycleBG 1.png"
                     alt="GP Hybrid Electric Bike CAD Model"
@@ -347,7 +356,7 @@ export default function GPHybridBike() {
       </section>
 
       {/* Aerodynamic Simulation Section */}
-      <section className="-mt-68 pb-0 bg-white overflow-x-hidden">
+      <section className="-mt-48 pb-0 bg-white overflow-x-hidden">
   <div className="w-full max-w-none px-0">
     
     {/* Three Equal Panels */}
@@ -357,7 +366,7 @@ export default function GPHybridBike() {
         "/product/as.png",
         "/product/ass.png",
       ].map((src, index) => (
-        <div key={index} className="relative w-full h-[300px] sm:h-[400px] md:h-[450px] lg:h-[500px] xl:h-[500px] flex items-center justify-center">
+        <div key={index} className="relative w-full h-[380px] sm:h-[480px] md:h-[540px] lg:h-[600px] xl:h-[620px] flex items-center justify-center">
           <img
             src={src}
             alt={`Aerodynamic Simulation ${index + 1}`}
@@ -369,15 +378,16 @@ export default function GPHybridBike() {
 
     {/* Yellow Call-to-Action Strip */}
     <div className="w-full max-w-none bg-[#FFF208] py-3 px-6 lg:px-8 flex items-center justify-center gap-3 hover:bg-yellow-300 transition-colors duration-300 cursor-pointer">
-      <span className="text-black font-bold text-base sm:text-lg lg:text-xl xl:text-xl tracking-wide text-center">
+      <span className="text-black font-bold tracking-wide text-[clamp(0.65rem,1.1vw,1.1rem)] whitespace-nowrap text-center">
         GOT AN IDEA? LET'S INNOVATE!
       </span>
       <Image
         src="/why-artivo/Group 18.svg"
         alt="Arrow"
-        width={28}
-        height={28}
+        width={24}
+        height={24}
         className="object-contain"
+        style={{ width: 'clamp(14px, 1.6vw, 26px)', height: 'clamp(14px, 1.6vw, 26px)' }}
       />
     </div>
   </div>
