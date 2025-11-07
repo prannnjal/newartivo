@@ -476,7 +476,12 @@ export default function About() {
         {/* Left-corner text */}
         <div className="absolute inset-0 z-10 flex items-end justify-start">
           <div className="pb-10 pr-8 max-w-2xl" style={{ paddingLeft: 'clamp(1rem, 4.68vw, 4rem)' }}>
-            <h3 className="text-white text-3xl sm:text-4xl font-bold mb-4">Tested to Succeed.</h3>
+            <h3
+              className="text-white text-3xl sm:text-4xl font-bold mb-4"
+              style={{ letterSpacing: '-0.04em' }}
+            >
+              Tested to Succeed.
+            </h3>
             <p className="text-white/90 text-base sm:text-lg leading-relaxed">
               Our R&D process is built on precision, experimentation, and collaboration, helping businesses transform bold ideas into market-ready products faster, smarter, and more sustainably.
             </p>
