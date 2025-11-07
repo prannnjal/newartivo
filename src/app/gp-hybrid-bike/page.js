@@ -296,7 +296,7 @@ export default function GPHybridBike() {
             {/* Left Section - 50% width (1 column) */}
             <div className="space-y-6">
               {/* Heading with Arrow */}
-              <div className="flex items-center gap-3" style={{ transform: 'translateY(-22px)' }}>
+              <div className="flex items-center gap-3">
                 <Image
                   src="/product/Frame 157.svg"
                   alt="Arrow Icon"
@@ -310,14 +310,19 @@ export default function GPHybridBike() {
               </div>
               
               {/* Paragraph Text */}
-              <p className="text-gray-700 text-base xl:text-base leading-relaxed max-w-2xl" style={{ transform: 'translateY(-16px)' }}>
+              <p className="text-gray-700 text-base xl:text-base leading-relaxed max-w-2xl pl-[3.25rem]">
                 The GP Hybrid Electric Bike has been intricately assembled in 3D using componentry axis modelling, giving us{' '}
                 <span className="font-semibold text-black">accurate Finite Element Analysis.</span>
               </p>
               
               {/* Bike Image with Background */}
               <div className="relative h-[700px] lg:h-[800px] xl:h-[800px] overflow-visible">
-                <div className="absolute w-[50vw] h-full left-[calc(-50vw+50%+8rem+12rem)] lg:left-[calc(-50vw+50%+6.5rem+19rem)] -top-28 lg:-top-32">
+                <div
+                  className="absolute w-[50vw] h-full -top-32 lg:-top-24 xl:-top-20"
+                  style={{
+                    left: 'calc(-50vw + 50% + clamp(1rem, 4.68vw, 4rem) + clamp(5.5rem, 16vw, 21rem))'
+                  }}
+                >
                   <Image
                     src="/product/CycleBG 1.png"
                     alt="GP Hybrid Electric Bike CAD Model"
@@ -395,7 +400,7 @@ export default function GPHybridBike() {
 
       {/* Full Screen Image Section */}
       <section className="relative w-full min-h-[400px] h-[60vh] md:h-[70vh] lg:h-screen xl:h-screen overflow-hidden">
-        <div className="relative w-full h-full max-w-full xl:max-w-[2000px] mx-auto">
+        <div className="relative w-full h-full max-w-none">
           <Image
             src="/product/ORAGPEB-BL - Field P1 2.png"
             alt="ORAGPEB-BL Field"
@@ -438,7 +443,7 @@ export default function GPHybridBike() {
               <p className="text-white text-base lg:text-lg xl:text-lg leading-relaxed drop-shadow-md text-left">
                 Artivo's global network of manufacturers, suppliers and distributors come to play at this stage.
                 With an aim to get industrial certifications, the GP Hybrid Electric Bike passed all standards with{' '}
-                <span className="text-[#FF7A00] font-semibold">accurate</span> prototyping.
+                accurate prototyping.
               </p>
             </div>
           </div>

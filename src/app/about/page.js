@@ -136,12 +136,16 @@ export default function About() {
 
       {/* Stats Section */}
       <section className="w-full bg-white py-8">
-        <div className="max-w-7xl mx-auto grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-7 gap-y-2 gap-x-1 text-center">
-          {/* Row 1 */}
-          <div>
-            <div className="text-base sm:text-lg lg:text-2xl font-bold text-[#0074CB]">10+</div>
-            <div className="text-xs text-gray-700 mt-1">Years of Experience</div>
-          </div>
+        <div
+          className="w-full"
+          style={{ paddingLeft: 0, paddingRight: 'clamp(1rem, 4.68vw, 4rem)' }}
+        >
+          <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-7 gap-y-2 gap-x-1 text-center">
+            {/* Row 1 */}
+            <div>
+              <div className="text-base sm:text-lg lg:text-2xl font-bold text-[#0074CB]">10+</div>
+              <div className="text-xs text-gray-700 mt-1">Years of Experience</div>
+            </div>
           <div>
             <div className="text-base sm:text-lg lg:text-2xl font-bold text-[#0074CB]">1200+</div>
             <div className="text-xs text-gray-700 mt-1">Projects Completed</div>
@@ -188,13 +192,14 @@ export default function About() {
             <div className="text-xs text-gray-700 mt-1">CAGR in ANZ Market</div>
           </div>
           {/* Row 3 */}
-          <div>
-            <div className="text-base sm:text-lg lg:text-2xl font-bold text-black">18,000+</div>
-            <div className="text-xs text-gray-700 mt-1">Social Members</div>
-          </div>
-          <div>
-            <div className="text-base sm:text-lg lg:text-2xl font-bold text-black">15,000 sqm</div>
-            <div className="text-xs text-gray-700 mt-1">Prototyping Space</div>
+            <div>
+              <div className="text-base sm:text-lg lg:text-2xl font-bold text-black">18,000+</div>
+              <div className="text-xs text-gray-700 mt-1">Social Members</div>
+            </div>
+            <div>
+              <div className="text-base sm:text-lg lg:text-2xl font-bold text-black">15,000 sqm</div>
+              <div className="text-xs text-gray-700 mt-1">Prototyping Space</div>
+            </div>
           </div>
         </div>
       </section>
@@ -352,17 +357,22 @@ export default function About() {
       </section>
 
       {/* Background + decorative image section (with text) */}
-      <section
-        className="pt-0 pb-12 relative -mt-11"
-        style={{ background: 'linear-gradient(to right, rgba(25, 88, 99, 1),rgba(11, 25, 47, 1))' }}
-      >
-        {/* Background Image */}
+      <section className="pt-0 pb-12 relative -mt-11 overflow-hidden">
+        {/* Gradient Background */}
         <div className="absolute inset-0 z-0">
+          <div
+            className="absolute inset-0"
+            style={{ background: 'linear-gradient(90deg, rgba(11,25,47,1) 0%, rgba(8,181,255,1) 100%)' }}
+          />
+          <div
+            className="absolute inset-0"
+            style={{ background: 'rgba(0, 0, 0, 0.3)' }}
+          />
           <Image
-            src="/2 11.png"
-            alt="Footer Background"
+            src="/1 11.png"
+            alt="Background Pattern"
             fill
-            className="object-cover"
+            className="object-cover opacity-30"
             priority
           />
         </div>
