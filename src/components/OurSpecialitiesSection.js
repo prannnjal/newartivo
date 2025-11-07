@@ -65,7 +65,7 @@ export const OurSpecialitiesSection = () => {
                   <p 
                     className="text-black text-base sm:text-lg"
                     style={{ 
-                      fontWeight: 500,
+                      fontWeight: 600,
                       lineHeight: '100%',
                       letterSpacing: '-0.04em'
                     }}
@@ -75,8 +75,8 @@ export const OurSpecialitiesSection = () => {
                   <p 
                     className="text-black text-base sm:text-lg"
                     style={{ 
-                      fontWeight: 500,
-                      lineHeight: '100%',
+                      fontWeight: 400,
+                      lineHeight: '120%',
                       letterSpacing: '-0.04em'
                     }}
                   >

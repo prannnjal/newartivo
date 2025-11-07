@@ -51,8 +51,8 @@ export default function GPHybridBike() {
             <p 
               className="text-white text-base sm:text-lg lg:text-[20px]"
               style={{ 
-                fontWeight: 500,
-                lineHeight: '100%',
+                fontWeight: 400,
+                lineHeight: '120%',
                 letterSpacing: '-0.04em'
               }}
             >
