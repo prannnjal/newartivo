@@ -162,6 +162,52 @@ export default function GPHybridBike() {
             marginRight: 0
           }}
         >
+          {/* Mobile Layout */}
+          <div className="lg:hidden space-y-8">
+            <div className="flex items-center gap-3">
+              <div className="relative w-8 h-8">
+                <Image
+                  src="/product/Next Arrow.svg"
+                  alt="Conceptualisation Arrow"
+                  fill
+                  className="object-contain"
+                />
+              </div>
+              <h2 className="text-2xl sm:text-3xl font-bold text-gray-900 tracking-tight">
+                Conceptualisation
+              </h2>
+            </div>
+            <p className="text-gray-700 text-base sm:text-lg leading-relaxed">
+              Our dedicated team of designers shared multiple strategies to begin this project and in-doing-so, we were
+              <span className="font-semibold text-black"> able to define a creative theme</span> that matched our client's brief.
+            </p>
+            <div className="space-y-6">
+              <div className="relative w-full min-h-[300px] sm:min-h-[340px] bg-white">
+                <Image src="/product/b.png" alt="Conceptualisation Design" fill className="object-contain" />
+              </div>
+              <div className="relative w-full min-h-[320px] sm:min-h-[360px] bg-white">
+                <Image src="/product/a.png" alt="Product Design" fill className="object-cover" />
+              </div>
+              <div className="relative w-full min-h-[300px] sm:min-h-[340px] bg-white">
+                <Image src="/product/c.png" alt="Concept Imagery" fill className="object-contain" />
+              </div>
+              <div className="relative w-full h-72 sm:h-80 bg-black overflow-hidden rounded-tr-[40px]">
+                <Image src="/product/d.png" alt="Prototype Imagery" fill className="object-cover" />
+              </div>
+              <div className="relative w-full h-64 sm:h-72 bg-black overflow-hidden rounded-tl-[40px]">
+                <Image src="/product/f.png" alt="Engineering Details" fill className="object-cover" />
+              </div>
+            </div>
+            <div className="w-full bg-[#FFED00] flex items-center justify-between px-6 py-4 rounded-full shadow-md">
+              <span className="text-black font-bold tracking-wide text-sm sm:text-base whitespace-nowrap">
+                BRING YOUR IDEAS TO LIFE
+              </span>
+              <Image src="/why-artivo/Group 18.svg" alt="Arrow Icon" width={22} height={22} className="object-contain" />
+            </div>
+          </div>
+
+          {/* Desktop Layout */}
+          <div className="hidden lg:block">
           <div className="grid grid-cols-1 lg:grid-cols-[minmax(0,1.2fr)_minmax(0,0.8fr)] items-start gap-10 lg:gap-12">
             <div className="flex flex-col gap-6 max-w-[70rem] lg:pr-10">
               <div className="flex items-center gap-4">
@@ -258,10 +304,10 @@ export default function GPHybridBike() {
                 className="object-cover"
               />
             </div>
-            <div className="col-span-2 -mt-7 lg:-mt-21">
+            <div className="col-span-2 -mt-5.5 lg:-mt-21.5">
               <div
                 className="ml-auto w-[calc(50%-2px)] h-[48px] sm:h-[56px] lg:h-[64px] bg-[#FFED00] flex items-center justify-start pl-[70px] pr-2 sm:pr-3 lg:pr-4 gap-[70px]"
-                style={{ transform: 'translate(0px, -2px)' }}
+                style={{ transform: 'translate(0px, -1.5px)' }}
               >
                 <span className="text-black font-bold tracking-wide text-[clamp(0.625rem,1vw,0.95rem)] whitespace-nowrap">
                   BRING YOUR IDEAS TO LIFE
@@ -277,6 +323,7 @@ export default function GPHybridBike() {
               </div>
             </div>
           </div>
+          </div>
         </div>
       </section>
 
@@ -291,6 +338,33 @@ export default function GPHybridBike() {
             marginRight: 0
           }}
         >
+          {/* Mobile Layout */}
+          <div className="lg:hidden space-y-8">
+            <div className="flex items-center gap-3">
+              <Image src="/product/Frame 157.svg" alt="Arrow Icon" width={28} height={28} className="object-contain opacity-80" />
+              <h2 className="text-2xl font-bold text-gray-900 tracking-tight">CAD Modelling + Simulations</h2>
+            </div>
+            <p className="text-gray-700 text-base leading-relaxed">
+              The GP Hybrid Electric Bike has been intricately assembled in 3D using componentry axis modelling, giving us
+              <span className="font-semibold text-black"> accurate Finite Element Analysis.</span>
+            </p>
+            <div className="relative w-full h-72 sm:h-80 bg-white">
+              <Image src="/product/CycleBG 1.png" alt="GP Hybrid Electric Bike CAD Model" fill className="object-contain" />
+            </div>
+            <div className="relative w-full h-64 sm:h-72 bg-white">
+              <Image src="/1.webp" alt="Bike Wireframe Isometric View" fill className="object-contain" />
+            </div>
+            <div className="bg-white/95 border border-gray-200 rounded-lg p-4 space-y-1 text-sm font-medium text-gray-900 shadow-sm">
+              <div>SCALE: 1:15</div>
+              <div>VIEW: ISOMETRIC</div>
+              <div>ANGLE: TOP-DOWN</div>
+              <div>DISPLAY: WIREFRAME</div>
+              <div>TOOL: SOLIDWORKS</div>
+            </div>
+          </div>
+
+          {/* Desktop Layout */}
+          <div className="hidden lg:block">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
             
             {/* Left Section - 50% width (1 column) */}
@@ -356,6 +430,7 @@ export default function GPHybridBike() {
               </div>
             </div>
             
+          </div>
           </div>
         </div>
       </section>

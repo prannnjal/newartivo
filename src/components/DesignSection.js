@@ -56,28 +56,26 @@ export const DesignSection = () => {
             </div>
             <div className="flex flex-col items-end space-y-1">
               <p 
-                className="text-base font-medium"
                 style={{ 
                   color: 'white',
-                  fontWeight: 500,
-                  fontSize: '1rem',
-                  lineHeight: '100%',
+                  fontWeight: 600,
+                  fontSize: 'clamp(1.05rem, 3.4vw, 1.35rem)',
+                  lineHeight: '110%',
                   letterSpacing: '-0.04em'
                 }}
               >
                 Pirelli
               </p>
               <p 
-                className="text-base font-medium"
                 style={{ 
                   color: 'white',
-                  fontWeight: 500,
-                  fontSize: '1rem',
-                  lineHeight: '100%',
+                  fontWeight: 400,
+                  fontSize: 'clamp(0.85rem, 2.6vw, 1.05rem)',
+                  lineHeight: '110%',
                   letterSpacing: '-0.04em'
                 }}
               >
-                Exclusive Official Tyre Suppliers
+                Exclusive Official Tyre Suppliers 
               </p>
             </div>
           </div>
@@ -139,9 +137,9 @@ export const DesignSection = () => {
             <p 
               style={{ 
                 color: 'white',
-                fontWeight: 500,
-                fontSize: 'clamp(0.875rem, 1.46vw, 1.25rem)',
-                lineHeight: '100%',
+                fontWeight: 600,
+                fontSize: 'clamp(1.1rem, 1.8vw, 1.4rem)',
+                lineHeight: '110%',
                 letterSpacing: '-0.04em'
               }}
             >
@@ -150,13 +148,13 @@ export const DesignSection = () => {
             <p 
               style={{ 
                 color: 'white',
-                fontWeight: 500,
-                fontSize: 'clamp(0.875rem, 1.46vw, 1.25rem)',
-                lineHeight: '100%',
+                fontWeight: 400,
+                fontSize: 'clamp(0.9rem, 1.4vw, 1.1rem)',
+                lineHeight: '110%',
                 letterSpacing: '-0.04em'
               }}
             >
-              Exclusive Official Tyre Suppliers
+              Exclusive Official Tyre Suppliers 
             </p>
           </div>
         </div>

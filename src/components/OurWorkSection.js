@@ -79,7 +79,7 @@ export const OurWorkSection = () => {
             <p 
               className="text-white"
               style={{
-                fontWeight: 400,
+                fontWeight: 600,
                 fontSize: 'clamp(1rem, 2.64vw, 2.25rem)',
                 lineHeight: '100%',
                 letterSpacing: '-0.04em'
@@ -148,27 +148,31 @@ export const OurWorkSection = () => {
         <div
           className="relative overflow-hidden"
           style={{
-            width: 'clamp(300px, 80vw, 400px)',
-            height: 'clamp(30px, 7vw, 46px)',
+            width: 'clamp(260px, 75vw, 360px)',
+            height: 'clamp(36px, 8vw, 52px)',
             background: '#FFED00',
-            clipPath: 'polygon(0 0, 100% 0, 10% 100%, 0% 100%)',
-            transform: 'scaleX(-1)'
+            clipPath: 'polygon(0 0, 100% 0, 100% 100%, 20% 100%)',
+            transform: 'scaleY(-1)'
           }}
         >
           {/* Text and Arrow Overlay - Centered in the image */}
           <div
-            className="absolute inset-0 flex items-center justify-center gap-2 px-4 md:px-6"
-            style={{ transform: 'scaleX(-1)' }}
+            className="absolute inset-0 flex items-center justify-center gap-3 px-4"
+            style={{ transform: 'scaleY(-1) translateX(6px)' }}
           >
-            <span className="text-black font-bold text-xs sm:text-sm md:text-base text-center">
+            <span
+              className="text-black font-bold text-center"
+              style={{ fontSize: 'clamp(0.75rem, 2.6vw, 1rem)', letterSpacing: '-0.02em' }}
+            >
               HAVE AN IDEA? LET'S MAKE IT PROFITABLE
             </span>
             <Image
               src="/why-artivo/Group 18.svg"
               alt="Arrow"
-              width={16}
-              height={16}
-              className="object-contain w-4 h-4 md:w-5 md:h-5 flex-shrink-0"
+              width={18}
+              height={18}
+              className="object-contain"
+              style={{ width: 'clamp(14px, 3vw, 18px)', height: 'clamp(14px, 3vw, 18px)' }}
             />
           </div>
         </div>

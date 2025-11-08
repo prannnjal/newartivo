@@ -5,8 +5,18 @@ export const OurSpecialitiesSection = () => {
   return (
     <section className="relative bg-white lg:h-[400px]">
       
+      {/* Background Image with wavy patterns */}
+      <div className="hidden lg:block absolute inset-0 z-5">
+        <Image
+          src="/1 11.png"
+          alt="Background Pattern"
+          fill
+          className="object-cover opacity-80"
+        />
+      </div>
+
       {/* Mobile View */}
-      <div className="lg:hidden px-4 sm:px-6">
+      <div className="lg:hidden px-4 sm:px-6 mt-6">
         <div style={{ display: 'flex', flexDirection: 'column', gap: '2px' }}>
           {/* Left Side - Text Content */}
           <div className="flex flex-col justify-center">
