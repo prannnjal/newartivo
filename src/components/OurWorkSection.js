@@ -33,11 +33,15 @@ export const OurWorkSection = () => {
               width: 'clamp(400px, 31.25vw, 600px)',
               height: 'clamp(40px, 3.2vw, 64px)',
               background: '#FFED00',
-              clipPath: 'polygon(0 0, 80% 0, 100% 100%, 0% 100%)'
+              clipPath: 'polygon(0 0, 100% 0, 100% 100%, 20% 100%)',
+              transform: 'scaleY(-1)'
             }}
           >
             {/* Text and Arrow Overlay - Centered in the image */}
-            <div className="absolute inset-0 flex items-center justify-center gap-3 px-4 md:px-6">
+            <div
+              className="absolute inset-0 flex items-center justify-center gap-3 px-4 md:px-6"
+              style={{ transform: 'scaleY(-1)' }}
+            >
               <span 
                 className="text-black font-bold text-center"
                 style={{ fontSize: 'clamp(0.875rem, 0.938vw, 1.125rem)', letterSpacing: '-0.02em' }}
@@ -147,11 +151,15 @@ export const OurWorkSection = () => {
             width: 'clamp(300px, 80vw, 400px)',
             height: 'clamp(30px, 7vw, 46px)',
             background: '#FFED00',
-            clipPath: 'polygon(0 0, 90% 0, 100% 100%, 0% 100%)'
+            clipPath: 'polygon(0 0, 100% 0, 10% 100%, 0% 100%)',
+            transform: 'scaleX(-1)'
           }}
         >
           {/* Text and Arrow Overlay - Centered in the image */}
-          <div className="absolute inset-0 flex items-center justify-center gap-2 px-4 md:px-6">
+          <div
+            className="absolute inset-0 flex items-center justify-center gap-2 px-4 md:px-6"
+            style={{ transform: 'scaleX(-1)' }}
+          >
             <span className="text-black font-bold text-xs sm:text-sm md:text-base text-center">
               HAVE AN IDEA? LET'S MAKE IT PROFITABLE
             </span>
