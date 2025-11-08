@@ -36,7 +36,7 @@ export const Navbar = () => {
         {/* Right Side - Navigation Links and Button */}
         <div className="hidden md:flex items-center space-x-8">
           <a href="#" className="text-white text-lg font-medium hover:text-gray-300 transition-colors">
-            
+            Home
           </a>
           <a href="/why-artivo" className="text-white text-lg font-medium hover:text-gray-300 transition-colors">
             Why Artivo
@@ -90,6 +90,13 @@ export const Navbar = () => {
         aria-hidden={!isMenuOpen}
       >
         <div className="flex flex-col gap-5 pt-6 text-center">
+        <a
+            href="/"
+            className="text-white text-[clamp(1.1rem,4vw,1.35rem)] font-semibold hover:text-gray-300 transition-colors"
+            onClick={handleCloseMenu}
+          >
+            Home
+          </a>
           <a
             href="/why-artivo"
             className="text-white text-[clamp(1.1rem,4vw,1.35rem)] font-semibold hover:text-gray-300 transition-colors"
