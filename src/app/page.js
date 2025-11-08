@@ -42,7 +42,7 @@ export default function Home() {
         
         {/* Centered Text */}
         <div className="relative z-10 flex items-center justify-center h-full">
-          <h2 className="font-medium italic tracking-wide text-center px-4 text-lg sm:text-xl md:text-[30px]"
+          <h2 className="font-medium tracking-wide text-center px-4 text-lg sm:text-xl md:text-[30px]"
               style={{ 
                 color: 'rgba(255, 255, 255, 1)'
               }}>
