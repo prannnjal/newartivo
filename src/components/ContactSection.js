@@ -51,7 +51,30 @@ export const ContactSection = () => {
                 </div>
                 <div className="flex-1">
                   <h3 className="text-gray-800 font-semibold mb-1 sm:mb-2 text-sm sm:text-base">Email Us</h3>
-                  <p className="text-gray-500 text-sm sm:text-base break-words">connect@artivo.com.au</p>
+                  <a
+                    href="mailto:connect@artivo.com.au"
+                    className="text-gray-500 text-sm sm:text-base break-words hover:text-red-600 transition-colors duration-200"
+                  >
+                    connect@artivo.com.au
+                  </a>
+                </div>
+              </div>
+
+              {/* Phone */}
+              <div className="flex items-start space-x-3 sm:space-x-4">
+                <div className="flex-shrink-0 w-5 h-5 sm:w-6 sm:h-6 mt-1">
+                  <svg className="w-5 h-5 sm:w-6 sm:h-6 text-gray-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 5a2 2 0 012-2h1.28a1 1 0 01.95.68l1.07 3.21a1 1 0 01-.27 1.04l-1.52 1.52a12.04 12.04 0 005.66 5.66l1.52-1.52a1 1 0 011.04-.27l3.21 1.07a1 1 0 01.68.95V19a2 2 0 01-2 2h-1C9.163 21 3 14.837 3 7V5z" />
+                  </svg>
+                </div>
+                <div className="flex-1">
+                  <h3 className="text-gray-800 font-semibold mb-1 sm:mb-2 text-sm sm:text-base">Call Us</h3>
+                  <a
+                    href="tel:+61434741351"
+                    className="text-gray-500 text-sm sm:text-base hover:text-red-600 transition-colors duration-200"
+                  >
+                    +61 434 741 351
+                  </a>
                 </div>
               </div>
 
