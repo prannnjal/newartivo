@@ -38,11 +38,12 @@ export const Navbar = () => {
           <a href="#" className="text-white text-lg font-medium hover:text-gray-300 transition-colors">
             Home
           </a>
-          <a href="/why-artivo" className="text-white text-lg font-medium hover:text-gray-300 transition-colors">
-            Why Artivo
-          </a>
+         
           <a href="/about" className="text-white text-lg font-medium hover:text-gray-300 transition-colors">
             About
+          </a>
+          <a href="/capabilities" className="text-white text-lg font-medium hover:text-gray-300 transition-colors">
+            Capabilities
           </a>
           <a href="/contact-us" className="text-white text-lg font-medium hover:text-gray-300 transition-colors">
             Contact Us
@@ -98,11 +99,11 @@ export const Navbar = () => {
             Home
           </a>
           <a
-            href="/why-artivo"
+            href="/capabilities"
             className="text-white text-[clamp(1.1rem,4vw,1.35rem)] font-semibold hover:text-gray-300 transition-colors"
             onClick={handleCloseMenu}
           >
-            Why Artivo
+            Capabilities
           </a>
           <a
             href="/about"
