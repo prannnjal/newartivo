@@ -465,7 +465,7 @@ export default function About() {
       </section>
 
       {/* Full-screen bicycle image section */}
-      <section className="relative w-full h-screen overflow-hidden my-[1px]">
+      <section className="relative w-full h-screen overflow-hidden my-[4px]">
         <Image
           src="/about/freepik__make-render-of-the-bicycle-in-the-reference-image-__90791 1.png"
           alt="Bicycle Render"
