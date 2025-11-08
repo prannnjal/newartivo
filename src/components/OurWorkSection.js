@@ -25,28 +25,22 @@ export const OurWorkSection = () => {
       
       {/* Right Side - Bottom Right Content - Outside container to reach edge */}
       <div className="hidden lg:block absolute right-0 z-20" style={{ bottom: 0, marginBottom: 0, paddingBottom: 0 }}>
-        <div className="relative flex items-end gap-2" style={{ marginBottom: 0, paddingBottom: 0 }}>
+        <div className="relative flex items-end " style={{ marginBottom: 0, paddingBottom: 0 }}>
           {/* Intersect Background Image */}
-          <div className="relative" style={{ 
-            width: 'clamp(400px, 31.25vw, 600px)',
-            height: 'clamp(80px, 6.25vw, 120px)',
-            marginBottom: 0,
-            paddingBottom: 0,
-            display: 'flex',
-            alignItems: 'flex-end'
-          }}>
-            <Image
-              src="/why-artivo/Intersect (1).png"
-              alt="Intersect Background"
-              fill
-              className="object-contain"
-              style={{ objectPosition: 'bottom' }}
-            />
+          <div
+            className="relative overflow-hidden"
+            style={{
+              width: 'clamp(400px, 31.25vw, 600px)',
+              height: 'clamp(40px, 3.2vw, 64px)',
+              background: '#FFED00',
+              clipPath: 'polygon(0 0, 80% 0, 100% 100%, 0% 100%)'
+            }}
+          >
             {/* Text and Arrow Overlay - Centered in the image */}
-            <div className="absolute inset-0 flex items-center justify-center gap-2" style={{ transform: 'translateY(clamp(24px, 1.8vw, 56px))' }}>
+            <div className="absolute inset-0 flex items-center justify-center gap-3 px-4 md:px-6">
               <span 
-                className="text-black font-bold whitespace-nowrap"
-                style={{ fontSize: 'clamp(0.875rem, 0.938vw, 1.125rem)' }}
+                className="text-black font-bold text-center"
+                style={{ fontSize: 'clamp(0.875rem, 0.938vw, 1.125rem)', letterSpacing: '-0.02em' }}
               >
                 HAVE AN IDEA? LET'S MAKE IT PROFITABLE
               </span>
@@ -147,36 +141,27 @@ export const OurWorkSection = () => {
       
       {/* Mobile - Bottom Right Content - Outside container to reach edge */}
       <div className="lg:hidden absolute bottom-0 right-0 z-20" style={{ bottom: 0, marginBottom: 0, paddingBottom: 0 }}>
-        <div className="relative flex items-end gap-2" style={{ marginBottom: 0, paddingBottom: 0 }}>
-          {/* Intersect Background Image */}
-          <div className="relative" style={{ 
+        <div
+          className="relative overflow-hidden"
+          style={{
             width: 'clamp(300px, 80vw, 400px)',
-            height: 'clamp(60px, 15vw, 80px)',
-            marginBottom: 0,
-            paddingBottom: 0,
-            display: 'flex',
-            alignItems: 'flex-end'
-          }}>
+            height: 'clamp(30px, 7vw, 46px)',
+            background: '#FFED00',
+            clipPath: 'polygon(0 0, 90% 0, 100% 100%, 0% 100%)'
+          }}
+        >
+          {/* Text and Arrow Overlay - Centered in the image */}
+          <div className="absolute inset-0 flex items-center justify-center gap-2 px-4 md:px-6">
+            <span className="text-black font-bold text-xs sm:text-sm md:text-base text-center">
+              HAVE AN IDEA? LET'S MAKE IT PROFITABLE
+            </span>
             <Image
-              src="/why-artivo/Intersect (1).png"
-              alt="Intersect Background"
-              fill
-              className="object-contain"
-              style={{ objectPosition: 'bottom' }}
+              src="/why-artivo/Group 18.svg"
+              alt="Arrow"
+              width={16}
+              height={16}
+              className="object-contain w-4 h-4 md:w-5 md:h-5 flex-shrink-0"
             />
-            {/* Text and Arrow Overlay - Centered in the image */}
-            <div className="absolute inset-0 flex items-center justify-center gap-2 px-4 md:px-6 text-center" style={{ transform: 'translateY(clamp(20px, 2.6vw, 44px))' }}>
-              <span className="text-black font-bold text-xs sm:text-xs md:text-sm whitespace-normal sm:whitespace-nowrap">
-                HAVE AN IDEA? LET'S MAKE IT PROFITABLE
-              </span>
-              <Image
-                src="/why-artivo/Group 18.svg"
-                alt="Arrow"
-                width={16}
-                height={16}
-                className="object-contain w-4 h-4 md:w-5 md:h-5 flex-shrink-0"
-              />
-            </div>
           </div>
         </div>
       </div>

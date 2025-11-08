@@ -383,16 +383,13 @@ export default function About() {
         {/* Bottom-center intersect image with overlaid CTA text */}
         <div className="absolute left-1/2 -translate-x-1/2 -bottom-16 sm:-bottom-20 pointer-events-none">
           <div className="relative w-[400px] sm:w-[490px] md:w-[580px] h-[120px] sm:h-[155px] md:h-[190px]">
-            <Image
-              src="/about/Intersect (1).png"
-              alt="Intersect Decorative"
-              fill
-              className="object-contain"
-              priority
+            <div
+              className="absolute inset-0 bg-[#FFF208]"
+              style={{ clipPath: 'polygon(0 0, 80% 0, 100% 100%, 0% 100%)' }}
             />
             {/* CTA overlay centered on the image */}
-            <div className="absolute inset-0 flex items-center justify-center z-20">
-              <div className="flex items-center justify-center gap-2 px-6" style={{ transform: 'translateY(-4px)' }}>
+            <div className="relative inset-0 flex items-center justify-center z-20 h-full">
+              <div className="flex items-center justify-center gap-2 sm:gap-3 px-6" style={{ transform: 'translateY(-4px)' }}>
                 <span className="text-black font-bold text-sm whitespace-nowrap">
                   CLICK HERE TO BOOK A FREE CONSULTATION
                 </span>
@@ -482,7 +479,7 @@ export default function About() {
             >
               Tested to Succeed.
             </h3>
-            <p className="text-white/90 text-base sm:text-lg leading-relaxed">
+            <p className="text-white/90 text-base sm:text-lg leading-relaxed" style={{ letterSpacing: '-0.04em' }}>
               Our R&D process is built on precision, experimentation, and collaboration, helping businesses transform bold ideas into market-ready products faster, smarter, and more sustainably.
             </p>
           </div>

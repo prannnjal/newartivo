@@ -32,7 +32,7 @@ export const Navbar = () => {
         {/* Right Side - Navigation Links and Button */}
         <div className="hidden md:flex items-center space-x-8">
           <a href="#" className="text-white text-lg font-medium hover:text-gray-300 transition-colors">
-            Journal
+            
           </a>
           <a href="/why-artivo" className="text-white text-lg font-medium hover:text-gray-300 transition-colors">
             Why Artivo
