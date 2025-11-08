@@ -87,10 +87,10 @@ export default function Home() {
                 <Image
                   src="/Grids/Artivo Logo - White (1) 1.png"
                   alt="Artivo Logo"
-                  width={40}
-                  height={40}
+                  width={60}
+                  height={60}
                   className="object-contain"
-                  style={{ width: 'clamp(25px, 6vw, 40px)', height: 'clamp(25px, 6vw, 40px)' }}
+                  style={{ width: 'clamp(32px, 7vw, 72px)', height: 'clamp(32px, 7vw, 72px)' }}
                 />
               </div>
             </div>
@@ -179,16 +179,16 @@ export default function Home() {
                   className="object-contain"
                 />
                 {/* Logo Centered on Symbols */}
-                <div className="absolute inset-0 flex items-center justify-center">
-                  <Image
-                    src="/Grids/Artivo Logo - White (1) 1.png"
-                    alt="Artivo Logo"
-                    width={75}
-                    height={75}
-                    className="object-contain"
-                    style={{ width: 'clamp(25px, 4vw, 65px)', height: 'clamp(25px, 4vw, 65px)' }}
-                  />
-                </div>
+            <div className="absolute inset-0 flex items-center justify-center">
+              <Image
+                src="/Grids/Artivo Logo - White (1) 1.png"
+                alt="Artivo Logo"
+                width={100}
+                height={100}
+                className="object-contain"
+                style={{ width: 'clamp(36px, 5.5vw, 90px)', height: 'clamp(36px, 5.5vw, 90px)' }}
+              />
+            </div>
               </div>
 
               {/* Process Steps - Arranged in Circle around the image */}

@@ -383,24 +383,25 @@ export default function About() {
         {/* Bottom-center intersect image with overlaid CTA text */}
         <div className="absolute left-1/2 -translate-x-1/2 -bottom-16 sm:-bottom-20 pointer-events-none">
           <div className="relative w-[400px] sm:w-[490px] md:w-[580px] h-[120px] sm:h-[155px] md:h-[190px]">
-            <div
-              className="absolute inset-0 bg-[#FFF208]"
-              style={{ clipPath: 'polygon(0 0, 80% 0, 100% 100%, 0% 100%)' }}
+            <Image
+              src="/about/Intersect (1).png"
+              alt="Intersect Decorative"
+              fill
+              className="object-contain"
+              priority
             />
             {/* CTA overlay centered on the image */}
-            <div className="relative inset-0 flex items-center justify-center z-20 h-full">
-              <div className="flex items-center justify-center gap-2 sm:gap-3 px-6" style={{ transform: 'translateY(-4px)' }}>
-                <span className="text-black font-bold text-sm whitespace-nowrap">
-                  CLICK HERE TO BOOK A FREE CONSULTATION
-                </span>
-                <Image
-                  src="/why-artivo/Group 18.svg"
-                  alt="CTA Arrow"
-                  width={20}
-                  height={20}
-                  className="object-contain"
-                />
-              </div>
+            <div className="absolute inset-0 flex items-center justify-center gap-3 px-6 z-20">
+              <span className="text-black font-bold text-sm whitespace-nowrap">
+                CLICK HERE TO BOOK A FREE CONSULTATION
+              </span>
+              <Image
+                src="/why-artivo/Group 18.svg"
+                alt="CTA Arrow"
+                width={20}
+                height={20}
+                className="object-contain"
+              />
             </div>
           </div>
         </div>
@@ -430,7 +431,7 @@ export default function About() {
             ].map((feature, index) => (
               <div
                 key={feature.id}
-                className="p-6 bg-transparent duration-300 group cursor-pointer relative"
+                className="p-6 bg-transparent duration-300 group cursor-pointer relative md:pr-12"
               >
                 <h3 className="text-white text-xl font-bold mb-3 group-hover:text-[#ffed00] transition-colors">
                   {feature.title}
@@ -438,9 +439,12 @@ export default function About() {
                 <p className="text-white text-sm opacity-90 leading-relaxed mb-6" style={{ maxWidth: '330px' }}>
                   {feature.description}
                 </p>
-                <div className="hidden md:flex items-center justify-center absolute top-1/2 right-0 -translate-y-1/2 z-10" style={{ transform: 'translateY(-50%) translateX(-800%)' }}>
+                <div
+                  className="hidden md:flex items-center justify-center absolute top-1/2 -translate-y-1/2 group"
+                  style={{ right: 'calc(100% + clamp(0.25rem, 0.6vw, 0.75rem))' }}
+                >
                   <svg
-                    className="w-6 h-6 text-white"
+                    className="w-5 h-5 text-white group-hover:text-[#ffed00] transition-colors"
                     fill="none"
                     stroke="currentColor"
                     viewBox="0 0 24 24"

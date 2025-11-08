@@ -103,33 +103,32 @@ export const TestimonialFeaturesSection = () => {
           {features.map((feature, index) => (
             <div
               key={feature.id}
-              className="p-6 bg-transparent duration-300 group cursor-pointer relative"
+              className="p-6 bg-transparent duration-300 group cursor-pointer relative md:pr-12"
             >
-              <div className="flex items-start gap-1">
-                <div className="flex-1">
-                  <h3 className="text-white text-xl font-bold mb-3 group-hover:text-[#ffed00] transition-colors">
-                    {feature.title}
-                  </h3>
-                  <p className="text-white text-sm opacity-90 leading-relaxed" style={{ maxWidth: '330px' }}>
-                    {feature.description}
-                  </p>
-                </div>
-                <div className="hidden md:flex items-center justify-center flex-shrink-0 mt-3">
-                  <svg
-                    className="w-6 h-6 text-white"
-                    fill="none"
-                    stroke="currentColor"
-                    viewBox="0 0 24 24"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      strokeWidth={2}
-                      d="M9 5l7 7-7 7"
-                    />
-                  </svg>
-                </div>
+              <h3 className="text-white text-xl font-bold mb-3 group-hover:text-[#ffed00] transition-colors">
+                {feature.title}
+              </h3>
+              <p className="text-white text-sm opacity-90 leading-relaxed" style={{ maxWidth: '330px' }}>
+                {feature.description}
+              </p>
+                <div
+                  className="hidden md:flex items-center justify-center absolute top-1/2 -translate-y-1/2 group"
+                  style={{ right: 'calc(100% + clamp(0.25rem, 0.6vw, 0.75rem))' }}
+                >
+                <svg
+                  className="w-5 h-5 text-white group-hover:text-[#ffed00] transition-colors"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth={2}
+                    d="M9 5l7 7-7 7"
+                  />
+                </svg>
               </div>
             </div>
           ))}
