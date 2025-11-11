@@ -1,4 +1,5 @@
 import React from "react";
+import Link from "next/link";
 
 export const Footer = () => {
   return (
@@ -64,10 +65,9 @@ export const Footer = () => {
             <div className="space-y-4" style={{ marginRight: 'clamp(7rem, 14vw, 14rem)' }}>
               <h3 className="text-white text-sm font-bold uppercase tracking-wide">PAGES</h3>
               <ul className="space-y-2">
-                <li><a href="#" className="text-white text-sm hover:text-gray-300 transition-colors">About</a></li>
-                <li><a href="#" className="text-white text-sm hover:text-gray-300 transition-colors">Case Studies</a></li>
-                
-                <li><a href="/contact-us" className="text-white text-sm hover:text-gray-300 transition-colors">Contact Us</a></li>
+                <li><Link href="/about" className="text-white text-sm hover:text-gray-300 transition-colors">About</Link></li>
+                <li><Link href="/case-studies" className="text-white text-sm hover:text-gray-300 transition-colors">Case Studies</Link></li>
+                <li><Link href="/contact-us" className="text-white text-sm hover:text-gray-300 transition-colors">Contact Us</Link></li>
               </ul>
             </div>
 
@@ -75,11 +75,11 @@ export const Footer = () => {
             <div className="space-y-4" style={{ marginRight: 'clamp(10rem, 20vw, 20rem)' }}>
               <h3 className="text-white text-sm font-bold uppercase tracking-wide">SERVICES</h3>
               <ul className="space-y-2">
-                <li><a href="#" className="text-white text-sm hover:text-gray-300 transition-colors">Product Innovation</a></li>
-                <li><a href="#" className="text-white text-sm hover:text-gray-300 transition-colors">Electronic Design</a></li>
-                <li><a href="#" className="text-white text-sm hover:text-gray-300 transition-colors">Design for Sustainability</a></li>
-                <li><a href="#" className="text-white text-sm hover:text-gray-300 transition-colors">Design for Startups</a></li>
-                <li><a href="#" className="text-white text-sm hover:text-gray-300 transition-colors">Manufacture Process Optimisation</a></li>
+                <li><Link href="/capabilities" className="text-white text-sm hover:text-gray-300 transition-colors">Product Innovation</Link></li>
+                <li><Link href="/capabilities" className="text-white text-sm hover:text-gray-300 transition-colors">Electronic Design</Link></li>
+                <li><Link href="/capabilities" className="text-white text-sm hover:text-gray-300 transition-colors">Design for Sustainability</Link></li>
+                <li><Link href="/capabilities" className="text-white text-sm hover:text-gray-300 transition-colors">Design for Startups</Link></li>
+                <li><Link href="/capabilities" className="text-white text-sm hover:text-gray-300 transition-colors">Manufacture Process Optimisation</Link></li>
               </ul>
             </div>
 
@@ -87,8 +87,8 @@ export const Footer = () => {
             <div className="space-y-4">
               <h3 className="text-white text-sm font-bold uppercase tracking-wide">TERMS & CONDITIONS</h3>
               <ul className="space-y-2">
-                <li><a href="#" className="text-white text-sm hover:text-gray-300 transition-colors">Privacy Policy</a></li>
-                <li><a href="#" className="text-white text-sm hover:text-gray-300 transition-colors">Terms of Service</a></li>
+                <li><Link href="/privacy-policy" className="text-white text-sm hover:text-gray-300 transition-colors">Privacy Policy</Link></li>
+                <li><Link href="/terms-of-service" className="text-white text-sm hover:text-gray-300 transition-colors">Terms of Service</Link></li>
               </ul>
             </div>
           </div>
