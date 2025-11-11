@@ -97,7 +97,15 @@ export const Footer = () => {
         {/* Bottom Border */}
         <div className="mt-12 pt-8 text-center">
           <p className="text-white text-sm">
-            Designed & Developed by CHALKSNBOARD
+            Designed & Developed by{" "}
+            <a
+              href="https://chalksnboard.in"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="font-bold hover:text-gray-200 transition-colors"
+            >
+              CHALKS<span className="text-red-500">N</span>BOARD
+            </a>
           </p>
         </div>
       </div>
