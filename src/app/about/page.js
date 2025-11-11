@@ -427,7 +427,7 @@ export default function About() {
                 id: 3,
                 title: "Innovation that leads",
                 description: "At Artivo, we believe that true innovation goes beyond just creativity. It requires a deep understanding of market needs and user-centric design, to fulfil market supply-demand."
-              }
+              },
             ].map((feature, index) => (
               <div
                 key={feature.id}
@@ -439,25 +439,27 @@ export default function About() {
                 <p className="text-white text-sm opacity-90 leading-relaxed mb-6" style={{ maxWidth: '330px' }}>
                   {feature.description}
                 </p>
-                <div
-                  className="hidden md:flex items-center justify-center absolute top-1/2 -translate-y-1/2 group"
-                  style={{ right: 'calc(100% + clamp(0.25rem, 0.6vw, 0.75rem))' }}
-                >
-                  <svg
-                    className="w-5 h-5 text-white group-hover:text-[#ffed00] transition-colors"
-                    fill="none"
-                    stroke="currentColor"
-                    viewBox="0 0 24 24"
-                    xmlns="http://www.w3.org/2000/svg"
+                {(index === 1 || index === 2) && (
+                  <div
+                    className="hidden md:flex items-center justify-center absolute top-1/2 -translate-y-1/2 group"
+                    style={{ right: 'calc(100% + clamp(0.25rem, 0.6vw, 0.75rem))' }}
                   >
-                    <path
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      strokeWidth={2}
-                      d="M9 5l7 7-7 7"
-                    />
-                  </svg>
-                </div>
+                    <svg
+                      className="w-5 h-5 text-white group-hover:text-[#ffed00] transition-colors"
+                      fill="none"
+                      stroke="currentColor"
+                      viewBox="0 0 24 24"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        strokeWidth={2}
+                        d="M9 5l7 7-7 7"
+                      />
+                    </svg>
+                  </div>
+                )}
               </div>
             ))}
           </div>

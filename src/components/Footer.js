@@ -65,9 +65,8 @@ export const Footer = () => {
               <h3 className="text-white text-sm font-bold uppercase tracking-wide">PAGES</h3>
               <ul className="space-y-2">
                 <li><a href="#" className="text-white text-sm hover:text-gray-300 transition-colors">About</a></li>
-                <li><a href="#" className="text-white text-sm hover:text-gray-300 transition-colors">Work</a></li>
-                <li><a href="#" className="text-white text-sm hover:text-gray-300 transition-colors">Careers</a></li>
-                <li><a href="#" className="text-white text-sm hover:text-gray-300 transition-colors">Blog</a></li>
+                <li><a href="#" className="text-white text-sm hover:text-gray-300 transition-colors">Case Studies</a></li>
+                
                 <li><a href="/contact-us" className="text-white text-sm hover:text-gray-300 transition-colors">Contact Us</a></li>
               </ul>
             </div>
