@@ -381,8 +381,8 @@ export default function About() {
 
         </div>
         {/* Bottom-center intersect image with overlaid CTA text */}
-        <div className="absolute left-1/2 -translate-x-1/2 -bottom-16 sm:-bottom-20">
-          <div className="relative w-[400px] sm:w-[490px] md:w-[580px] h-[120px] sm:h-[155px] md:h-[190px]">
+        <div className="absolute left-0 right-0 -bottom-10 sm:-bottom-20 w-full px-0 sm:px-0">
+          <div className="relative w-full max-w-none sm:max-w-[490px] md:max-w-[580px] h-[110px] sm:h-[155px] md:h-[190px] mx-auto">
             <Image
               src="/about/Intersect (1).png"
               alt="Intersect Decorative"
@@ -497,13 +497,13 @@ export default function About() {
           </div>
         </div>
         {/* Bottom-right decorative image with overlaid CTA */}
-        <div className="absolute -bottom-4 sm:-bottom-19 right-0 z-10">
+        <div className="absolute -bottom-10 sm:-bottom-19 left-0 right-0 z-10 px-0">
           <a
             href="https://calendly.com/artivo/free-design-consultation"
             target="_blank"
             rel="noopener noreferrer"
             aria-label="Book a free design consultation"
-            className="relative w-[360px] sm:w-[440px] md:w-[520px] lg:w-[600px] h-[120px] sm:h-[150px] md:h-[180px] block"
+            className="relative w-full sm:w-[440px] md:w-[520px] lg:w-[600px] h-[110px] sm:h-[150px] md:h-[180px] block ml-auto"
           >
             {/* Decorative image */}
             <Image
@@ -516,13 +516,13 @@ export default function About() {
 
             {/* CTA overlay centered on the image */}
             <div className="absolute inset-0 flex items-center justify-center pointer-events-auto z-20">
-              <div className="flex items-center justify-center gap-3 text-black font-semibold text-sm sm:text-base whitespace-nowrap px-3 py-1 rounded-full" style={{ transform: 'translateY(-8px)' }}>
+              <div className="flex items-center justify-center gap-3 text-black font-semibold text-xs sm:text-base whitespace-nowrap px-3 py-1 rounded-full" style={{ transform: 'translateY(-6px)' }}>
                 <span>CLICK HERE AND GET YOUR R&amp;D SCORE</span>
                 <Image
                   src="/why-artivo/Group 18.svg"
                   alt="CTA Arrow"
-                  width={24}
-                  height={24}
+                  width={20}
+                  height={20}
                   className="object-contain"
                 />
               </div>
