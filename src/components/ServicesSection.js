@@ -108,7 +108,13 @@ export const ServicesSection = () => {
                     </h3>
                     <p
                       className="text-white/90 mt-3 text-sm leading-snug"
-                      style={{ maxWidth: '22rem' }}
+                      style={{
+                        maxWidth: '22rem',
+                        display: '-webkit-box',
+                        WebkitLineClamp: 3,
+                        WebkitBoxOrient: 'vertical',
+                        overflow: 'hidden',
+                      }}
                     >
                       {service.description}
                     </p>
