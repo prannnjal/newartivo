@@ -3,7 +3,7 @@
 4:I[97367,["/_next/static/chunks/ff1a16fafef87110.js","/_next/static/chunks/247eb132b7f7b574.js"],"MetadataBoundary"]
 5:"$Sreact.suspense"
 7:I[27201,["/_next/static/chunks/ff1a16fafef87110.js","/_next/static/chunks/247eb132b7f7b574.js"],"IconMark"]
-:HL["/_next/static/chunks/2b01dd9761927418.css","style"]
+:HL["/_next/static/chunks/0e8ba7c485ab12bb.css","style"]
 :HL["/_next/static/media/030c76ff40bce98c-s.p.c4196caa.woff2","font",{"crossOrigin":"","type":"font/woff2"}]
 :HL["/_next/static/media/0595f7052377a1a2-s.p.0de08f1e.woff2","font",{"crossOrigin":"","type":"font/woff2"}]
 :HL["/_next/static/media/235a0ef330592118-s.p.b3cd1641.woff2","font",{"crossOrigin":"","type":"font/woff2"}]
@@ -18,6 +18,6 @@
 :HL["/product/ass.png","image"]
 :HL["/2 11.png","image"]
 :HL["/Logo/Frame 33.png","image"]
-0:{"buildId":"i-_iskvyJYVAfdy0jj-t4","tree":{"name":"","paramType":null,"paramKey":"","hasRuntimePrefetch":false,"slots":{"children":{"name":"gp-hybrid-bike","paramType":null,"paramKey":"gp-hybrid-bike","hasRuntimePrefetch":false,"slots":{"children":{"name":"__PAGE__","paramType":null,"paramKey":"__PAGE__","hasRuntimePrefetch":false,"slots":null,"isRootLayout":false}},"isRootLayout":false}},"isRootLayout":true},"head":["$","$1","h",{"children":[null,["$","$L2",null,{"children":"$@3"}],["$","div",null,{"hidden":true,"children":["$","$L4",null,{"children":["$","$5",null,{"name":"Next.Metadata","children":"$@6"}]}]}],["$","meta",null,{"name":"next-size-adjust","content":""}]]}],"isHeadPartial":false,"staleTime":300}
+0:{"buildId":"tJD211NVGL8Y7k7Go_M5w","tree":{"name":"","paramType":null,"paramKey":"","hasRuntimePrefetch":false,"slots":{"children":{"name":"gp-hybrid-bike","paramType":null,"paramKey":"gp-hybrid-bike","hasRuntimePrefetch":false,"slots":{"children":{"name":"__PAGE__","paramType":null,"paramKey":"__PAGE__","hasRuntimePrefetch":false,"slots":null,"isRootLayout":false}},"isRootLayout":false}},"isRootLayout":true},"head":["$","$1","h",{"children":[null,["$","$L2",null,{"children":"$@3"}],["$","div",null,{"hidden":true,"children":["$","$L4",null,{"children":["$","$5",null,{"name":"Next.Metadata","children":"$@6"}]}]}],["$","meta",null,{"name":"next-size-adjust","content":""}]]}],"isHeadPartial":false,"staleTime":300}
 3:[["$","meta","0",{"charSet":"utf-8"}],["$","meta","1",{"name":"viewport","content":"width=device-width, initial-scale=1"}]]
 6:[["$","title","0",{"children":"ARTIVO"}],["$","meta","1",{"name":"description","content":"Advanced Engineering Solutions - Product Design, Engineering, Prototyping, Manufacturing"}],["$","link","2",{"rel":"icon","href":"/favicon.ico?favicon.0b3bf435.ico","sizes":"256x256","type":"image/x-icon"}],["$","link","3",{"rel":"icon","href":"/Grids/Artivo Logo - White (1) 1.png"}],["$","$L7","4",{}]]
