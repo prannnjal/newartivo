@@ -50,12 +50,15 @@ export const Navbar = () => {
           </a>
           
           {/* Connect Button */}
-          <button 
+          <a
+            href="https://calendly.com/artivo/free-design-consultation"
+            target="_blank"
+            rel="noopener noreferrer"
             className="text-black px-8 py-3 font-semibold text-sm rounded-full transition-colors"
             style={{ backgroundColor: 'rgba(255, 242, 8, 1)' }}
           >
             Book a Free Audit
-          </button>
+          </a>
         </div>
 
         {/* Mobile Menu Toggle */}
@@ -119,13 +122,16 @@ export const Navbar = () => {
           >
             Contact Us
           </a>
-          <button
+          <a
+            href="https://calendly.com/artivo/free-design-consultation"
+            target="_blank"
+            rel="noopener noreferrer"
             className="text-black px-8 py-3 font-semibold text-base rounded-full transition-colors mx-auto"
             style={{ backgroundColor: 'rgba(255, 242, 8, 1)' }}
             onClick={handleCloseMenu}
           >
             Book a Free Audit
-          </button>
+          </a>
         </div>
       </div>
     </nav>
