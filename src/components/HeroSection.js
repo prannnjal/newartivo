@@ -13,7 +13,8 @@ export const HeroSection = () => {
           playsInline
           className="w-full h-full object-cover min-w-full min-h-full"
         >
-          <source src="/hero.webm" type="video/mp4" />
+          <source src="/hero.mp4" type="video/mp4" />
+          <source src="/hero.webm" type="video/webm" />
         </video>
       </div>
       
