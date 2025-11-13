@@ -381,7 +381,7 @@ export default function About() {
 
         </div>
         {/* Bottom-center intersect image with overlaid CTA text */}
-        <div className="absolute left-1/2 -translate-x-1/2 -bottom-16 sm:-bottom-20 pointer-events-none">
+        <div className="absolute left-1/2 -translate-x-1/2 -bottom-16 sm:-bottom-20">
           <div className="relative w-[400px] sm:w-[490px] md:w-[580px] h-[120px] sm:h-[155px] md:h-[190px]">
             <Image
               src="/about/Intersect (1).png"
@@ -391,7 +391,13 @@ export default function About() {
               priority
             />
             {/* CTA overlay centered on the image */}
-            <div className="absolute inset-0 flex items-center justify-center gap-3 px-6 z-20">
+            <a
+              href="https://calendly.com/artivo/free-design-consultation"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Book a free design consultation"
+              className="absolute inset-0 flex items-center justify-center gap-3 px-6 z-20"
+            >
               <span className="text-black font-bold text-sm whitespace-nowrap">
                 CLICK HERE TO BOOK A FREE CONSULTATION
               </span>
@@ -402,7 +408,7 @@ export default function About() {
                 height={20}
                 className="object-contain"
               />
-            </div>
+            </a>
           </div>
         </div>
 
@@ -492,7 +498,13 @@ export default function About() {
         </div>
         {/* Bottom-right decorative image with overlaid CTA */}
         <div className="absolute -bottom-4 sm:-bottom-19 right-0 z-10">
-          <div className="relative w-[360px] sm:w-[440px] md:w-[520px] lg:w-[600px] h-[120px] sm:h-[150px] md:h-[180px]">
+          <a
+            href="https://calendly.com/artivo/free-design-consultation"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Book a free design consultation"
+            className="relative w-[360px] sm:w-[440px] md:w-[520px] lg:w-[600px] h-[120px] sm:h-[150px] md:h-[180px] block"
+          >
             {/* Decorative image */}
             <Image
               src="/about/as.png"
@@ -515,7 +527,7 @@ export default function About() {
                 />
               </div>
             </div>
-          </div>
+          </a>
         </div>
 
 

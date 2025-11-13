@@ -65,7 +65,13 @@ export const TestimonialFeaturesSection = () => {
         />
         {/* Text overlay */}
         <div className="absolute inset-0 flex items-center" style={{ paddingLeft: 'clamp(3rem, 6vw, 6rem)', paddingRight: 'clamp(1rem, 4.68vw, 4rem)' }}>
-          <div className="flex items-center gap-6">
+          <a
+            href="https://calendly.com/artivo/free-design-consultation"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Book a free design consultation"
+            className="flex items-center gap-6"
+          >
             <span className="text-black font-bold whitespace-nowrap" style={{ fontSize: 'clamp(0.875rem, 1vw, 1rem)' }}>
               CLICK HERE TO BOOK A FREE CONSULTATION
             </span>
@@ -76,7 +82,7 @@ export const TestimonialFeaturesSection = () => {
               height={20}
               className="object-contain"
             />
-          </div>
+          </a>
         </div>
       </div>
 

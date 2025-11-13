@@ -76,7 +76,14 @@ export const ProductShowcaseSection = () => {
               
               {/* Right Side - Bottom Right Content - Desktop */}
               <div className="hidden lg:block absolute right-0 z-20" style={{ bottom: 0, marginBottom: 0, paddingBottom: 0 }}>
-                <div className="relative flex items-end" style={{ marginBottom: 0, paddingBottom: 0 }}>
+                <a
+                  href="https://calendly.com/artivo/free-design-consultation"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="Book a free design consultation"
+                  className="relative flex items-end"
+                  style={{ marginBottom: 0, paddingBottom: 0 }}
+                >
                   <div
                     className="relative overflow-hidden"
                     style={{
@@ -108,13 +115,17 @@ export const ProductShowcaseSection = () => {
                       />
                     </div>
                   </div>
-                </div>
+                </a>
               </div>
               
               {/* Mobile - Right Side Content */}
               <div className="lg:hidden absolute bottom-0 right-0 z-20" style={{ marginBottom: 0, paddingBottom: 0 }}>
-                <div
-                  className="relative overflow-hidden"
+                <a
+                  href="https://calendly.com/artivo/free-design-consultation"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="Book a free design consultation"
+                  className="relative overflow-hidden block"
                   style={{
                     width: 'clamp(260px, 70vw, 340px)',
                     height: 'clamp(34px, 7.5vw, 50px)',
@@ -144,7 +155,7 @@ export const ProductShowcaseSection = () => {
                       />
                     </div>
                   </div>
-                </div>
+                </a>
               </div>
             </div>
             

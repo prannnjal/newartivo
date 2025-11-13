@@ -198,12 +198,18 @@ export default function GPHybridBike() {
                 <Image src="/product/f.png" alt="Engineering Details" fill className="object-cover" />
               </div>
             </div>
-            <div className="w-full bg-[#FFED00] flex items-center justify-between px-6 py-4 rounded-full shadow-md">
+            <a
+              href="https://calendly.com/artivo/free-design-consultation"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Book a free design consultation"
+              className="w-full bg-[#FFED00] flex items-center justify-between px-6 py-4 rounded-full shadow-md"
+            >
               <span className="text-black font-bold tracking-wide text-sm sm:text-base whitespace-nowrap">
                 BRING YOUR IDEAS TO LIFE
               </span>
               <Image src="/why-artivo/Group 18.svg" alt="Arrow Icon" width={22} height={22} className="object-contain" />
-            </div>
+            </a>
           </div>
 
           {/* Desktop Layout */}
@@ -305,7 +311,11 @@ export default function GPHybridBike() {
               />
             </div>
             <div className="col-span-2 -mt-5.5 lg:-mt-21.5">
-              <div
+              <a
+                href="https://calendly.com/artivo/free-design-consultation"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Book a free design consultation"
                 className="ml-auto w-[calc(50%-2px)] h-[48px] sm:h-[56px] lg:h-[64px] bg-[#FFED00] flex items-center justify-start pl-[70px] pr-2 sm:pr-3 lg:pr-4 gap-[70px]"
                 style={{ transform: 'translate(0px, -1.5px)' }}
               >
@@ -320,7 +330,7 @@ export default function GPHybridBike() {
                   className="object-contain"
                   style={{ width: 'clamp(12px, 1.5vw, 24px)', height: 'clamp(12px, 1.5vw, 24px)' }}
                 />
-              </div>
+              </a>
             </div>
           </div>
           </div>
@@ -457,7 +467,13 @@ export default function GPHybridBike() {
     </div>
 
     {/* Yellow Call-to-Action Strip */}
-    <div className="w-full max-w-none bg-[#FFF208] py-3 px-6 lg:px-8 flex items-center justify-center gap-3 hover:bg-yellow-300 transition-colors duration-300 cursor-pointer">
+    <a
+      href="https://calendly.com/artivo/free-design-consultation"
+      target="_blank"
+      rel="noopener noreferrer"
+      aria-label="Book a free design consultation"
+      className="w-full max-w-none bg-[#FFF208] py-3 px-6 lg:px-8 flex items-center justify-center gap-3 hover:bg-yellow-300 transition-colors duration-300 cursor-pointer"
+    >
       <span className="text-black font-bold tracking-wide text-[clamp(0.65rem,1.1vw,1.1rem)] whitespace-nowrap text-center">
         GOT AN IDEA? LET'S INNOVATE!
       </span>
@@ -469,7 +485,7 @@ export default function GPHybridBike() {
         className="object-contain"
         style={{ width: 'clamp(14px, 1.6vw, 26px)', height: 'clamp(14px, 1.6vw, 26px)' }}
       />
-    </div>
+    </a>
   </div>
 </section>
 

@@ -4,7 +4,13 @@ import Image from 'next/image';
 export const YellowStrip = () => {
   return (
     <section className="relative h-[45px] flex items-center justify-center">
-      <div className="relative w-full h-full">
+      <a
+        href="https://calendly.com/artivo/free-design-consultation"
+        target="_blank"
+        rel="noopener noreferrer"
+        aria-label="Book a free design consultation"
+        className="relative w-full h-full block"
+      >
         <Image
           src="/why-artivo/Intersect (1).png"
           alt="Intersect Background"
@@ -24,7 +30,7 @@ export const YellowStrip = () => {
             className="object-contain"
           />
         </div>
-      </div>
+      </a>
     </section>
   );
 };
