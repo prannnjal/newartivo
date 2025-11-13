@@ -71,13 +71,10 @@ export const ServicesSection = () => {
   return (
     <section className="w-full bg-white">
       <div className="w-full max-w-none">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3" style={{ gap: '2px' }}>
+        {/* Mobile Layout */}
+        <div className="grid grid-cols-1 gap-[2px] md:hidden">
           {services.map((service) => (
-            <div 
-              key={service.id} 
-              className="relative aspect-[4/3] overflow-hidden"
-            >
-              {/* Background Image */}
+            <div key={`mobile-${service.id}`} className="relative aspect-[4/3] overflow-hidden">
               <div className="absolute inset-0">
                 <Image
                   src={service.image}
@@ -85,35 +82,108 @@ export const ServicesSection = () => {
                   fill
                   className="object-cover"
                   priority={service.id <= 3}
-                  sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
+                  sizes="(max-width: 768px) 100vw"
                 />
               </div>
-              
-              {/* Dark Overlay */}
+              <div className="absolute inset-0 bg-black/55 z-10"></div>
+              <div className="absolute inset-0 z-20 flex flex-col justify-between p-5">
+                <div className="flex justify-between items-start">
+                  <div>
+                    <h3
+                      className="text-white font-semibold uppercase leading-tight tracking-tight"
+                      style={{
+                        fontSize: 'clamp(1.35rem, 5vw, 1.75rem)',
+                        letterSpacing: '-0.04em',
+                      }}
+                    >
+                      {service.title === "INDUSTRIAL TESTING + VALIDATION" ? (
+                        <>
+                          INDUSTRIAL
+                          <br />
+                          TESTING+VALIDATION
+                        </>
+                      ) : (
+                        service.title
+                      )}
+                    </h3>
+                    <p
+                      className="text-white/90 mt-3 text-sm leading-snug"
+                      style={{ maxWidth: '22rem' }}
+                    >
+                      {service.description}
+                    </p>
+                  </div>
+                  <span
+                    className="font-semibold leading-none text-white select-none"
+                    style={{
+                      fontSize: 'clamp(2.75rem, 10vw, 3.5rem)',
+                      WebkitTextStroke: '0.3px white',
+                      color: 'transparent',
+                      textStroke: '0.3px white',
+                    }}
+                  >
+                    /{service.id}
+                  </span>
+                </div>
+                {service.showArrow && (
+                  <div className="flex justify-end">
+                    <svg
+                      className="text-white"
+                      fill="none"
+                      stroke="currentColor"
+                      strokeWidth={2}
+                      viewBox="0 0 24 24"
+                      style={{ width: '28px', height: '28px' }}
+                    >
+                      <path strokeLinecap="round" strokeLinejoin="round" d="M9 5l7 7-7 7" />
+                    </svg>
+                  </div>
+                )}
+              </div>
+            </div>
+          ))}
+        </div>
+
+        {/* Desktop & Tablet Layout */}
+        <div className="hidden md:grid md:grid-cols-2 lg:grid-cols-3" style={{ gap: '2px' }}>
+          {services.map((service) => (
+            <div
+              key={service.id}
+              className="relative aspect-[4/3] overflow-hidden"
+            >
+              <div className="absolute inset-0">
+                <Image
+                  src={service.image}
+                  alt={service.title}
+                  fill
+                  className="object-cover"
+                  priority={service.id <= 3}
+                  sizes="(max-width: 1024px) 50vw, 33vw"
+                />
+              </div>
+
               <div className="absolute inset-0 bg-black/50 z-10"></div>
-              
-              {/* Section Number - Top Right */}
+
               <div className="absolute top-5 right-5 md:top-6 md:right-6 lg:top-7 lg:right-7 z-20">
-                <span 
-                  className="font-semibold leading-none text-white"
-                  style={{ 
+                <span
+                  className="font-semibold leading-none text-white select-none"
+                  style={{
                     fontSize: '64px',
                     WebkitTextStroke: '0.3px white',
                     color: 'transparent',
-                    textStroke: '0.3px white'
+                    textStroke: '0.3px white',
                   }}
                 >
                   /{service.id}
                 </span>
               </div>
 
-              {/* Right Edge Arrow - Only for specific services */}
               {service.showArrow && (
                 <div className="absolute top-1/2 right-3 md:right-4 lg:right-5 -translate-y-1/2 z-20">
-                  <svg 
-                    className="text-white" 
-                    fill="none" 
-                    stroke="currentColor" 
+                  <svg
+                    className="text-white"
+                    fill="none"
+                    stroke="currentColor"
                     strokeWidth={2}
                     viewBox="0 0 24 24"
                     style={{ width: '32px', height: '32px' }}
@@ -122,18 +192,17 @@ export const ServicesSection = () => {
                   </svg>
                 </div>
               )}
-              
-              {/* Content - Positioned */}
+
               <div className="absolute z-20" style={{ top: '20px', left: '26px' }}>
-                <h3 
+                <h3
                   className="text-white"
-                  style={{ 
+                  style={{
                     width: '169px',
                     height: '72px',
                     fontWeight: 600,
                     fontSize: '30px',
                     lineHeight: '100%',
-                    letterSpacing: '-0.04em'
+                    letterSpacing: '-0.04em',
                   }}
                 >
                   {service.title === "INDUSTRIAL TESTING + VALIDATION" ? (
@@ -147,17 +216,17 @@ export const ServicesSection = () => {
                   )}
                 </h3>
               </div>
-              
+
               <div className="absolute z-20" style={{ top: '102px', left: '26px' }}>
-                <p 
+                <p
                   className="text-white"
-                  style={{ 
+                  style={{
                     width: '384px',
                     height: '38px',
                     fontWeight: 400,
                     fontSize: '16px',
                     lineHeight: '100%',
-                    letterSpacing: '0'
+                    letterSpacing: '0',
                   }}
                 >
                   {service.description}

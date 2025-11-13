@@ -151,7 +151,7 @@ export const OurWorkSection = () => {
       </div>
       
       {/* Mobile - Bottom Right Content - Outside container to reach edge */}
-      <div className="lg:hidden absolute bottom-0 right-0 z-20" style={{ bottom: 0, marginBottom: 0, paddingBottom: 0 }}>
+      <div className="lg:hidden absolute bottom-0 left-0 right-0 z-20" style={{ bottom: 0, marginBottom: 0, paddingBottom: 0 }}>
         <a
           href="https://calendly.com/artivo/free-design-consultation"
           target="_blank"
@@ -159,7 +159,8 @@ export const OurWorkSection = () => {
           aria-label="Book a free design consultation"
           className="relative overflow-hidden block"
           style={{
-            width: 'clamp(260px, 75vw, 360px)',
+            width: '100%',
+            maxWidth: '100%',
             height: 'clamp(36px, 8vw, 52px)',
             background: '#FFED00',
             clipPath: 'polygon(0 0, 100% 0, 100% 100%, 20% 100%)',

@@ -119,7 +119,7 @@ export const ProductShowcaseSection = () => {
               </div>
               
               {/* Mobile - Right Side Content */}
-              <div className="lg:hidden absolute bottom-0 right-0 z-20" style={{ marginBottom: 0, paddingBottom: 0 }}>
+              <div className="lg:hidden absolute bottom-0 left-0 right-0 z-20" style={{ marginBottom: 0, paddingBottom: 0 }}>
                 <a
                   href="https://calendly.com/artivo/free-design-consultation"
                   target="_blank"
@@ -127,7 +127,8 @@ export const ProductShowcaseSection = () => {
                   aria-label="Book a free design consultation"
                   className="relative overflow-hidden block"
                   style={{
-                    width: 'clamp(260px, 70vw, 340px)',
+                    width: '100%',
+                    maxWidth: '100%',
                     height: 'clamp(34px, 7.5vw, 50px)',
                     background: '#FFED00',
                     clipPath: 'polygon(0 0, 100% 0, 100% 100%, 20% 100%)',

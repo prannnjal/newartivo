@@ -126,7 +126,7 @@ export const Navbar = () => {
             href="https://calendly.com/artivo/free-design-consultation"
             target="_blank"
             rel="noopener noreferrer"
-            className="text-black px-8 py-3 font-semibold text-base rounded-full transition-colors mx-auto"
+            className="w-full text-center text-black py-3 font-semibold text-base rounded-full transition-colors"
             style={{ backgroundColor: 'rgba(255, 242, 8, 1)' }}
             onClick={handleCloseMenu}
           >
