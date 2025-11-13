@@ -107,9 +107,9 @@ export const ServicesSection = () => {
                       )}
                     </h3>
                     <p
-                      className="text-white/90 mt-3 text-sm leading-snug"
+                      className="text-white/90 mt-3 text-sm leading-snug text-justify"
                       style={{
-                        maxWidth: '22rem',
+                        maxWidth: '100%',
                         display: '-webkit-box',
                         WebkitLineClamp: 3,
                         WebkitBoxOrient: 'vertical',
@@ -150,8 +150,87 @@ export const ServicesSection = () => {
           ))}
         </div>
 
-        {/* Desktop & Tablet Layout */}
-        <div className="hidden md:grid md:grid-cols-2 lg:grid-cols-3" style={{ gap: '2px' }}>
+        {/* Tablet Layout */}
+        <div className="hidden md:grid lg:hidden grid-cols-2 gap-[2px]">
+          {services.map((service) => (
+            <div key={`tablet-${service.id}`} className="relative aspect-[4/3] overflow-hidden">
+              <div className="absolute inset-0">
+                <Image
+                  src={service.image}
+                  alt={service.title}
+                  fill
+                  className="object-cover"
+                  priority={service.id <= 3}
+                  sizes="(max-width: 1024px) 50vw"
+                />
+              </div>
+              <div className="absolute inset-0 bg-black/55 z-10"></div>
+              <div className="absolute inset-0 z-20 flex flex-col justify-between p-6">
+                <div className="flex justify-between items-start gap-4">
+                  <div>
+                    <h3
+                      className="text-white font-semibold uppercase leading-tight tracking-tight"
+                      style={{
+                        fontSize: 'clamp(1.35rem, 3.4vw, 1.85rem)',
+                        letterSpacing: '-0.04em',
+                      }}
+                    >
+                      {service.title === "INDUSTRIAL TESTING + VALIDATION" ? (
+                        <>
+                          INDUSTRIAL
+                          <br />
+                          TESTING+VALIDATION
+                        </>
+                      ) : (
+                        service.title
+                      )}
+                    </h3>
+                    <p
+                      className="text-white/90 mt-4 text-sm leading-snug"
+                      style={{
+                        maxWidth: 'clamp(14rem, 22vw, 18rem)',
+                        display: '-webkit-box',
+                        WebkitLineClamp: 3,
+                        WebkitBoxOrient: 'vertical',
+                        overflow: 'hidden',
+                      }}
+                    >
+                      {service.description.replace(/\n/g, ' ')}
+                    </p>
+                  </div>
+                  <span
+                    className="font-semibold leading-none text-white select-none"
+                    style={{
+                      fontSize: 'clamp(3rem, 6vw, 3.75rem)',
+                      WebkitTextStroke: '0.3px white',
+                      color: 'transparent',
+                      textStroke: '0.3px white',
+                    }}
+                  >
+                    /{service.id}
+                  </span>
+                </div>
+                {service.showArrow && (
+                  <div className="flex justify-end">
+                    <svg
+                      className="text-white"
+                      fill="none"
+                      stroke="currentColor"
+                      strokeWidth={2}
+                      viewBox="0 0 24 24"
+                      style={{ width: '32px', height: '32px' }}
+                    >
+                      <path strokeLinecap="round" strokeLinejoin="round" d="M9 5l7 7-7 7" />
+                    </svg>
+                  </div>
+                )}
+              </div>
+            </div>
+          ))}
+        </div>
+
+        {/* Desktop Layout */}
+        <div className="hidden lg:grid md:grid-cols-2 lg:grid-cols-3" style={{ gap: '2px' }}>
           {services.map((service) => (
             <div
               key={service.id}
