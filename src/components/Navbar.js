@@ -35,7 +35,7 @@ export const Navbar = () => {
 
         {/* Right Side - Navigation Links and Button */}
         <div className="hidden md:flex items-center space-x-8">
-          <a href="#" className="text-white text-lg font-medium hover:text-gray-300 transition-colors">
+          <a href="https://artivo.com.au" className="text-white text-lg font-medium hover:text-gray-300 transition-colors">
             Home
           </a>
          
@@ -95,7 +95,7 @@ export const Navbar = () => {
       >
         <div className="flex flex-col gap-5 pt-6 text-center">
         <a
-            href="/"
+            href="https://artivo.com.au"
             className="text-white text-[clamp(1.1rem,4vw,1.35rem)] font-semibold hover:text-gray-300 transition-colors"
             onClick={handleCloseMenu}
           >
