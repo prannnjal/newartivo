@@ -1,3 +1,5 @@
+'use client';
+
 import React from 'react';
 import Image from 'next/image';
 import { Navbar } from '@/components/Navbar';
@@ -78,9 +80,9 @@ function FooterStyleSection() {
   );
 }
 
-export default function About() {
+function AboutView({ variant = 'desktop' }) {
   return (
-    <div className="min-h-screen bg-white">
+    <div className="min-h-screen bg-white" data-variant={`about-${variant}`}>
       <Navbar />
       {/* Hero Section */}
       <section className="relative h-screen w-full overflow-hidden">
@@ -381,23 +383,43 @@ export default function About() {
 
         </div>
         {/* Bottom-center intersect image with overlaid CTA text */}
-        <div className="absolute left-0 right-0 -bottom-10 sm:-bottom-20 w-full px-0 sm:px-0">
-          <div className="relative w-full max-w-none sm:max-w-[490px] md:max-w-[580px] h-[110px] sm:h-[155px] md:h-[190px] mx-auto">
-            <Image
-              src="/about/Intersect (1).png"
-              alt="Intersect Decorative"
-              fill
-              className="object-contain"
-              priority
-            />
+        <div
+          className={`absolute pointer-events-none ${
+            variant === 'mobile'
+              ? 'left-0 right-0 bottom-0'
+              : 'left-1/2 -translate-x-1/2 -bottom-16 sm:-bottom-20'
+          }`}
+        >
+          <div
+            className={`relative ${
+              variant === 'mobile'
+                ? 'h-[48px] w-screen max-w-none'
+                : 'h-[120px] sm:h-[155px] md:h-[190px] w-[400px] sm:w-[490px] md:w-[580px]'
+            }`}
+          >
+            {variant === 'mobile' ? (
+              <div
+                className="absolute inset-0"
+                style={{
+                  background:
+                    ' rgba(255,237,0,1) ',
+                  boxShadow: '0 15px 40px rgba(0,0,0,0.25)',
+                  // clip-path vertices: top-left → top-right → right side down → bottom-right slant → bottom-left slant → left side up
+                  clipPath:
+                    'polygon(10% 0%, 88% 0%, 100% 100%, 95% 100%, 5% 100%, 0% 100%)',
+                }}
+              />
+            ) : (
+              <Image
+                src="/about/Intersect (1).png"
+                alt="Intersect Decorative"
+                fill
+                className="object-contain"
+                priority
+              />
+            )}
             {/* CTA overlay centered on the image */}
-            <a
-              href="https://calendly.com/artivo/free-design-consultation"
-              target="_blank"
-              rel="noopener noreferrer"
-              aria-label="Book a free design consultation"
-              className="absolute inset-0 flex items-center justify-center gap-3 px-6 z-20"
-            >
+            <div className="absolute inset-0 flex items-center justify-center gap-3 px-6 z-20">
               <span className="text-black font-bold text-sm whitespace-nowrap">
                 CLICK HERE TO BOOK A FREE CONSULTATION
               </span>
@@ -408,7 +430,7 @@ export default function About() {
                 height={20}
                 className="object-contain"
               />
-            </a>
+            </div>
           </div>
         </div>
 
@@ -483,8 +505,20 @@ export default function About() {
         />
         <div className="absolute inset-0 bg-black/40" />
         {/* Left-corner text */}
-        <div className="absolute inset-0 z-10 flex items-end justify-start">
-          <div className="pb-10 pr-8 max-w-2xl" style={{ paddingLeft: 'clamp(1rem, 4.68vw, 4rem)' }}>
+        <div
+          className={`absolute inset-0 z-10 flex justify-start ${
+            variant === 'mobile' ? 'items-end' : 'items-end'
+          }`}
+          style={{
+            paddingBottom: variant === 'mobile' ? 'clamp(4rem, 10vw, 6rem)' : 0,
+          }}
+        >
+          <div
+            className={`pr-8 max-w-2xl ${
+              variant === 'mobile' ? 'pb-4' : 'pb-10'
+            }`}
+            style={{ paddingLeft: 'clamp(1rem, 4.68vw, 4rem)' }}
+          >
             <h3
               className="text-white text-3xl sm:text-4xl font-bold mb-4"
               style={{ letterSpacing: '-0.04em' }}
@@ -497,37 +531,62 @@ export default function About() {
           </div>
         </div>
         {/* Bottom-right decorative image with overlaid CTA */}
-        <div className="absolute -bottom-10 sm:-bottom-19 left-0 right-0 z-10 px-0">
-          <a
-            href="https://calendly.com/artivo/free-design-consultation"
-            target="_blank"
-            rel="noopener noreferrer"
-            aria-label="Book a free design consultation"
-            className="relative w-full sm:w-[440px] md:w-[520px] lg:w-[600px] h-[110px] sm:h-[150px] md:h-[180px] block ml-auto"
+        <div
+          className={`absolute z-10 ${
+            variant === 'mobile'
+              ? 'right-0 bottom-0'
+              : 'right-0 -bottom-4 sm:-bottom-19'
+          }`}
+        >
+          <div
+            className={`relative ${
+              variant === 'mobile'
+                ? 'w-[calc(100vw-1rem)] max-w-[380px] h-[50px]'
+                : 'w-[360px] sm:w-[440px] md:w-[520px] lg:w-[600px] h-[120px] sm:h-[150px] md:h-[180px]'
+            }`}
           >
-            {/* Decorative image */}
-            <Image
-              src="/about/as.png"
-              alt="Decorative Bottom Right"
-              fill
-              className="object-contain"
-              priority
-            />
+            {variant === 'mobile' ? (
+              <div
+                className="absolute inset-0 rounded-[0px]"
+                style={{
+                  background:
+                    ' rgba(255,237,0,1) ',
+                  boxShadow: '0 15px 40px rgba(0,0,0,0.25)',
+                  
+                  clipPath:
+                    'polygon(13% 0%, 100% 0%, 100% 100%, 95% 100%, 5% 100%, 0% 100%)',
+                }}
+              />
+            ) : (
+              <Image
+                src="/about/as.png"
+                alt="Decorative Bottom Right"
+                fill
+                className="object-contain"
+                priority
+              />
+            )}
 
             {/* CTA overlay centered on the image */}
             <div className="absolute inset-0 flex items-center justify-center pointer-events-auto z-20">
-              <div className="flex items-center justify-center gap-3 text-black font-semibold text-xs sm:text-base whitespace-nowrap px-3 py-1 rounded-full" style={{ transform: 'translateY(-6px)' }}>
-                <span>CLICK HERE AND GET YOUR R&amp;D SCORE</span>
+              <div
+                className={`flex items-center justify-center gap-3 text-black font-semibold text-sm sm:text-base whitespace-nowrap px-3 py-1 rounded-full ${
+                  variant === 'mobile' ? 'translate-y-0 w-full' : '-translate-y-2'
+                }`}
+              >
+                <span className="truncate">
+                  CLICK HERE AND GET YOUR R&amp;D SCORE
+                </span>
                 <Image
                   src="/why-artivo/Group 18.svg"
                   alt="CTA Arrow"
-                  width={20}
-                  height={20}
+                  width={24}
+                  height={24}
                   className="object-contain"
                 />
               </div>
             </div>
-          </a>
+          </div>
         </div>
 
 
@@ -549,5 +608,21 @@ export default function About() {
 
       <Footer />
     </div>
+  );
+}
+
+const DesktopAboutView = () => <AboutView variant="desktop" />;
+const MobileAboutView = () => <AboutView variant="mobile" />;
+
+export default function About() {
+  return (
+    <>
+      <div className="hidden md:block">
+        <DesktopAboutView />
+      </div>
+      <div className="block md:hidden">
+        <MobileAboutView />
+      </div>
+    </>
   );
 }
