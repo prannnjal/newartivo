@@ -10,7 +10,7 @@ export default function ContactUs() {
   return (
     <div className="min-h-screen bg-white">
       {/* Navbar */}
-      <Navbar />
+      <Navbar variant="contact" />
 
       {/* Contact Section as Hero */}
       <div style={{ marginTop: 'clamp(6rem, 12vw, 12rem)' }}>

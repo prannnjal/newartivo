@@ -3,9 +3,12 @@
 import React, { useState } from 'react';
 import { usePathname } from 'next/navigation';
 
-export const Navbar = () => {
+export const Navbar = ({ variant = 'default' }) => {
   const pathname = usePathname();
-  const isContactUs = pathname === '/contact-us';
+  const isContactTheme = variant === 'contact' || pathname === '/contact-us';
+  const navBackground = isContactTheme
+    ? 'linear-gradient(90deg, #0B192F 0%, #CD400B 100%)'
+    : 'rgba(0, 0, 0, 0.15)';
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   const handleToggleMenu = () => setIsMenuOpen((prev) => !prev);
@@ -13,8 +16,8 @@ export const Navbar = () => {
 
   return (
     <nav
-      className={`absolute top-0 left-0 right-0 z-50 ${isContactUs ? '' : 'bg-transparent'}`}
-      style={isContactUs ? { background: 'linear-gradient(90deg, rgba(11, 25, 47, 1), rgba(205, 64, 11, 1))', opacity: 1 } : { background: 'rgba(0, 0, 0, 0.15)', opacity: 1 }}
+      className="absolute top-0 left-0 right-0 z-50"
+      style={{ background: navBackground, opacity: 1 }}
     >
       <div className="py-6 flex justify-between items-center relative" style={{ 
         paddingLeft: 'clamp(1rem, 4.68vw, 4rem)',
@@ -89,7 +92,8 @@ export const Navbar = () => {
         style={{
           paddingLeft: 'clamp(1rem, 4.68vw, 4rem)',
           paddingRight: 'clamp(1rem, 4.68vw, 4rem)',
-          paddingBottom: 'clamp(2rem, 4vw, 3rem)'
+          paddingBottom: 'clamp(2rem, 4vw, 3rem)',
+          background: isContactTheme ? navBackground : 'rgba(0,0,0,0.45)'
         }}
         aria-hidden={!isMenuOpen}
       >

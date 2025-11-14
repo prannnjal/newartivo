@@ -91,15 +91,44 @@ export const TestimonialFeaturesSection = () => {
         <div className="flex flex-col lg:flex-row items-start justify-between mb-8 gap-10">
           {/* Quote */}
           <div className="lg:w-1/2 mt-12" style={{ paddingLeft: 0 }}>
-            <blockquote className="text-white text-4xl font-bold leading-tight mb-6 whitespace-nowrap">
-              "Artivo is where imagination meets precision."
-            </blockquote>
-            <cite className="text-white text-base sm:text-lg opacity-90 block not-italic" style={{ fontStyle: 'normal' }}>
-              <span className="font-semibold" style={{ fontSize: 'clamp(1rem, 1.2vw, 1.25rem)' }}>Jessica Wade</span><br />
-              <span className="opacity-75" style={{ marginTop: '0px', display: 'block' }}>
-                Innovation, DLR Hydraulic Tools
-              </span>
-            </cite>
+            {/* Desktop / Tablet view */}
+            <div className="hidden md:block">
+              <blockquote className="text-white text-4xl font-bold leading-tight mb-6">
+                "Artivo is where imagination meets precision."
+              </blockquote>
+              <cite
+                className="text-white text-base sm:text-lg opacity-90 block not-italic"
+                style={{ fontStyle: 'normal' }}
+              >
+                <span
+                  className="font-semibold"
+                  style={{ fontSize: 'clamp(1rem, 1.2vw, 1.25rem)' }}
+                >
+                  Jessica Wade
+                </span>
+                <br />
+                <span
+                  className="opacity-75"
+                  style={{ marginTop: '0px', display: 'block' }}
+                >
+                  Innovation, DLR Hydraulic Tools
+                </span>
+              </cite>
+            </div>
+
+            {/* Mobile-specific view */}
+            <div className="block md:hidden">
+              <blockquote className="text-white text-2xl sm:text-3xl font-bold leading-tight mb-4">
+                "Artivo is where imagination meets precision."
+              </blockquote>
+              <cite className="text-white text-sm opacity-90 not-italic block">
+                <span className="font-semibold text-base">Jessica Wade</span>
+                <br />
+                <span className="opacity-75 text-sm">
+                  Innovation, DLR Hydraulic Tools
+                </span>
+              </cite>
+            </div>
           </div>
 
         </div>
