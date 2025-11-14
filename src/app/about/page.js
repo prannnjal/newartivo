@@ -1,3 +1,5 @@
+'use client';
+
 import React from 'react';
 import Image from 'next/image';
 import { Navbar } from '@/components/Navbar';
@@ -78,9 +80,9 @@ function FooterStyleSection() {
   );
 }
 
-export default function About() {
+function AboutView({ variant = 'desktop' }) {
   return (
-    <div className="min-h-screen bg-white">
+    <div className="min-h-screen bg-white" data-variant={`about-${variant}`}>
       <Navbar />
       {/* Hero Section */}
       <section className="relative h-screen w-full overflow-hidden">
@@ -381,15 +383,41 @@ export default function About() {
 
         </div>
         {/* Bottom-center intersect image with overlaid CTA text */}
-        <div className="absolute left-1/2 -translate-x-1/2 -bottom-16 sm:-bottom-20 pointer-events-none">
-          <div className="relative w-[400px] sm:w-[490px] md:w-[580px] h-[120px] sm:h-[155px] md:h-[190px]">
-            <Image
-              src="/about/Intersect (1).png"
-              alt="Intersect Decorative"
-              fill
-              className="object-contain"
-              priority
-            />
+        <div
+          className={`absolute pointer-events-none ${
+            variant === 'mobile'
+              ? 'left-0 right-0 bottom-0'
+              : 'left-1/2 -translate-x-1/2 -bottom-16 sm:-bottom-20'
+          }`}
+        >
+          <div
+            className={`relative ${
+              variant === 'mobile'
+                ? 'h-[48px] w-screen max-w-none'
+                : 'h-[120px] sm:h-[155px] md:h-[190px] w-[400px] sm:w-[490px] md:w-[580px]'
+            }`}
+          >
+            {variant === 'mobile' ? (
+              <div
+                className="absolute inset-0"
+                style={{
+                  background:
+                    ' rgba(255,237,0,1) ',
+                  boxShadow: '0 15px 40px rgba(0,0,0,0.25)',
+                  // clip-path vertices: top-left → top-right → right side down → bottom-right slant → bottom-left slant → left side up
+                  clipPath:
+                    'polygon(10% 0%, 88% 0%, 100% 100%, 95% 100%, 5% 100%, 0% 100%)',
+                }}
+              />
+            ) : (
+              <Image
+                src="/about/Intersect (1).png"
+                alt="Intersect Decorative"
+                fill
+                className="object-contain"
+                priority
+              />
+            )}
             {/* CTA overlay centered on the image */}
             <div className="absolute inset-0 flex items-center justify-center gap-3 px-6 z-20">
               <span className="text-black font-bold text-sm whitespace-nowrap">
@@ -537,5 +565,21 @@ export default function About() {
 
       <Footer />
     </div>
+  );
+}
+
+const DesktopAboutView = () => <AboutView variant="desktop" />;
+const MobileAboutView = () => <AboutView variant="mobile" />;
+
+export default function About() {
+  return (
+    <>
+      <div className="hidden md:block">
+        <DesktopAboutView />
+      </div>
+      <div className="block md:hidden">
+        <MobileAboutView />
+      </div>
+    </>
   );
 }
