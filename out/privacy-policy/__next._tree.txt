@@ -3,7 +3,7 @@
 4:I[97367,["/_next/static/chunks/ff1a16fafef87110.js","/_next/static/chunks/247eb132b7f7b574.js"],"MetadataBoundary"]
 5:"$Sreact.suspense"
 7:I[27201,["/_next/static/chunks/ff1a16fafef87110.js","/_next/static/chunks/247eb132b7f7b574.js"],"IconMark"]
-:HL["/_next/static/chunks/72c5bf368cec127a.css","style"]
+:HL["/_next/static/chunks/7a176059fc9b6097.css","style"]
 :HL["/_next/static/media/030c76ff40bce98c-s.p.c4196caa.woff2","font",{"crossOrigin":"","type":"font/woff2"}]
 :HL["/_next/static/media/0595f7052377a1a2-s.p.0de08f1e.woff2","font",{"crossOrigin":"","type":"font/woff2"}]
 :HL["/_next/static/media/235a0ef330592118-s.p.b3cd1641.woff2","font",{"crossOrigin":"","type":"font/woff2"}]
@@ -15,6 +15,6 @@
 :HL["/_next/static/media/efe66f9dab7e6ce7-s.p.a25a39ba.woff2","font",{"crossOrigin":"","type":"font/woff2"}]
 :HL["/2 11.png","image"]
 :HL["/Logo/Frame 33.png","image"]
-0:{"buildId":"CXEZQlz1eWsx1ShQO6Ioi","tree":{"name":"","paramType":null,"paramKey":"","hasRuntimePrefetch":false,"slots":{"children":{"name":"privacy-policy","paramType":null,"paramKey":"privacy-policy","hasRuntimePrefetch":false,"slots":{"children":{"name":"__PAGE__","paramType":null,"paramKey":"__PAGE__","hasRuntimePrefetch":false,"slots":null,"isRootLayout":false}},"isRootLayout":false}},"isRootLayout":true},"head":["$","$1","h",{"children":[null,["$","$L2",null,{"children":"$@3"}],["$","div",null,{"hidden":true,"children":["$","$L4",null,{"children":["$","$5",null,{"name":"Next.Metadata","children":"$@6"}]}]}],["$","meta",null,{"name":"next-size-adjust","content":""}]]}],"isHeadPartial":false,"staleTime":300}
+0:{"buildId":"TLPkYes5a_3C7ieUam0Uk","tree":{"name":"","paramType":null,"paramKey":"","hasRuntimePrefetch":false,"slots":{"children":{"name":"privacy-policy","paramType":null,"paramKey":"privacy-policy","hasRuntimePrefetch":false,"slots":{"children":{"name":"__PAGE__","paramType":null,"paramKey":"__PAGE__","hasRuntimePrefetch":false,"slots":null,"isRootLayout":false}},"isRootLayout":false}},"isRootLayout":true},"head":["$","$1","h",{"children":[null,["$","$L2",null,{"children":"$@3"}],["$","div",null,{"hidden":true,"children":["$","$L4",null,{"children":["$","$5",null,{"name":"Next.Metadata","children":"$@6"}]}]}],["$","meta",null,{"name":"next-size-adjust","content":""}]]}],"isHeadPartial":false,"staleTime":300}
 3:[["$","meta","0",{"charSet":"utf-8"}],["$","meta","1",{"name":"viewport","content":"width=device-width, initial-scale=1"}]]
 6:[["$","title","0",{"children":"ARTIVO"}],["$","meta","1",{"name":"description","content":"Advanced Engineering Solutions - Product Design, Engineering, Prototyping, Manufacturing"}],["$","link","2",{"rel":"shortcut icon","href":"/Artivo Logo - White (1) 1.ico"}],["$","link","3",{"rel":"icon","href":"/favicon.ico?favicon.a992292b.ico","sizes":"25x32","type":"image/x-icon"}],["$","link","4",{"rel":"icon","href":"/Artivo Logo - White (1) 1.ico"}],["$","link","5",{"rel":"apple-touch-icon","href":"/Artivo Logo - White (1) 1.ico"}],["$","$L7","6",{}]]
