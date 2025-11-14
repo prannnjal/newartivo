@@ -505,8 +505,20 @@ function AboutView({ variant = 'desktop' }) {
         />
         <div className="absolute inset-0 bg-black/40" />
         {/* Left-corner text */}
-        <div className="absolute inset-0 z-10 flex items-end justify-start">
-          <div className="pb-10 pr-8 max-w-2xl" style={{ paddingLeft: 'clamp(1rem, 4.68vw, 4rem)' }}>
+        <div
+          className={`absolute inset-0 z-10 flex justify-start ${
+            variant === 'mobile' ? 'items-end' : 'items-end'
+          }`}
+          style={{
+            paddingBottom: variant === 'mobile' ? 'clamp(4rem, 10vw, 6rem)' : 0,
+          }}
+        >
+          <div
+            className={`pr-8 max-w-2xl ${
+              variant === 'mobile' ? 'pb-4' : 'pb-10'
+            }`}
+            style={{ paddingLeft: 'clamp(1rem, 4.68vw, 4rem)' }}
+          >
             <h3
               className="text-white text-3xl sm:text-4xl font-bold mb-4"
               style={{ letterSpacing: '-0.04em' }}
@@ -519,21 +531,52 @@ function AboutView({ variant = 'desktop' }) {
           </div>
         </div>
         {/* Bottom-right decorative image with overlaid CTA */}
-        <div className="absolute -bottom-4 sm:-bottom-19 right-0 z-10">
-          <div className="relative w-[360px] sm:w-[440px] md:w-[520px] lg:w-[600px] h-[120px] sm:h-[150px] md:h-[180px]">
-            {/* Decorative image */}
-            <Image
-              src="/about/as.png"
-              alt="Decorative Bottom Right"
-              fill
-              className="object-contain"
-              priority
-            />
+        <div
+          className={`absolute z-10 ${
+            variant === 'mobile'
+              ? 'right-0 bottom-0'
+              : 'right-0 -bottom-4 sm:-bottom-19'
+          }`}
+        >
+          <div
+            className={`relative ${
+              variant === 'mobile'
+                ? 'w-[calc(100vw-1rem)] max-w-[380px] h-[50px]'
+                : 'w-[360px] sm:w-[440px] md:w-[520px] lg:w-[600px] h-[120px] sm:h-[150px] md:h-[180px]'
+            }`}
+          >
+            {variant === 'mobile' ? (
+              <div
+                className="absolute inset-0 rounded-[0px]"
+                style={{
+                  background:
+                    ' rgba(255,237,0,1) ',
+                  boxShadow: '0 15px 40px rgba(0,0,0,0.25)',
+                  
+                  clipPath:
+                    'polygon(13% 0%, 100% 0%, 100% 100%, 95% 100%, 5% 100%, 0% 100%)',
+                }}
+              />
+            ) : (
+              <Image
+                src="/about/as.png"
+                alt="Decorative Bottom Right"
+                fill
+                className="object-contain"
+                priority
+              />
+            )}
 
             {/* CTA overlay centered on the image */}
             <div className="absolute inset-0 flex items-center justify-center pointer-events-auto z-20">
-              <div className="flex items-center justify-center gap-3 text-black font-semibold text-sm sm:text-base whitespace-nowrap px-3 py-1 rounded-full" style={{ transform: 'translateY(-8px)' }}>
-                <span>CLICK HERE AND GET YOUR R&amp;D SCORE</span>
+              <div
+                className={`flex items-center justify-center gap-3 text-black font-semibold text-sm sm:text-base whitespace-nowrap px-3 py-1 rounded-full ${
+                  variant === 'mobile' ? 'translate-y-0 w-full' : '-translate-y-2'
+                }`}
+              >
+                <span className="truncate">
+                  CLICK HERE AND GET YOUR R&amp;D SCORE
+                </span>
                 <Image
                   src="/why-artivo/Group 18.svg"
                   alt="CTA Arrow"
