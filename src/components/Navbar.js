@@ -35,7 +35,7 @@ export const Navbar = () => {
 
         {/* Right Side - Navigation Links and Button */}
         <div className="hidden md:flex items-center space-x-8">
-          <a href="#" className="text-white text-lg font-medium hover:text-gray-300 transition-colors">
+          <a href="https://artivo.com.au" className="text-white text-lg font-medium hover:text-gray-300 transition-colors">
             Home
           </a>
          
@@ -50,12 +50,15 @@ export const Navbar = () => {
           </a>
           
           {/* Connect Button */}
-          <button 
+          <a
+            href="https://calendly.com/artivo/free-design-consultation"
+            target="_blank"
+            rel="noopener noreferrer"
             className="text-black px-8 py-3 font-semibold text-sm rounded-full transition-colors"
             style={{ backgroundColor: 'rgba(255, 242, 8, 1)' }}
           >
             Book a Free Audit
-          </button>
+          </a>
         </div>
 
         {/* Mobile Menu Toggle */}
@@ -92,7 +95,7 @@ export const Navbar = () => {
       >
         <div className="flex flex-col gap-5 pt-6 text-center">
         <a
-            href="/"
+            href="https://artivo.com.au"
             className="text-white text-[clamp(1.1rem,4vw,1.35rem)] font-semibold hover:text-gray-300 transition-colors"
             onClick={handleCloseMenu}
           >
@@ -119,13 +122,16 @@ export const Navbar = () => {
           >
             Contact Us
           </a>
-          <button
-            className="text-black px-8 py-3 font-semibold text-base rounded-full transition-colors mx-auto"
+          <a
+            href="https://calendly.com/artivo/free-design-consultation"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="w-full text-center text-black py-3 font-semibold text-base rounded-full transition-colors"
             style={{ backgroundColor: 'rgba(255, 242, 8, 1)' }}
             onClick={handleCloseMenu}
           >
             Book a Free Audit
-          </button>
+          </a>
         </div>
       </div>
     </nav>

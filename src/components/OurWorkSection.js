@@ -25,7 +25,14 @@ export const OurWorkSection = () => {
       
       {/* Right Side - Bottom Right Content - Outside container to reach edge */}
       <div className="hidden lg:block absolute right-0 z-20" style={{ bottom: 0, marginBottom: 0, paddingBottom: 0 }}>
-        <div className="relative flex items-end " style={{ marginBottom: 0, paddingBottom: 0 }}>
+        <a
+          href="https://calendly.com/artivo/free-design-consultation"
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label="Book a free design consultation"
+          className="relative flex items-end"
+          style={{ marginBottom: 0, paddingBottom: 0 }}
+        >
           {/* Intersect Background Image */}
           <div
             className="relative overflow-hidden"
@@ -61,7 +68,7 @@ export const OurWorkSection = () => {
               />
             </div>
           </div>
-        </div>
+        </a>
       </div>
 
       {/* Left Side - Testimonial Content - Independent from left edge */}
@@ -144,11 +151,16 @@ export const OurWorkSection = () => {
       </div>
       
       {/* Mobile - Bottom Right Content - Outside container to reach edge */}
-      <div className="lg:hidden absolute bottom-0 right-0 z-20" style={{ bottom: 0, marginBottom: 0, paddingBottom: 0 }}>
-        <div
-          className="relative overflow-hidden"
+      <div className="lg:hidden absolute bottom-0 left-0 right-0 z-20" style={{ bottom: 0, marginBottom: 0, paddingBottom: 0 }}>
+        <a
+          href="https://calendly.com/artivo/free-design-consultation"
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label="Book a free design consultation"
+          className="relative overflow-hidden block"
           style={{
-            width: 'clamp(260px, 75vw, 360px)',
+            width: '100%',
+            maxWidth: '100%',
             height: 'clamp(36px, 8vw, 52px)',
             background: '#FFED00',
             clipPath: 'polygon(0 0, 100% 0, 100% 100%, 20% 100%)',
@@ -175,7 +187,7 @@ export const OurWorkSection = () => {
               style={{ width: 'clamp(14px, 3vw, 18px)', height: 'clamp(14px, 3vw, 18px)' }}
             />
           </div>
-        </div>
+        </a>
       </div>
     </section>
   );

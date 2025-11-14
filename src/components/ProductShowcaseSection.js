@@ -46,7 +46,33 @@ export const ProductShowcaseSection = () => {
                  className="object-cover"
                />
               <div className="absolute inset-0 bg-black/50 z-10"></div>
-              <div className="absolute bottom-16 left-6 right-6 z-20">
+              {/* Mobile Copy */}
+              <div className="absolute bottom-24 left-0 right-0 px-6 z-20 lg:hidden">
+                <div className="space-y-3">
+                  <h2
+                    className="text-white font-bold tracking-tight"
+                    style={{
+                      fontSize: 'clamp(1.75rem, 6vw, 2.25rem)',
+                      lineHeight: '1',
+                      letterSpacing: '-0.04em',
+                    }}
+                  >
+                    Tested to Succeed.
+                  </h2>
+                  <p
+                    className="text-white/95 font-light leading-snug"
+                    style={{
+                      fontSize: 'clamp(0.95rem, 4.2vw, 1.1rem)',
+                      letterSpacing: '-0.02em',
+                    }}
+                  >
+                    Our R&D process is built on precision, experimentation, and collaboration, helping businesses transform bold ideas into market-ready products faster, smarter, and more sustainably.
+                  </p>
+                </div>
+              </div>
+
+              {/* Desktop Copy */}
+              <div className="hidden lg:block absolute bottom-16 left-6 right-6 z-20">
                 <div className="p-5">
                   <h2 
                     className="text-white mb-3"
@@ -62,7 +88,7 @@ export const ProductShowcaseSection = () => {
                   <p 
                     className="text-white mb-4"
                     style={{ 
-                      width: '338px',
+                      maxWidth: '338px',
                       fontWeight: 200,
                       fontSize: '20px',
                       lineHeight: '100%',
@@ -76,7 +102,14 @@ export const ProductShowcaseSection = () => {
               
               {/* Right Side - Bottom Right Content - Desktop */}
               <div className="hidden lg:block absolute right-0 z-20" style={{ bottom: 0, marginBottom: 0, paddingBottom: 0 }}>
-                <div className="relative flex items-end" style={{ marginBottom: 0, paddingBottom: 0 }}>
+                <a
+                  href="https://calendly.com/artivo/free-design-consultation"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="Book a free design consultation"
+                  className="relative flex items-end"
+                  style={{ marginBottom: 0, paddingBottom: 0 }}
+                >
                   <div
                     className="relative overflow-hidden"
                     style={{
@@ -108,15 +141,20 @@ export const ProductShowcaseSection = () => {
                       />
                     </div>
                   </div>
-                </div>
+                </a>
               </div>
               
               {/* Mobile - Right Side Content */}
-              <div className="lg:hidden absolute bottom-0 right-0 z-20" style={{ marginBottom: 0, paddingBottom: 0 }}>
-                <div
-                  className="relative overflow-hidden"
+              <div className="lg:hidden absolute bottom-0 left-0 right-0 z-20" style={{ marginBottom: 0, paddingBottom: 0 }}>
+                <a
+                  href="https://calendly.com/artivo/free-design-consultation"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="Book a free design consultation"
+                  className="relative overflow-hidden block"
                   style={{
-                    width: 'clamp(260px, 70vw, 340px)',
+                    width: '100%',
+                    maxWidth: '100%',
                     height: 'clamp(34px, 7.5vw, 50px)',
                     background: '#FFED00',
                     clipPath: 'polygon(0 0, 100% 0, 100% 100%, 20% 100%)',
@@ -144,7 +182,7 @@ export const ProductShowcaseSection = () => {
                       />
                     </div>
                   </div>
-                </div>
+                </a>
               </div>
             </div>
             
