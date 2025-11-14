@@ -10,9 +10,6 @@ const barlow = Barlow({
 export const metadata = {
   title: "ARTIVO",
   description: "Advanced Engineering Solutions - Product Design, Engineering, Prototyping, Manufacturing",
-  icons: {
-    icon: "/Grids/Artivo Logo - White (1) 1.png",
-  },
 };
 
 export default function RootLayout({ children }) {
